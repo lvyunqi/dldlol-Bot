@@ -54,3 +54,9 @@ python bot.py
 * 新增玩家/魂兽释放魂技CD冷却
 * 调整玩家前10级等级升级各项属性只增幅1点
 * 调整魂兽最多攻击次数为10次
+
+
+## 感谢
+[botuniverse / onebot](https://github.com/botuniverse/onebot) ：超棒的机器人协议  
+[Mrs4s / go-cqhttp](https://github.com/Mrs4s/go-cqhttp) ：cqhttp的golang实现，轻量、原生跨平台.  
+[nonebot / nonebot2](https://github.com/nonebot/nonebot2) ：跨平台Python异步机器人框架  
