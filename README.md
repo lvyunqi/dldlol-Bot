@@ -1,5 +1,6 @@
 # 斗罗大陆OL-Bot
 
+[![star](https://gitee.com/lvyunqi/dldlol-Bot/badge/star.svg?theme=dark)](https://gitee.com/lvyunqi/dldlol-Bot/stargazers)
 ****
 此项目基于 Nonebot2 和 go-cqhttp 开发，以 MySQL 作为数据库的QQ群娱乐机器人
 #### 介绍
