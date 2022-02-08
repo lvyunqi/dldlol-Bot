@@ -3,10 +3,7 @@ from nonebot.typing import T_State
 from nonebot.adapters import Bot, Event
 from numpy import power
 from ..function import *
-#import pymysql
-#import random
 
-#conn = pymysql.connect(host='114.132.234.220',user='dldlol_bot',passwd='dldlol',db='dldlol_bot')
 
 whjx = on_command("武魂觉醒")
 @whjx.handle()
