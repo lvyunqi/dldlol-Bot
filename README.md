@@ -23,7 +23,7 @@
 
  **安装前请先配置好Python3（作者使用的Python3.8.10）** 
 
-####Linux(建议使用Ubuntu20系列)
+#### Linux(建议使用Ubuntu20系列)
 ```
 # 配置gocq
 在 https://github.com/Mrs4s/go-cqhttp 下载Releases最新版本，运行后选择反向代理，
@@ -40,7 +40,7 @@ pip install -r requirements.txt
 python bot.py
 ```
 
-####Windows
+#### Windows
 ```
 # 配置gocq
 在 https://github.com/Mrs4s/go-cqhttp 下载Releases最新版本，运行后选择反向代理，
