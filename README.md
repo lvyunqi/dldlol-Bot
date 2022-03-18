@@ -19,92 +19,18 @@
 
  **未经允许，请遵守GPL2.0协议，禁止私自商业化！** 
 
-## 简单部署
+# dldlol-Bot
 
- **安装前请先配置好Python3（作者使用的Python3.8.10）** 
+## How to start
 
-#### Linux(建议使用Ubuntu20系列)
-```
-# 配置gocq
-在 https://github.com/Mrs4s/go-cqhttp 下载Releases最新版本，运行后选择反向代理，
-  后将gocq的配置文件config.yml中的universal改为universal: ws://127.0.0.1:8080/cqhttp/ws
-# 获取代码
-git clone https://gitee.com/lvyunqi/dldlol-Bot.git
-# 进入目录
-cd dldlol-Bot
-# 安装依赖
-pip install -r requirements.txt
-# 进行基础配置
-####请查看 配置 部分####
-# 开始运行
-python bot.py
-```
+1. generate project using `nb create` .
+2. create your plugin using `nb plugin create` .
+3. writing your plugins under `src/plugins` folder.
+4. run your bot using `nb run` .
 
-#### Windows
-```
-# 配置gocq
-在 https://github.com/Mrs4s/go-cqhttp 下载Releases最新版本，运行后选择反向代理，
-  后将gocq的配置文件config.yml中的universal改为universal: ws://127.0.0.1:8080/cqhttp/ws
-# 获取代码
-https://gitee.com/lvyunqi/dldlol-Bot/repository/archive/master.zip
-# 解压进入目录
-# 安装依赖
-依赖库在requirements.txt中，请根据实际情况安装
-# 进行基础配置
-####请查看 配置 部分####
-# 开始运行
-python bot.py
-```
+## Documentation
 
-#### Windows（酷喵机器人框架）
-```
-# 安装酷喵机器人框架并登录Bot QQ
-在 https://www.kumbot.cn 下载最新版本，运行登录一次Bot QQ，进入酷喵目录
-  配置/data/go-cqhttp目录下的config.yml，直接复制下方配置替换最后原版最后两行
-  # 反向WS设置
-  - ws-reverse:
-      # 反向WS Universal 地址
-      # 注意 设置了此项地址后下面两项将会被忽略
-      universal: ws://127.0.0.1:8080/cqhttp/ws/
-      # 反向WS API 地址
-      api: ws://your_websocket_api.server
-      # 反向WS Event 地址
-      event: ws://your_websocket_event.server
-      # 重连间隔 单位毫秒
-      reconnect-interval: 3000
-      middlewares:
-        <<: *default # 引用默认中间件
-# 登录Bot QQ
-# 获取代码
-https://gitee.com/lvyunqi/dldlol-Bot/repository/archive/master.zip
-# 解压进入目录
-# 安装依赖
-依赖库在requirements.txt中，请根据实际情况安装
-# 进行基础配置
-####请查看 配置 部分####
-# 开始运行
-python bot.py
-```
-  
-## 简单配置
-
-```
-1.在.env.dev文件中
-  SUPERUSERS = [""]   # 填写你的QQ，这里是超级管理员账号，多个用英文逗号分开
-2.在src/plugins/function.py文件中
-  * 修改第7行到第12行dbinfo数据库连接信息
-3.在src/plugins/battle.py文件中
-  * 修改数据库连接信息
-```
-
-## 更新
-
-### 2022/2/7
-
-* 新增玩家/魂兽释放魂技CD冷却
-* 调整玩家前10级等级升级各项属性只增幅1点
-* 调整魂兽最多攻击次数为10次
-
+See [Docs](https://v2.nonebot.dev/)
 
 ## 感谢
 [botuniverse / onebot](https://github.com/botuniverse/onebot) ：超棒的机器人协议  
