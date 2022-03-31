@@ -1,1 +1,0 @@
-cmd /k "nb run"
