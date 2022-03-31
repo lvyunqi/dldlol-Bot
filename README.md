@@ -11,6 +11,10 @@
 
 目前此项目还在开发中
 
+最新版本：https://gitee.com/lvyunqi/dldlol-Bot/tree/v2-beta/
+
+ **暂时未达到正常使用阶段！！！** 
+
 如果希望有个地方讨论，或者有问题或建议，可以发送issues或加入[ <strong>[斗罗大陆·S2公测一群](https://jq.qq.com/?_wv=1027&k=t82s58Pl)</strong>]
 
 ## 声明
