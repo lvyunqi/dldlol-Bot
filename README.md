@@ -1,6 +1,8 @@
 # 斗罗大陆OL-Bot
 
 [![star](https://gitee.com/lvyunqi/dldlol-Bot/badge/star.svg?theme=dark)](https://gitee.com/lvyunqi/dldlol-Bot/stargazers)
+![Python Version](https://img.shields.io/badge/Python-3.8.10%2B-blue)
+![NoneBot Version](https://img.shields.io/badge/NoneBot-2.0.0.a16-red)
 ****
 此项目基于 Nonebot2 和 go-cqhttp 开发，以 MySQL 作为数据库的QQ群娱乐机器人
 #### 介绍
