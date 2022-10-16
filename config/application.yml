@@ -1,0 +1,14 @@
+# mysql
+MySQL:
+  host: 111.172.243.59
+  port: 3306
+  username: qimenbot
+  password: qimen
+  database: qimenbot
+
+bot:
+  superusers: 434658198,123456 # 配置超管用户
+  apikey: 123457 # 配置API访问密钥
+
+  plugin:
+    - com.dldlol.ExpandDemo.py

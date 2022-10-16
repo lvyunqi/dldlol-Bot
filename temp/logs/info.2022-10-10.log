@@ -1,0 +1,260 @@
+2022-10-10 17:56:39 [ main:438 ] - [ INFO ] Starting QimenBotApplication on LAPTOP-FNT7SMLI with PID 27076 (D:\Project\JAVA\Bot\QimenBot\target\classes started by lvyunqi in D:\Project\JAVA\Bot\QimenBot)
+2022-10-10 17:56:39 [ main:440 ] - [ INFO ] No active profile set, falling back to default profiles: default
+2022-10-10 17:56:39 [ main:1087 ] - [ INFO ] Bean 'taskConfig' of type [com.mryunqi.qimenbot.config.TaskConfig$$EnhancerBySpringCGLIB$$49366c5c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-10 17:56:40 [ main:1301 ] - [ INFO ] Tomcat initialized with port(s): 8088 (http)
+2022-10-10 17:56:40 [ main:1308 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-8088"]
+2022-10-10 17:56:40 [ main:1308 ] - [ INFO ] Starting service [Tomcat]
+2022-10-10 17:56:40 [ main:1308 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-10-10 17:56:40 [ main:1381 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2022-10-10 17:56:40 [ main:1381 ] - [ INFO ] Root WebApplicationContext: initialization completed in 906 ms
+2022-10-10 17:56:40 [ main:1594 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK](1.0) @夜空
+2022-10-10 17:56:40 [ main:1605 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK]成功！
+2022-10-10 17:56:40 [ main:1607 ] - [ INFO ] 数据库初始化...
+2022-10-10 17:56:43 [ main:4610 ] - [ INFO ] 数据库连接池 - Starting...
+2022-10-10 17:56:43 [ main:4912 ] - [ INFO ] 数据库连接池 - Start completed.
+2022-10-10 17:56:43 [ main:4964 ] - [ INFO ] user表:success!
+2022-10-10 17:56:44 [ main:5449 ] - [ INFO ] command表:success!
+2022-10-10 17:56:44 [ main:5734 ] - [ INFO ] 启动成功
+2022-10-10 17:56:44 [ main:5735 ] - [ INFO ] 正在启动Go-Cqhttp客户端...
+2022-10-10 17:56:44 [ main:5742 ] - [ WARN ] 即将登录QQ-->2733944636
+2022-10-10 17:56:47 [ main:9163 ] - [ INFO ] 检查更新中.....
+2022-10-10 17:56:47 [ main:9163 ] - [ INFO ] 当前主体框架已更新到最新版！
+2022-10-10 17:56:48 [ main:9826 ] - [ INFO ] Initializing ExecutorService
+2022-10-10 17:56:48 [ main:9827 ] - [ INFO ] Initializing ExecutorService 'taskScheduler'
+2022-10-10 17:56:48 [ main:9979 ] - [ INFO ] Adding welcome page template: index
+2022-10-10 17:56:48 [ main:10039 ] - [ INFO ] Initializing ExecutorService
+2022-10-10 17:56:48 [ main:10039 ] - [ INFO ] Initializing ExecutorService 'shiroTaskExecutor'
+2022-10-10 17:56:48 [ main:10129 ] - [ INFO ] Starting ProtocolHandler ["http-nio-8088"]
+2022-10-10 17:56:48 [ main:10157 ] - [ INFO ] Tomcat started on port(s): 8088 (http) with context path ''
+2022-10-10 17:56:48 [ taskScheduler-1:10168 ] - [ INFO ] Initializing ExecutorService
+2022-10-10 17:56:48 [ main:10169 ] - [ INFO ] Started QimenBotApplication in 10.061 seconds (JVM running for 10.651)
+2022-10-10 17:56:56 [ SpringContextShutdownHook:18089 ] - [ INFO ] Shutting down ExecutorService 'shiroTaskExecutor'
+2022-10-10 17:56:56 [ SpringContextShutdownHook:18090 ] - [ INFO ] Shutting down ExecutorService 'taskScheduler'
+2022-10-10 17:56:56 [ SpringContextShutdownHook:18099 ] - [ INFO ] 数据库连接池 - Shutdown initiated...
+2022-10-10 17:56:56 [ SpringContextShutdownHook:18104 ] - [ INFO ] 数据库连接池 - Shutdown completed.
+2022-10-10 17:57:14 [ main:437 ] - [ INFO ] Starting QimenBotApplication on LAPTOP-FNT7SMLI with PID 16692 (D:\Project\JAVA\Bot\QimenBot\target\classes started by lvyunqi in D:\Project\JAVA\Bot\QimenBot)
+2022-10-10 17:57:14 [ main:439 ] - [ INFO ] No active profile set, falling back to default profiles: default
+2022-10-10 17:57:14 [ main:1084 ] - [ INFO ] Bean 'taskConfig' of type [com.mryunqi.qimenbot.config.TaskConfig$$EnhancerBySpringCGLIB$$49366c5c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-10 17:57:14 [ main:1299 ] - [ INFO ] Tomcat initialized with port(s): 8088 (http)
+2022-10-10 17:57:14 [ main:1305 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-8088"]
+2022-10-10 17:57:14 [ main:1305 ] - [ INFO ] Starting service [Tomcat]
+2022-10-10 17:57:14 [ main:1305 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-10-10 17:57:14 [ main:1378 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2022-10-10 17:57:14 [ main:1378 ] - [ INFO ] Root WebApplicationContext: initialization completed in 906 ms
+2022-10-10 17:57:15 [ main:1585 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK](1.0) @夜空
+2022-10-10 17:57:15 [ main:1598 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK]成功！
+2022-10-10 17:57:15 [ main:1599 ] - [ INFO ] 数据库初始化...
+2022-10-10 17:57:18 [ main:4611 ] - [ INFO ] 数据库连接池 - Starting...
+2022-10-10 17:57:18 [ main:4906 ] - [ INFO ] 数据库连接池 - Start completed.
+2022-10-10 17:57:18 [ main:4962 ] - [ INFO ] user表:success!
+2022-10-10 17:57:19 [ main:5441 ] - [ INFO ] command表:success!
+2022-10-10 17:57:19 [ main:5752 ] - [ INFO ] 启动成功
+2022-10-10 17:57:19 [ main:5754 ] - [ INFO ] 正在启动Go-Cqhttp客户端...
+2022-10-10 17:57:19 [ main:5764 ] - [ WARN ] 即将登录QQ-->2733944636
+2022-10-10 17:57:23 [ main:9835 ] - [ INFO ] 检查更新中.....
+2022-10-10 17:57:23 [ main:9835 ] - [ INFO ] 当前主体框架已更新到最新版！
+2022-10-10 17:57:24 [ main:10490 ] - [ INFO ] Initializing ExecutorService
+2022-10-10 17:57:24 [ main:10492 ] - [ INFO ] Initializing ExecutorService 'taskScheduler'
+2022-10-10 17:57:24 [ main:10629 ] - [ INFO ] Adding welcome page template: index
+2022-10-10 17:57:24 [ main:10683 ] - [ INFO ] Initializing ExecutorService
+2022-10-10 17:57:24 [ main:10683 ] - [ INFO ] Initializing ExecutorService 'shiroTaskExecutor'
+2022-10-10 17:57:24 [ main:10768 ] - [ INFO ] Starting ProtocolHandler ["http-nio-8088"]
+2022-10-10 17:57:24 [ main:10796 ] - [ INFO ] Tomcat started on port(s): 8088 (http) with context path ''
+2022-10-10 17:57:24 [ taskScheduler-1:10804 ] - [ INFO ] Initializing ExecutorService
+2022-10-10 17:57:24 [ main:10806 ] - [ INFO ] Started QimenBotApplication in 10.695 seconds (JVM running for 11.276)
+2022-10-10 17:57:49 [ SpringContextShutdownHook:36218 ] - [ INFO ] Shutting down ExecutorService 'shiroTaskExecutor'
+2022-10-10 17:57:49 [ SpringContextShutdownHook:36218 ] - [ INFO ] Shutting down ExecutorService 'taskScheduler'
+2022-10-10 17:57:49 [ SpringContextShutdownHook:36228 ] - [ INFO ] 数据库连接池 - Shutdown initiated...
+2022-10-10 17:57:49 [ SpringContextShutdownHook:36232 ] - [ INFO ] 数据库连接池 - Shutdown completed.
+2022-10-10 18:05:33 [ main:442 ] - [ INFO ] Starting QimenBotApplication on LAPTOP-FNT7SMLI with PID 12940 (D:\Project\JAVA\Bot\QimenBot\target\classes started by lvyunqi in D:\Project\JAVA\Bot\QimenBot)
+2022-10-10 18:05:33 [ main:444 ] - [ INFO ] No active profile set, falling back to default profiles: default
+2022-10-10 18:05:34 [ main:1112 ] - [ INFO ] Bean 'taskConfig' of type [com.mryunqi.qimenbot.config.TaskConfig$$EnhancerBySpringCGLIB$$49366c5c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-10 18:05:34 [ main:1331 ] - [ INFO ] Tomcat initialized with port(s): 8088 (http)
+2022-10-10 18:05:34 [ main:1337 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-8088"]
+2022-10-10 18:05:34 [ main:1337 ] - [ INFO ] Starting service [Tomcat]
+2022-10-10 18:05:34 [ main:1337 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-10-10 18:05:34 [ main:1410 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2022-10-10 18:05:34 [ main:1410 ] - [ INFO ] Root WebApplicationContext: initialization completed in 933 ms
+2022-10-10 18:05:34 [ main:1617 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK](1.0) @夜空
+2022-10-10 18:05:34 [ main:1631 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK]成功！
+2022-10-10 18:05:34 [ main:1632 ] - [ INFO ] 数据库初始化...
+2022-10-10 18:05:37 [ main:4639 ] - [ INFO ] 数据库连接池 - Starting...
+2022-10-10 18:05:38 [ main:4886 ] - [ INFO ] 数据库连接池 - Start completed.
+2022-10-10 18:05:38 [ main:4932 ] - [ INFO ] user表:success!
+2022-10-10 18:05:38 [ main:5312 ] - [ INFO ] command表:success!
+2022-10-10 18:05:38 [ main:5535 ] - [ INFO ] 启动成功
+2022-10-10 18:05:38 [ main:5537 ] - [ INFO ] 正在启动Go-Cqhttp客户端...
+2022-10-10 18:05:38 [ main:5546 ] - [ WARN ] 即将登录QQ-->2733944636
+2022-10-10 18:05:42 [ main:9607 ] - [ INFO ] 检查更新中.....
+2022-10-10 18:05:42 [ main:9607 ] - [ INFO ] 当前主体框架已更新到最新版！
+2022-10-10 18:05:43 [ main:10237 ] - [ INFO ] Initializing ExecutorService
+2022-10-10 18:05:43 [ main:10238 ] - [ INFO ] Initializing ExecutorService 'taskScheduler'
+2022-10-10 18:05:43 [ main:10371 ] - [ INFO ] Adding welcome page template: index
+2022-10-10 18:05:43 [ main:10428 ] - [ INFO ] Initializing ExecutorService
+2022-10-10 18:05:43 [ main:10428 ] - [ INFO ] Initializing ExecutorService 'shiroTaskExecutor'
+2022-10-10 18:05:43 [ main:10516 ] - [ INFO ] Starting ProtocolHandler ["http-nio-8088"]
+2022-10-10 18:05:43 [ main:10541 ] - [ INFO ] Tomcat started on port(s): 8088 (http) with context path ''
+2022-10-10 18:05:43 [ taskScheduler-1:10550 ] - [ INFO ] Initializing ExecutorService
+2022-10-10 18:05:43 [ main:10552 ] - [ INFO ] Started QimenBotApplication in 10.439 seconds (JVM running for 11.027)
+2022-10-10 18:06:27 [ SpringContextShutdownHook:54477 ] - [ INFO ] Shutting down ExecutorService 'shiroTaskExecutor'
+2022-10-10 18:06:27 [ SpringContextShutdownHook:54477 ] - [ INFO ] Shutting down ExecutorService 'taskScheduler'
+2022-10-10 18:06:27 [ SpringContextShutdownHook:54486 ] - [ INFO ] 数据库连接池 - Shutdown initiated...
+2022-10-10 18:06:27 [ SpringContextShutdownHook:54491 ] - [ INFO ] 数据库连接池 - Shutdown completed.
+2022-10-10 18:06:54 [ main:1103 ] - [ INFO ] Starting QimenBotApplication on LAPTOP-FNT7SMLI with PID 27688 (D:\Project\JAVA\Bot\QimenBot\target\QimenBot-1.0.7-Beta.jar started by lvyunqi in D:\Project\JAVA\Bot\QimenBot\target)
+2022-10-10 18:06:54 [ main:1106 ] - [ INFO ] No active profile set, falling back to default profiles: default
+2022-10-10 18:06:55 [ main:2218 ] - [ INFO ] Bean 'taskConfig' of type [com.mryunqi.qimenbot.config.TaskConfig$$EnhancerBySpringCGLIB$$889d2c9d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-10 18:06:55 [ main:2765 ] - [ INFO ] Tomcat initialized with port(s): 8088 (http)
+2022-10-10 18:06:56 [ main:2776 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-8088"]
+2022-10-10 18:06:56 [ main:2777 ] - [ INFO ] Starting service [Tomcat]
+2022-10-10 18:06:56 [ main:2777 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-10-10 18:06:56 [ main:2851 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2022-10-10 18:06:56 [ main:2851 ] - [ INFO ] Root WebApplicationContext: initialization completed in 1681 ms
+2022-10-10 18:06:56 [ main:2999 ] - [ WARN ] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'botExpandBean': Invocation of init method failed; nested exception is java.lang.NullPointerException: Cannot invoke "java.util.List.iterator()" because the return value of "com.mryunqi.qimenbot.Controller.Constant.getPlugin()" is null
+2022-10-10 18:06:56 [ main:3006 ] - [ INFO ] Stopping service [Tomcat]
+2022-10-10 18:06:56 [ main:3019 ] - [ INFO ] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-10-10 18:07:51 [ main:1180 ] - [ INFO ] Starting QimenBotApplication on LAPTOP-FNT7SMLI with PID 27032 (D:\Project\JAVA\Bot\QimenBot\target\QimenBot-1.0.7-Beta.jar started by lvyunqi in D:\Project\JAVA\Bot\QimenBot\target)
+2022-10-10 18:07:51 [ main:1183 ] - [ INFO ] No active profile set, falling back to default profiles: default
+2022-10-10 18:07:52 [ main:2342 ] - [ INFO ] Bean 'taskConfig' of type [com.mryunqi.qimenbot.config.TaskConfig$$EnhancerBySpringCGLIB$$d489cf14] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-10 18:07:52 [ main:2887 ] - [ INFO ] Tomcat initialized with port(s): 8088 (http)
+2022-10-10 18:07:52 [ main:2899 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-8088"]
+2022-10-10 18:07:52 [ main:2900 ] - [ INFO ] Starting service [Tomcat]
+2022-10-10 18:07:52 [ main:2900 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-10-10 18:07:52 [ main:2976 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2022-10-10 18:07:52 [ main:2977 ] - [ INFO ] Root WebApplicationContext: initialization completed in 1730 ms
+2022-10-10 18:07:53 [ main:3144 ] - [ WARN ] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'botExpandBean': Invocation of init method failed; nested exception is java.lang.NullPointerException: Cannot invoke "com.alibaba.fastjson2.JSONObject.getJSONObject(String)" because "JsonMap" is null
+2022-10-10 18:07:53 [ main:3149 ] - [ INFO ] Stopping service [Tomcat]
+2022-10-10 18:07:53 [ main:3161 ] - [ INFO ] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-10-10 18:08:36 [ main:1103 ] - [ INFO ] Starting QimenBotApplication on LAPTOP-FNT7SMLI with PID 1916 (D:\Project\JAVA\Bot\QimenBot\target\QimenBot-1.0.7-Beta.jar started by lvyunqi in D:\Project\JAVA\Bot\QimenBot\target)
+2022-10-10 18:08:36 [ main:1107 ] - [ INFO ] No active profile set, falling back to default profiles: default
+2022-10-10 18:08:37 [ main:2257 ] - [ INFO ] Bean 'taskConfig' of type [com.mryunqi.qimenbot.config.TaskConfig$$EnhancerBySpringCGLIB$$c4117822] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-10 18:08:37 [ main:2831 ] - [ INFO ] Tomcat initialized with port(s): 8088 (http)
+2022-10-10 18:08:38 [ main:2843 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-8088"]
+2022-10-10 18:08:38 [ main:2844 ] - [ INFO ] Starting service [Tomcat]
+2022-10-10 18:08:38 [ main:2844 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-10-10 18:08:38 [ main:2916 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2022-10-10 18:08:38 [ main:2917 ] - [ INFO ] Root WebApplicationContext: initialization completed in 1749 ms
+2022-10-10 18:08:38 [ main:3314 ] - [ INFO ] ������չ[[Python]拓展插件SDK](1.0) @夜空
+2022-10-10 18:08:38 [ main:3329 ] - [ INFO ] ������չ[[Python]拓展插件SDK]�ɹ���
+2022-10-10 18:08:38 [ main:3330 ] - [ INFO ] ���ݿ��ʼ��...
+2022-10-10 18:08:41 [ main:6340 ] - [ INFO ] ���ݿ����ӳ� - Starting...
+2022-10-10 18:08:41 [ main:6675 ] - [ INFO ] ���ݿ����ӳ� - Start completed.
+2022-10-10 18:08:41 [ main:6726 ] - [ INFO ] user��:success!
+2022-10-10 18:08:42 [ main:7622 ] - [ INFO ] command��:success!
+2022-10-10 18:08:43 [ main:7862 ] - [ INFO ] �����ɹ�
+2022-10-10 18:08:43 [ main:7865 ] - [ INFO ] ��������Go-Cqhttp�ͻ���...
+2022-10-10 18:08:43 [ main:7874 ] - [ WARN ] ������¼QQ-->2733944636
+2022-10-10 18:08:47 [ main:11915 ] - [ INFO ] ��������.....
+2022-10-10 18:08:47 [ main:11915 ] - [ INFO ] ��ǰ�������Ѹ��µ����°棡
+2022-10-10 18:08:48 [ main:13172 ] - [ INFO ] Initializing ExecutorService
+2022-10-10 18:08:48 [ main:13176 ] - [ INFO ] Initializing ExecutorService 'taskScheduler'
+2022-10-10 18:08:48 [ main:13538 ] - [ INFO ] Adding welcome page template: index
+2022-10-10 18:08:48 [ main:13711 ] - [ INFO ] Initializing ExecutorService
+2022-10-10 18:08:48 [ main:13712 ] - [ INFO ] Initializing ExecutorService 'shiroTaskExecutor'
+2022-10-10 18:08:49 [ main:13853 ] - [ INFO ] Starting ProtocolHandler ["http-nio-8088"]
+2022-10-10 18:08:49 [ main:13943 ] - [ INFO ] Tomcat started on port(s): 8088 (http) with context path ''
+2022-10-10 18:08:49 [ taskScheduler-1:13970 ] - [ INFO ] Initializing ExecutorService
+2022-10-10 18:08:49 [ main:13972 ] - [ INFO ] Started QimenBotApplication in 13.664 seconds (JVM running for 14.218)
+2022-10-10 18:10:19 [ main:1066 ] - [ INFO ] Starting QimenBotApplication on LAPTOP-FNT7SMLI with PID 12596 (D:\Project\JAVA\Bot\RunBot\Public\QimenBot-1.0.7-Beta.jar started by lvyunqi in D:\Project\JAVA\Bot\RunBot\Public)
+2022-10-10 18:10:19 [ main:1069 ] - [ INFO ] No active profile set, falling back to default profiles: default
+2022-10-10 18:17:38 [ main:1187 ] - [ INFO ] Starting QimenBotApplication on LAPTOP-FNT7SMLI with PID 25280 (D:\Project\JAVA\Bot\RunBot\Public\QimenBot.jar started by lvyunqi in D:\Project\JAVA\Bot\RunBot\Public)
+2022-10-10 18:17:38 [ main:1192 ] - [ INFO ] No active profile set, falling back to default profiles: default
+2022-10-10 18:17:39 [ main:2372 ] - [ INFO ] Bean 'taskConfig' of type [com.mryunqi.qimenbot.config.TaskConfig$$EnhancerBySpringCGLIB$$dd5d45f8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-10 18:17:39 [ main:2984 ] - [ INFO ] Tomcat initialized with port(s): 8088 (http)
+2022-10-10 18:17:39 [ main:2996 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-8088"]
+2022-10-10 18:17:39 [ main:2996 ] - [ INFO ] Starting service [Tomcat]
+2022-10-10 18:17:39 [ main:2996 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-10-10 18:17:40 [ main:3068 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2022-10-10 18:17:40 [ main:3068 ] - [ INFO ] Root WebApplicationContext: initialization completed in 1801 ms
+2022-10-10 18:17:40 [ main:3459 ] - [ INFO ] ������չ[[Python]拓展插件SDK](1.0) @夜空
+2022-10-10 18:17:40 [ main:3474 ] - [ INFO ] ������չ[[Python]拓展插件SDK]�ɹ���
+2022-10-10 18:17:40 [ main:3476 ] - [ INFO ] ���ݿ��ʼ��...
+2022-10-10 18:17:43 [ main:6494 ] - [ INFO ] ���ݿ����ӳ� - Starting...
+2022-10-10 18:17:43 [ main:6872 ] - [ INFO ] ���ݿ����ӳ� - Start completed.
+2022-10-10 18:17:43 [ main:6934 ] - [ INFO ] user��:success!
+2022-10-10 18:17:44 [ main:7426 ] - [ INFO ] command��:success!
+2022-10-10 18:17:44 [ main:7713 ] - [ INFO ] �����ɹ�
+2022-10-10 18:17:44 [ main:7715 ] - [ INFO ] ��������Go-Cqhttp�ͻ���...
+2022-10-10 18:17:44 [ main:7726 ] - [ WARN ] ������¼QQ-->2733944636
+2022-10-10 18:17:49 [ main:12796 ] - [ INFO ] ��������.....
+2022-10-10 18:17:49 [ main:12796 ] - [ INFO ] ��ǰ�������Ѹ��µ����°棡
+2022-10-10 18:17:50 [ main:13982 ] - [ INFO ] Initializing ExecutorService
+2022-10-10 18:17:50 [ main:13986 ] - [ INFO ] Initializing ExecutorService 'taskScheduler'
+2022-10-10 18:17:51 [ main:14372 ] - [ INFO ] Adding welcome page template: index
+2022-10-10 18:17:51 [ main:14521 ] - [ INFO ] Initializing ExecutorService
+2022-10-10 18:17:51 [ main:14522 ] - [ INFO ] Initializing ExecutorService 'shiroTaskExecutor'
+2022-10-10 18:17:51 [ main:14659 ] - [ INFO ] Starting ProtocolHandler ["http-nio-8088"]
+2022-10-10 18:17:51 [ main:14705 ] - [ INFO ] Tomcat started on port(s): 8088 (http) with context path ''
+2022-10-10 18:17:51 [ taskScheduler-1:14720 ] - [ INFO ] Initializing ExecutorService
+2022-10-10 18:17:51 [ main:14723 ] - [ INFO ] Started QimenBotApplication in 14.404 seconds (JVM running for 15.026)
+2022-10-10 18:31:37 [ main:450 ] - [ INFO ] Starting QimenBotApplication on LAPTOP-FNT7SMLI with PID 7484 (D:\Project\JAVA\Bot\QimenBot\target\classes started by lvyunqi in D:\Project\JAVA\Bot\QimenBot)
+2022-10-10 18:31:37 [ main:452 ] - [ INFO ] No active profile set, falling back to default profiles: default
+2022-10-10 18:31:38 [ main:1095 ] - [ INFO ] Bean 'taskConfig' of type [com.mryunqi.qimenbot.config.TaskConfig$$EnhancerBySpringCGLIB$$29a0e0fd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-10 18:31:38 [ main:1311 ] - [ INFO ] Tomcat initialized with port(s): 8088 (http)
+2022-10-10 18:31:38 [ main:1316 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-8088"]
+2022-10-10 18:31:38 [ main:1316 ] - [ INFO ] Starting service [Tomcat]
+2022-10-10 18:31:38 [ main:1316 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-10-10 18:31:38 [ main:1388 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2022-10-10 18:31:38 [ main:1388 ] - [ INFO ] Root WebApplicationContext: initialization completed in 902 ms
+2022-10-10 18:31:39 [ main:1594 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK](1.0) @夜空
+2022-10-10 18:31:39 [ main:1605 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK]成功！
+2022-10-10 18:31:39 [ main:1607 ] - [ INFO ] 数据库初始化...
+2022-10-10 18:31:42 [ main:4621 ] - [ INFO ] 数据库连接池 - Starting...
+2022-10-10 18:31:42 [ main:4900 ] - [ INFO ] 数据库连接池 - Start completed.
+2022-10-10 18:31:42 [ main:4951 ] - [ INFO ] user表:success!
+2022-10-10 18:31:42 [ main:5404 ] - [ INFO ] command表:success!
+2022-10-10 18:31:43 [ main:5678 ] - [ INFO ] 启动成功
+2022-10-10 18:31:43 [ main:5679 ] - [ INFO ] 正在启动Go-Cqhttp客户端...
+2022-10-10 18:31:43 [ main:5688 ] - [ WARN ] 即将登录QQ-->2733944636
+2022-10-10 18:31:46 [ main:9376 ] - [ INFO ] 检查更新中.....
+2022-10-10 18:31:46 [ main:9377 ] - [ INFO ] 当前主体框架已更新到最新版！
+2022-10-10 18:31:47 [ main:10008 ] - [ INFO ] Initializing ExecutorService
+2022-10-10 18:31:47 [ main:10009 ] - [ INFO ] Initializing ExecutorService 'taskScheduler'
+2022-10-10 18:31:47 [ main:10138 ] - [ INFO ] Adding welcome page template: index
+2022-10-10 18:31:47 [ main:10192 ] - [ INFO ] Initializing ExecutorService
+2022-10-10 18:31:47 [ main:10192 ] - [ INFO ] Initializing ExecutorService 'shiroTaskExecutor'
+2022-10-10 18:31:47 [ main:10281 ] - [ INFO ] Starting ProtocolHandler ["http-nio-8088"]
+2022-10-10 18:31:47 [ main:10309 ] - [ INFO ] Tomcat started on port(s): 8088 (http) with context path ''
+2022-10-10 18:31:47 [ taskScheduler-1:10317 ] - [ INFO ] Initializing ExecutorService
+2022-10-10 18:31:47 [ main:10318 ] - [ INFO ] Started QimenBotApplication in 10.206 seconds (JVM running for 10.845)
+2022-10-10 18:32:18 [ SpringContextShutdownHook:41449 ] - [ INFO ] Shutting down ExecutorService 'shiroTaskExecutor'
+2022-10-10 18:32:18 [ SpringContextShutdownHook:41449 ] - [ INFO ] Shutting down ExecutorService 'taskScheduler'
+2022-10-10 18:32:18 [ SpringContextShutdownHook:41459 ] - [ INFO ] 数据库连接池 - Shutdown initiated...
+2022-10-10 18:32:18 [ SpringContextShutdownHook:41463 ] - [ INFO ] 数据库连接池 - Shutdown completed.
+2022-10-10 23:09:35 [ main:497 ] - [ INFO ] Starting QimenBotApplication on LAPTOP-FNT7SMLI with PID 5960 (D:\Project\JAVA\Bot\QimenBot\target\classes started by lvyunqi in D:\Project\JAVA\Bot\QimenBot)
+2022-10-10 23:09:35 [ main:499 ] - [ INFO ] No active profile set, falling back to default profiles: default
+2022-10-10 23:09:36 [ main:1173 ] - [ INFO ] Bean 'taskConfig' of type [com.mryunqi.qimenbot.config.TaskConfig$$EnhancerBySpringCGLIB$$e036124d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-10 23:09:36 [ main:1393 ] - [ INFO ] Tomcat initialized with port(s): 8088 (http)
+2022-10-10 23:09:36 [ main:1400 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-8088"]
+2022-10-10 23:09:36 [ main:1400 ] - [ INFO ] Starting service [Tomcat]
+2022-10-10 23:09:36 [ main:1400 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-10-10 23:09:36 [ main:1469 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2022-10-10 23:09:36 [ main:1469 ] - [ INFO ] Root WebApplicationContext: initialization completed in 936 ms
+2022-10-10 23:09:36 [ main:1802 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK](1.0) @夜空
+2022-10-10 23:09:36 [ main:1813 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK]成功！
+2022-10-10 23:09:36 [ main:1816 ] - [ INFO ] 数据库初始化...
+2022-10-10 23:09:40 [ main:4833 ] - [ INFO ] 数据库连接池 - Starting...
+2022-10-10 23:09:40 [ main:5119 ] - [ INFO ] 数据库连接池 - Start completed.
+2022-10-10 23:09:40 [ main:5169 ] - [ INFO ] user表:success!
+2022-10-10 23:09:40 [ main:5631 ] - [ INFO ] command表:success!
+2022-10-10 23:09:41 [ main:5902 ] - [ INFO ] 启动成功
+2022-10-10 23:09:41 [ main:5904 ] - [ INFO ] 正在启动Go-Cqhttp客户端...
+2022-10-10 23:09:41 [ main:5913 ] - [ WARN ] 即将登录QQ-->2733944636
+2022-10-10 23:09:44 [ main:9583 ] - [ INFO ] 检查更新中.....
+2022-10-10 23:09:44 [ main:9583 ] - [ INFO ] 当前主体框架已更新到最新版！
+2022-10-10 23:09:45 [ main:10240 ] - [ INFO ] Initializing ExecutorService
+2022-10-10 23:09:45 [ main:10241 ] - [ INFO ] Initializing ExecutorService 'taskScheduler'
+2022-10-10 23:09:45 [ main:10368 ] - [ INFO ] Adding welcome page template: index
+2022-10-10 23:09:45 [ main:10421 ] - [ INFO ] Initializing ExecutorService
+2022-10-10 23:09:45 [ main:10422 ] - [ INFO ] Initializing ExecutorService 'shiroTaskExecutor'
+2022-10-10 23:09:45 [ main:10508 ] - [ INFO ] Starting ProtocolHandler ["http-nio-8088"]
+2022-10-10 23:09:45 [ main:10541 ] - [ INFO ] Tomcat started on port(s): 8088 (http) with context path ''
+2022-10-10 23:09:45 [ taskScheduler-1:10550 ] - [ INFO ] Initializing ExecutorService
+2022-10-10 23:09:45 [ main:10552 ] - [ INFO ] Started QimenBotApplication in 10.44 seconds (JVM running for 11.091)
+2022-10-10 23:10:29 [ http-nio-8088-exec-1:53996 ] - [ INFO ] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-10 23:10:29 [ http-nio-8088-exec-1:53996 ] - [ INFO ] Initializing Servlet 'dispatcherServlet'
+2022-10-10 23:10:29 [ http-nio-8088-exec-1:54002 ] - [ INFO ] Completed initialization in 6 ms
+2022-10-10 23:10:29 [ http-nio-8088-exec-1:54052 ] - [ INFO ] Account 2733944636 connected

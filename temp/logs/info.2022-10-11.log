@@ -1,0 +1,95 @@
+2022-10-11 14:15:30 [ main:522 ] - [ INFO ] Starting QimenBotApplication on LAPTOP-FNT7SMLI with PID 24468 (D:\Project\JAVA\Bot\QimenBot\target\classes started by lvyunqi in D:\Project\JAVA\Bot\QimenBot)
+2022-10-11 14:15:30 [ main:523 ] - [ INFO ] No active profile set, falling back to default profiles: default
+2022-10-11 14:15:31 [ main:1219 ] - [ INFO ] Bean 'taskConfig' of type [com.mryunqi.qimenbot.config.TaskConfig$$EnhancerBySpringCGLIB$$dd4cc371] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-11 14:15:31 [ main:1444 ] - [ INFO ] Tomcat initialized with port(s): 8088 (http)
+2022-10-11 14:15:31 [ main:1451 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-8088"]
+2022-10-11 14:15:31 [ main:1451 ] - [ INFO ] Starting service [Tomcat]
+2022-10-11 14:15:31 [ main:1452 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-10-11 14:15:31 [ main:1524 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2022-10-11 14:15:31 [ main:1524 ] - [ INFO ] Root WebApplicationContext: initialization completed in 965 ms
+2022-10-11 14:15:32 [ main:1755 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK](1.0) @夜空
+2022-10-11 14:15:32 [ main:1768 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK]成功！
+2022-10-11 14:15:32 [ main:1769 ] - [ INFO ] 数据库初始化...
+2022-10-11 14:15:35 [ main:4774 ] - [ INFO ] 数据库连接池 - Starting...
+2022-10-11 14:15:35 [ main:5244 ] - [ INFO ] 数据库连接池 - Start completed.
+2022-10-11 14:15:35 [ main:5286 ] - [ INFO ] user表:success!
+2022-10-11 14:15:36 [ main:5874 ] - [ INFO ] command表:success!
+2022-10-11 14:15:36 [ main:6091 ] - [ INFO ] 启动成功
+2022-10-11 14:15:36 [ main:6094 ] - [ INFO ] 正在启动Go-Cqhttp客户端...
+2022-10-11 14:15:36 [ main:6110 ] - [ WARN ] 即将登录QQ-->2733944636
+2022-10-11 14:15:40 [ main:10112 ] - [ INFO ] 检查更新中.....
+2022-10-11 14:15:40 [ main:10113 ] - [ INFO ] 当前主体框架已更新到最新版！
+2022-10-11 14:15:41 [ main:11349 ] - [ INFO ] Initializing ExecutorService
+2022-10-11 14:15:41 [ main:11350 ] - [ INFO ] Initializing ExecutorService 'taskScheduler'
+2022-10-11 14:15:41 [ main:11483 ] - [ INFO ] Adding welcome page template: index
+2022-10-11 14:15:41 [ main:11538 ] - [ INFO ] Initializing ExecutorService
+2022-10-11 14:15:41 [ main:11539 ] - [ INFO ] Initializing ExecutorService 'shiroTaskExecutor'
+2022-10-11 14:15:41 [ main:11625 ] - [ INFO ] Starting ProtocolHandler ["http-nio-8088"]
+2022-10-11 14:15:41 [ main:11659 ] - [ INFO ] Tomcat started on port(s): 8088 (http) with context path ''
+2022-10-11 14:15:42 [ taskScheduler-1:11667 ] - [ INFO ] Initializing ExecutorService
+2022-10-11 14:15:42 [ main:11670 ] - [ INFO ] Started QimenBotApplication in 11.538 seconds (JVM running for 12.213)
+2022-10-11 14:15:48 [ http-nio-8088-exec-1:18035 ] - [ INFO ] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-11 14:15:48 [ http-nio-8088-exec-1:18035 ] - [ INFO ] Initializing Servlet 'dispatcherServlet'
+2022-10-11 14:15:48 [ http-nio-8088-exec-1:18041 ] - [ INFO ] Completed initialization in 6 ms
+2022-10-11 14:15:48 [ http-nio-8088-exec-1:18103 ] - [ INFO ] Account 2733944636 connected
+2022-10-11 14:30:11 [ http-nio-8088-exec-9:881022 ] - [ WARN ] Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'apikey' is not present]
+2022-10-11 15:31:39 [ ThreadPoolTaskExecutor-18:4568716 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@28e4981d (Communications link failure
+
+The last packet successfully received from the server was 3,100 milliseconds ago. The last packet sent successfully to the server was 3,119 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-11 15:31:39 [ ThreadPoolTaskExecutor-18:4568719 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1936231c (Communications link failure
+
+The last packet successfully received from the server was 1,110 milliseconds ago. The last packet sent successfully to the server was 1,126 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-11 15:31:39 [ ThreadPoolTaskExecutor-18:4568721 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@62df100 (Communications link failure
+
+The last packet successfully received from the server was 1,027,477 milliseconds ago. The last packet sent successfully to the server was 1,027,494 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-11 15:31:39 [ ThreadPoolTaskExecutor-18:4568722 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@a85b5a8 (Communications link failure
+
+The last packet successfully received from the server was 1,026,336 milliseconds ago. The last packet sent successfully to the server was 1,026,353 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-11 15:31:39 [ ThreadPoolTaskExecutor-18:4568723 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2b6f299d (Communications link failure
+
+The last packet successfully received from the server was 1,022,417 milliseconds ago. The last packet sent successfully to the server was 1,022,432 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-11 15:31:39 [ ThreadPoolTaskExecutor-18:4568724 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@369c12f (Communications link failure
+
+The last packet successfully received from the server was 1,002,861 milliseconds ago. The last packet sent successfully to the server was 1,002,878 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-11 15:31:39 [ ThreadPoolTaskExecutor-18:4568724 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6a2595b3 (Communications link failure
+
+The last packet successfully received from the server was 997,714 milliseconds ago. The last packet sent successfully to the server was 997,734 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-11 15:31:39 [ ThreadPoolTaskExecutor-18:4568725 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4d2a55aa (Communications link failure
+
+The last packet successfully received from the server was 994,931 milliseconds ago. The last packet sent successfully to the server was 994,949 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-11 15:31:39 [ ThreadPoolTaskExecutor-18:4568727 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1f5bae53 (Communications link failure
+
+The last packet successfully received from the server was 993,379 milliseconds ago. The last packet sent successfully to the server was 993,397 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-11 15:31:39 [ ThreadPoolTaskExecutor-18:4568728 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5276642e (Communications link failure
+
+The last packet successfully received from the server was 988,581 milliseconds ago. The last packet sent successfully to the server was 988,599 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-11 15:32:50 [ ThreadPoolTaskExecutor-14:4640147 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@598b0a9c (Communications link failure
+
+The last packet successfully received from the server was 779 milliseconds ago. The last packet sent successfully to the server was 859 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-11 15:32:50 [ ThreadPoolTaskExecutor-14:4640148 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2aacf6ad (Communications link failure
+
+The last packet successfully received from the server was 68,500 milliseconds ago. The last packet sent successfully to the server was 68,531 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-11 15:32:50 [ ThreadPoolTaskExecutor-14:4640150 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@595b2b7f (Communications link failure
+
+The last packet successfully received from the server was 67,926 milliseconds ago. The last packet sent successfully to the server was 67,977 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-11 15:32:50 [ ThreadPoolTaskExecutor-14:4640152 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4623b486 (Communications link failure
+
+The last packet successfully received from the server was 67,469 milliseconds ago. The last packet sent successfully to the server was 67,513 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-11 15:32:50 [ ThreadPoolTaskExecutor-14:4640153 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@46237fee (Communications link failure
+
+The last packet successfully received from the server was 67,099 milliseconds ago. The last packet sent successfully to the server was 67,147 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-11 15:32:50 [ ThreadPoolTaskExecutor-14:4640154 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@367fde1d (Communications link failure
+
+The last packet successfully received from the server was 66,756 milliseconds ago. The last packet sent successfully to the server was 66,802 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-11 15:32:50 [ ThreadPoolTaskExecutor-14:4640155 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@42c43f3 (Communications link failure
+
+The last packet successfully received from the server was 66,291 milliseconds ago. The last packet sent successfully to the server was 66,320 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-11 15:32:50 [ ThreadPoolTaskExecutor-14:4640156 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5f704074 (Communications link failure
+
+The last packet successfully received from the server was 65,758 milliseconds ago. The last packet sent successfully to the server was 65,797 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-11 15:32:50 [ ThreadPoolTaskExecutor-14:4640156 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@271887b (Communications link failure
+
+The last packet successfully received from the server was 65,362 milliseconds ago. The last packet sent successfully to the server was 65,399 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-11 15:32:50 [ ThreadPoolTaskExecutor-14:4640158 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4a36311e (Communications link failure
+
+The last packet successfully received from the server was 64,937 milliseconds ago. The last packet sent successfully to the server was 64,991 milliseconds ago.). Possibly consider using a shorter maxLifetime value.

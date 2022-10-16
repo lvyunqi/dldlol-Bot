@@ -1,0 +1,847 @@
+2022-10-13 16:20:55 [ main:511 ] - [ INFO ] Starting QimenBotApplication on LAPTOP-FNT7SMLI with PID 10120 (D:\Project\JAVA\Bot\QimenBot\target\classes started by lvyunqi in D:\Project\JAVA\Bot\QimenBot)
+2022-10-13 16:20:55 [ main:513 ] - [ INFO ] No active profile set, falling back to default profiles: default
+2022-10-13 16:20:55 [ main:1169 ] - [ INFO ] Bean 'taskConfig' of type [com.mryunqi.qimenbot.config.TaskConfig$$EnhancerBySpringCGLIB$$b3b16fac] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-13 16:20:55 [ main:1386 ] - [ INFO ] Tomcat initialized with port(s): 8088 (http)
+2022-10-13 16:20:55 [ main:1391 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-8088"]
+2022-10-13 16:20:55 [ main:1392 ] - [ INFO ] Starting service [Tomcat]
+2022-10-13 16:20:55 [ main:1392 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-10-13 16:20:55 [ main:1457 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2022-10-13 16:20:55 [ main:1457 ] - [ INFO ] Root WebApplicationContext: initialization completed in 910 ms
+2022-10-13 16:20:56 [ main:1674 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK](1.0) @夜空
+2022-10-13 16:20:56 [ main:1686 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK]成功！
+2022-10-13 16:20:56 [ main:1687 ] - [ INFO ] 数据库初始化...
+2022-10-13 16:20:59 [ main:4697 ] - [ INFO ] 数据库连接池 - Starting...
+2022-10-13 16:21:09 [ main:14969 ] - [ INFO ] 数据库连接池 - Start completed.
+2022-10-13 16:21:09 [ main:15018 ] - [ INFO ] user表:success!
+2022-10-13 16:21:09 [ main:15427 ] - [ INFO ] command表:success!
+2022-10-13 16:21:10 [ main:15671 ] - [ INFO ] 启动成功
+2022-10-13 16:21:10 [ main:15672 ] - [ INFO ] 正在启动Go-Cqhttp客户端...
+2022-10-13 16:21:10 [ main:15682 ] - [ WARN ] 即将登录QQ-->2733944636
+2022-10-13 16:21:15 [ main:20611 ] - [ INFO ] 检查更新中.....
+2022-10-13 16:21:15 [ main:20611 ] - [ INFO ] 当前主体框架已更新到最新版！
+2022-10-13 16:21:15 [ main:21247 ] - [ INFO ] Initializing ExecutorService
+2022-10-13 16:21:15 [ main:21249 ] - [ INFO ] Initializing ExecutorService 'taskScheduler'
+2022-10-13 16:21:15 [ main:21372 ] - [ INFO ] Adding welcome page template: index
+2022-10-13 16:21:15 [ main:21426 ] - [ INFO ] Initializing ExecutorService
+2022-10-13 16:21:15 [ main:21426 ] - [ INFO ] Initializing ExecutorService 'shiroTaskExecutor'
+2022-10-13 16:21:16 [ main:21508 ] - [ INFO ] Starting ProtocolHandler ["http-nio-8088"]
+2022-10-13 16:21:16 [ main:21541 ] - [ INFO ] Tomcat started on port(s): 8088 (http) with context path ''
+2022-10-13 16:21:16 [ taskScheduler-1:21548 ] - [ INFO ] Initializing ExecutorService
+2022-10-13 16:21:16 [ main:21551 ] - [ INFO ] Started QimenBotApplication in 21.425 seconds (JVM running for 22.063)
+2022-10-13 16:21:57 [ SpringContextShutdownHook:63166 ] - [ INFO ] Shutting down ExecutorService 'shiroTaskExecutor'
+2022-10-13 16:21:57 [ SpringContextShutdownHook:63166 ] - [ INFO ] Shutting down ExecutorService 'taskScheduler'
+2022-10-13 16:21:57 [ SpringContextShutdownHook:63173 ] - [ INFO ] 数据库连接池 - Shutdown initiated...
+2022-10-13 16:21:57 [ SpringContextShutdownHook:63178 ] - [ INFO ] 数据库连接池 - Shutdown completed.
+2022-10-13 16:22:13 [ main:495 ] - [ INFO ] Starting QimenBotApplication on LAPTOP-FNT7SMLI with PID 25308 (D:\Project\JAVA\Bot\QimenBot\target\classes started by lvyunqi in D:\Project\JAVA\Bot\QimenBot)
+2022-10-13 16:22:13 [ main:497 ] - [ INFO ] No active profile set, falling back to default profiles: default
+2022-10-13 16:22:13 [ main:1164 ] - [ INFO ] Bean 'taskConfig' of type [com.mryunqi.qimenbot.config.TaskConfig$$EnhancerBySpringCGLIB$$b3b16fac] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-13 16:22:14 [ main:1384 ] - [ INFO ] Tomcat initialized with port(s): 8088 (http)
+2022-10-13 16:22:14 [ main:1391 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-8088"]
+2022-10-13 16:22:14 [ main:1392 ] - [ INFO ] Starting service [Tomcat]
+2022-10-13 16:22:14 [ main:1392 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-10-13 16:22:14 [ main:1469 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2022-10-13 16:22:14 [ main:1469 ] - [ INFO ] Root WebApplicationContext: initialization completed in 938 ms
+2022-10-13 16:22:14 [ main:1673 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK](1.0) @夜空
+2022-10-13 16:22:14 [ main:1685 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK]成功！
+2022-10-13 16:22:14 [ main:1687 ] - [ INFO ] 数据库初始化...
+2022-10-13 16:22:17 [ main:4701 ] - [ INFO ] 数据库连接池 - Starting...
+2022-10-13 16:22:17 [ main:4944 ] - [ INFO ] 数据库连接池 - Start completed.
+2022-10-13 16:22:17 [ main:4987 ] - [ INFO ] user表:success!
+2022-10-13 16:22:17 [ main:5348 ] - [ INFO ] command表:success!
+2022-10-13 16:22:18 [ main:5572 ] - [ INFO ] 启动成功
+2022-10-13 16:22:18 [ main:5573 ] - [ INFO ] 正在启动Go-Cqhttp客户端...
+2022-10-13 16:22:18 [ main:5581 ] - [ WARN ] 即将登录QQ-->2733944636
+2022-10-13 16:22:21 [ main:9024 ] - [ INFO ] 检查更新中.....
+2022-10-13 16:22:21 [ main:9024 ] - [ INFO ] 当前主体框架已更新到最新版！
+2022-10-13 16:22:22 [ main:9643 ] - [ INFO ] Initializing ExecutorService
+2022-10-13 16:22:22 [ main:9645 ] - [ INFO ] Initializing ExecutorService 'taskScheduler'
+2022-10-13 16:22:22 [ main:9766 ] - [ INFO ] Adding welcome page template: index
+2022-10-13 16:22:22 [ main:9819 ] - [ INFO ] Initializing ExecutorService
+2022-10-13 16:22:22 [ main:9820 ] - [ INFO ] Initializing ExecutorService 'shiroTaskExecutor'
+2022-10-13 16:22:22 [ main:9900 ] - [ INFO ] Starting ProtocolHandler ["http-nio-8088"]
+2022-10-13 16:22:22 [ main:9924 ] - [ INFO ] Tomcat started on port(s): 8088 (http) with context path ''
+2022-10-13 16:22:22 [ main:9934 ] - [ INFO ] Started QimenBotApplication in 9.8 seconds (JVM running for 10.409)
+2022-10-13 16:22:22 [ taskScheduler-1:9934 ] - [ INFO ] Initializing ExecutorService
+2022-10-13 16:23:22 [ SpringContextShutdownHook:69578 ] - [ INFO ] Shutting down ExecutorService 'shiroTaskExecutor'
+2022-10-13 16:23:22 [ SpringContextShutdownHook:69578 ] - [ INFO ] Shutting down ExecutorService 'taskScheduler'
+2022-10-13 16:23:22 [ SpringContextShutdownHook:69586 ] - [ INFO ] 数据库连接池 - Shutdown initiated...
+2022-10-13 16:23:22 [ SpringContextShutdownHook:69589 ] - [ INFO ] 数据库连接池 - Shutdown completed.
+2022-10-13 16:31:19 [ main:528 ] - [ INFO ] Starting QimenBotApplication on LAPTOP-FNT7SMLI with PID 1748 (D:\Project\JAVA\Bot\QimenBot\target\classes started by lvyunqi in D:\Project\JAVA\Bot\QimenBot)
+2022-10-13 16:31:19 [ main:529 ] - [ INFO ] No active profile set, falling back to default profiles: default
+2022-10-13 16:31:20 [ main:1204 ] - [ INFO ] Bean 'taskConfig' of type [com.mryunqi.qimenbot.config.TaskConfig$$EnhancerBySpringCGLIB$$8449b616] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-13 16:31:20 [ main:1429 ] - [ INFO ] Tomcat initialized with port(s): 8088 (http)
+2022-10-13 16:31:20 [ main:1435 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-8088"]
+2022-10-13 16:31:20 [ main:1436 ] - [ INFO ] Starting service [Tomcat]
+2022-10-13 16:31:20 [ main:1436 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-10-13 16:31:20 [ main:1504 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2022-10-13 16:31:20 [ main:1504 ] - [ INFO ] Root WebApplicationContext: initialization completed in 940 ms
+2022-10-13 16:31:20 [ main:1733 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK](1.0) @夜空
+2022-10-13 16:31:20 [ main:1744 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK]成功！
+2022-10-13 16:31:20 [ main:1745 ] - [ INFO ] 数据库初始化...
+2022-10-13 16:31:23 [ main:4750 ] - [ INFO ] 数据库连接池 - Starting...
+2022-10-13 16:31:24 [ main:5253 ] - [ INFO ] 数据库连接池 - Start completed.
+2022-10-13 16:31:24 [ main:5301 ] - [ INFO ] user表:success!
+2022-10-13 16:31:25 [ main:5946 ] - [ INFO ] command表:success!
+2022-10-13 16:31:25 [ main:6187 ] - [ INFO ] 启动成功
+2022-10-13 16:31:25 [ main:6188 ] - [ INFO ] 正在启动Go-Cqhttp客户端...
+2022-10-13 16:31:25 [ main:6198 ] - [ WARN ] 即将登录QQ-->2733944636
+2022-10-13 16:31:29 [ main:10725 ] - [ INFO ] 检查更新中.....
+2022-10-13 16:31:29 [ main:10725 ] - [ INFO ] 当前主体框架已更新到最新版！
+2022-10-13 16:31:30 [ main:11401 ] - [ INFO ] Initializing ExecutorService
+2022-10-13 16:31:30 [ main:11403 ] - [ INFO ] Initializing ExecutorService 'taskScheduler'
+2022-10-13 16:31:30 [ main:11533 ] - [ INFO ] Adding welcome page template: index
+2022-10-13 16:31:30 [ main:11589 ] - [ INFO ] Initializing ExecutorService
+2022-10-13 16:31:30 [ main:11589 ] - [ INFO ] Initializing ExecutorService 'shiroTaskExecutor'
+2022-10-13 16:31:30 [ main:11677 ] - [ INFO ] Starting ProtocolHandler ["http-nio-8088"]
+2022-10-13 16:31:30 [ main:11710 ] - [ INFO ] Tomcat started on port(s): 8088 (http) with context path ''
+2022-10-13 16:31:30 [ taskScheduler-1:11720 ] - [ INFO ] Initializing ExecutorService
+2022-10-13 16:31:30 [ main:11722 ] - [ INFO ] Started QimenBotApplication in 11.575 seconds (JVM running for 12.25)
+2022-10-13 16:31:35 [ http-nio-8088-exec-1:16385 ] - [ INFO ] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-13 16:31:35 [ http-nio-8088-exec-1:16385 ] - [ INFO ] Initializing Servlet 'dispatcherServlet'
+2022-10-13 16:31:35 [ http-nio-8088-exec-1:16390 ] - [ INFO ] Completed initialization in 5 ms
+2022-10-13 16:31:35 [ http-nio-8088-exec-1:16435 ] - [ INFO ] Account 2733944636 connected
+2022-10-13 16:32:56 [ SpringContextShutdownHook:97457 ] - [ WARN ] Account 2733944636 disconnected
+2022-10-13 16:32:56 [ SpringContextShutdownHook:97464 ] - [ INFO ] Shutting down ExecutorService 'shiroTaskExecutor'
+2022-10-13 16:32:56 [ SpringContextShutdownHook:97465 ] - [ INFO ] Shutting down ExecutorService 'taskScheduler'
+2022-10-13 16:32:56 [ SpringContextShutdownHook:97474 ] - [ INFO ] 数据库连接池 - Shutdown initiated...
+2022-10-13 16:32:56 [ SpringContextShutdownHook:97479 ] - [ INFO ] 数据库连接池 - Shutdown completed.
+2022-10-13 16:33:12 [ main:528 ] - [ INFO ] Starting QimenBotApplication on LAPTOP-FNT7SMLI with PID 11248 (D:\Project\JAVA\Bot\QimenBot\target\classes started by lvyunqi in D:\Project\JAVA\Bot\QimenBot)
+2022-10-13 16:33:12 [ main:530 ] - [ INFO ] No active profile set, falling back to default profiles: default
+2022-10-13 16:33:13 [ main:1283 ] - [ INFO ] Bean 'taskConfig' of type [com.mryunqi.qimenbot.config.TaskConfig$$EnhancerBySpringCGLIB$$f11210f6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-13 16:33:13 [ main:1544 ] - [ INFO ] Tomcat initialized with port(s): 8088 (http)
+2022-10-13 16:33:14 [ main:1632 ] - [ INFO ] Root WebApplicationContext: initialization completed in 1063 ms
+2022-10-13 16:33:14 [ main:1840 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK](1.0) @夜空
+2022-10-13 16:33:14 [ main:1852 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK]成功！
+2022-10-13 16:33:14 [ main:1853 ] - [ INFO ] 数据库初始化...
+2022-10-13 16:33:25 [ main:443 ] - [ INFO ] Starting QimenBotApplication on LAPTOP-FNT7SMLI with PID 13432 (D:\Project\JAVA\Bot\QimenBot\target\classes started by lvyunqi in D:\Project\JAVA\Bot\QimenBot)
+2022-10-13 16:33:25 [ main:444 ] - [ INFO ] No active profile set, falling back to default profiles: default
+2022-10-13 16:33:26 [ main:1085 ] - [ INFO ] Bean 'taskConfig' of type [com.mryunqi.qimenbot.config.TaskConfig$$EnhancerBySpringCGLIB$$6ea10baa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-13 16:33:26 [ main:1296 ] - [ INFO ] Tomcat initialized with port(s): 8088 (http)
+2022-10-13 16:33:26 [ main:1300 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-8088"]
+2022-10-13 16:33:26 [ main:1301 ] - [ INFO ] Starting service [Tomcat]
+2022-10-13 16:33:26 [ main:1301 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-10-13 16:33:26 [ main:1367 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2022-10-13 16:33:26 [ main:1368 ] - [ INFO ] Root WebApplicationContext: initialization completed in 890 ms
+2022-10-13 16:33:26 [ main:1571 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK](1.0) @夜空
+2022-10-13 16:33:26 [ main:1581 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK]成功！
+2022-10-13 16:33:26 [ main:1584 ] - [ INFO ] 数据库初始化...
+2022-10-13 16:33:29 [ main:4598 ] - [ INFO ] 数据库连接池 - Starting...
+2022-10-13 16:33:29 [ main:4874 ] - [ INFO ] 数据库连接池 - Start completed.
+2022-10-13 16:33:29 [ main:4925 ] - [ INFO ] user表:success!
+2022-10-13 16:33:30 [ main:5607 ] - [ INFO ] command表:success!
+2022-10-13 16:33:31 [ main:6091 ] - [ INFO ] 启动成功
+2022-10-13 16:33:31 [ main:6093 ] - [ INFO ] 正在启动Go-Cqhttp客户端...
+2022-10-13 16:33:31 [ main:6101 ] - [ WARN ] 即将登录QQ-->2733944636
+2022-10-13 16:33:36 [ main:11151 ] - [ INFO ] 检查更新中.....
+2022-10-13 16:33:36 [ main:11151 ] - [ INFO ] 当前主体框架已更新到最新版！
+2022-10-13 16:33:36 [ main:11802 ] - [ INFO ] Initializing ExecutorService
+2022-10-13 16:33:36 [ main:11803 ] - [ INFO ] Initializing ExecutorService 'taskScheduler'
+2022-10-13 16:33:36 [ main:11931 ] - [ INFO ] Adding welcome page template: index
+2022-10-13 16:33:37 [ main:11985 ] - [ INFO ] Initializing ExecutorService
+2022-10-13 16:33:37 [ main:11985 ] - [ INFO ] Initializing ExecutorService 'shiroTaskExecutor'
+2022-10-13 16:33:37 [ main:12071 ] - [ INFO ] Starting ProtocolHandler ["http-nio-8088"]
+2022-10-13 16:33:37 [ main:12099 ] - [ INFO ] Tomcat started on port(s): 8088 (http) with context path ''
+2022-10-13 16:33:37 [ taskScheduler-1:12107 ] - [ INFO ] Initializing ExecutorService
+2022-10-13 16:33:37 [ main:12109 ] - [ INFO ] Started QimenBotApplication in 11.994 seconds (JVM running for 12.542)
+2022-10-13 16:33:41 [ http-nio-8088-exec-1:16028 ] - [ INFO ] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-13 16:33:41 [ http-nio-8088-exec-1:16028 ] - [ INFO ] Initializing Servlet 'dispatcherServlet'
+2022-10-13 16:33:41 [ http-nio-8088-exec-1:16033 ] - [ INFO ] Completed initialization in 5 ms
+2022-10-13 16:33:41 [ http-nio-8088-exec-1:16076 ] - [ INFO ] Account 2733944636 connected
+2022-10-13 16:36:26 [ SpringContextShutdownHook:181009 ] - [ WARN ] Account 2733944636 disconnected
+2022-10-13 16:36:26 [ SpringContextShutdownHook:181015 ] - [ INFO ] Shutting down ExecutorService 'shiroTaskExecutor'
+2022-10-13 16:36:26 [ SpringContextShutdownHook:181016 ] - [ INFO ] Shutting down ExecutorService 'taskScheduler'
+2022-10-13 16:36:26 [ SpringContextShutdownHook:181022 ] - [ INFO ] 数据库连接池 - Shutdown initiated...
+2022-10-13 16:36:26 [ SpringContextShutdownHook:181026 ] - [ INFO ] 数据库连接池 - Shutdown completed.
+2022-10-13 16:36:41 [ main:449 ] - [ INFO ] Starting QimenBotApplication on LAPTOP-FNT7SMLI with PID 11848 (D:\Project\JAVA\Bot\QimenBot\target\classes started by lvyunqi in D:\Project\JAVA\Bot\QimenBot)
+2022-10-13 16:36:41 [ main:451 ] - [ INFO ] No active profile set, falling back to default profiles: default
+2022-10-13 16:36:42 [ main:1095 ] - [ INFO ] Bean 'taskConfig' of type [com.mryunqi.qimenbot.config.TaskConfig$$EnhancerBySpringCGLIB$$ff806067] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-13 16:36:42 [ main:1309 ] - [ INFO ] Tomcat initialized with port(s): 8088 (http)
+2022-10-13 16:36:42 [ main:1315 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-8088"]
+2022-10-13 16:36:42 [ main:1315 ] - [ INFO ] Starting service [Tomcat]
+2022-10-13 16:36:42 [ main:1315 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-10-13 16:36:42 [ main:1382 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2022-10-13 16:36:42 [ main:1382 ] - [ INFO ] Root WebApplicationContext: initialization completed in 898 ms
+2022-10-13 16:36:42 [ main:1583 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK](1.0) @夜空
+2022-10-13 16:36:42 [ main:1593 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK]成功！
+2022-10-13 16:36:42 [ main:1595 ] - [ INFO ] 数据库初始化...
+2022-10-13 16:36:45 [ main:4604 ] - [ INFO ] 数据库连接池 - Starting...
+2022-10-13 16:36:46 [ main:4842 ] - [ INFO ] 数据库连接池 - Start completed.
+2022-10-13 16:36:46 [ main:4885 ] - [ INFO ] user表:success!
+2022-10-13 16:36:46 [ main:5239 ] - [ INFO ] command表:success!
+2022-10-13 16:36:46 [ main:5463 ] - [ INFO ] 启动成功
+2022-10-13 16:36:46 [ main:5464 ] - [ INFO ] 正在启动Go-Cqhttp客户端...
+2022-10-13 16:36:46 [ main:5474 ] - [ WARN ] 即将登录QQ-->2733944636
+2022-10-13 16:36:50 [ main:9392 ] - [ INFO ] 检查更新中.....
+2022-10-13 16:36:50 [ main:9392 ] - [ INFO ] 当前主体框架已更新到最新版！
+2022-10-13 16:36:51 [ main:10039 ] - [ INFO ] Initializing ExecutorService
+2022-10-13 16:36:51 [ main:10041 ] - [ INFO ] Initializing ExecutorService 'taskScheduler'
+2022-10-13 16:36:51 [ main:10179 ] - [ INFO ] Adding welcome page template: index
+2022-10-13 16:36:51 [ main:10232 ] - [ INFO ] Initializing ExecutorService
+2022-10-13 16:36:51 [ main:10232 ] - [ INFO ] Initializing ExecutorService 'shiroTaskExecutor'
+2022-10-13 16:36:51 [ main:10318 ] - [ INFO ] Starting ProtocolHandler ["http-nio-8088"]
+2022-10-13 16:36:51 [ main:10345 ] - [ INFO ] Tomcat started on port(s): 8088 (http) with context path ''
+2022-10-13 16:36:51 [ taskScheduler-1:10353 ] - [ INFO ] Initializing ExecutorService
+2022-10-13 16:36:51 [ main:10356 ] - [ INFO ] Started QimenBotApplication in 10.236 seconds (JVM running for 10.786)
+2022-10-13 16:36:57 [ http-nio-8088-exec-1:16095 ] - [ INFO ] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-13 16:36:57 [ http-nio-8088-exec-1:16095 ] - [ INFO ] Initializing Servlet 'dispatcherServlet'
+2022-10-13 16:36:57 [ http-nio-8088-exec-1:16099 ] - [ INFO ] Completed initialization in 4 ms
+2022-10-13 16:36:57 [ http-nio-8088-exec-1:16144 ] - [ INFO ] Account 2733944636 connected
+2022-10-13 16:37:49 [ SpringContextShutdownHook:68065 ] - [ WARN ] Account 2733944636 disconnected
+2022-10-13 16:37:49 [ SpringContextShutdownHook:68071 ] - [ INFO ] Shutting down ExecutorService 'shiroTaskExecutor'
+2022-10-13 16:37:49 [ SpringContextShutdownHook:68071 ] - [ INFO ] Shutting down ExecutorService 'taskScheduler'
+2022-10-13 16:37:49 [ SpringContextShutdownHook:68079 ] - [ INFO ] 数据库连接池 - Shutdown initiated...
+2022-10-13 16:37:49 [ SpringContextShutdownHook:68082 ] - [ INFO ] 数据库连接池 - Shutdown completed.
+2022-10-13 16:38:04 [ main:450 ] - [ INFO ] Starting QimenBotApplication on LAPTOP-FNT7SMLI with PID 14800 (D:\Project\JAVA\Bot\QimenBot\target\classes started by lvyunqi in D:\Project\JAVA\Bot\QimenBot)
+2022-10-13 16:38:04 [ main:451 ] - [ INFO ] No active profile set, falling back to default profiles: default
+2022-10-13 16:38:05 [ main:1095 ] - [ INFO ] Bean 'taskConfig' of type [com.mryunqi.qimenbot.config.TaskConfig$$EnhancerBySpringCGLIB$$b3b16fac] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-13 16:38:05 [ main:1313 ] - [ INFO ] Tomcat initialized with port(s): 8088 (http)
+2022-10-13 16:38:05 [ main:1319 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-8088"]
+2022-10-13 16:38:05 [ main:1320 ] - [ INFO ] Starting service [Tomcat]
+2022-10-13 16:38:05 [ main:1320 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-10-13 16:38:05 [ main:1388 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2022-10-13 16:38:05 [ main:1388 ] - [ INFO ] Root WebApplicationContext: initialization completed in 904 ms
+2022-10-13 16:38:05 [ main:1593 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK](1.0) @夜空
+2022-10-13 16:38:05 [ main:1605 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK]成功！
+2022-10-13 16:38:05 [ main:1606 ] - [ INFO ] 数据库初始化...
+2022-10-13 16:38:08 [ main:4626 ] - [ INFO ] 数据库连接池 - Starting...
+2022-10-13 16:38:08 [ main:4868 ] - [ INFO ] 数据库连接池 - Start completed.
+2022-10-13 16:38:08 [ main:4912 ] - [ INFO ] user表:success!
+2022-10-13 16:38:09 [ main:5267 ] - [ INFO ] command表:success!
+2022-10-13 16:38:09 [ main:5711 ] - [ INFO ] 启动成功
+2022-10-13 16:38:09 [ main:5712 ] - [ INFO ] 正在启动Go-Cqhttp客户端...
+2022-10-13 16:38:09 [ main:5724 ] - [ WARN ] 即将登录QQ-->2733944636
+2022-10-13 16:38:14 [ main:10431 ] - [ INFO ] 检查更新中.....
+2022-10-13 16:38:14 [ main:10431 ] - [ INFO ] 当前主体框架已更新到最新版！
+2022-10-13 16:38:15 [ main:11172 ] - [ INFO ] Initializing ExecutorService
+2022-10-13 16:38:15 [ main:11173 ] - [ INFO ] Initializing ExecutorService 'taskScheduler'
+2022-10-13 16:38:15 [ main:11303 ] - [ INFO ] Adding welcome page template: index
+2022-10-13 16:38:15 [ main:11360 ] - [ INFO ] Initializing ExecutorService
+2022-10-13 16:38:15 [ main:11361 ] - [ INFO ] Initializing ExecutorService 'shiroTaskExecutor'
+2022-10-13 16:38:15 [ main:11470 ] - [ INFO ] Tomcat started on port(s): 8088 (http) with context path ''
+2022-10-13 16:38:15 [ taskScheduler-1:11478 ] - [ INFO ] Initializing ExecutorService
+2022-10-13 16:38:15 [ main:11481 ] - [ INFO ] Started QimenBotApplication in 11.361 seconds (JVM running for 11.913)
+2022-10-13 16:38:15 [ SpringContextShutdownHook:11509 ] - [ INFO ] Shutting down ExecutorService 'shiroTaskExecutor'
+2022-10-13 16:38:15 [ SpringContextShutdownHook:11510 ] - [ INFO ] Shutting down ExecutorService 'taskScheduler'
+2022-10-13 16:38:15 [ SpringContextShutdownHook:11517 ] - [ INFO ] 数据库连接池 - Shutdown initiated...
+2022-10-13 16:38:15 [ SpringContextShutdownHook:11521 ] - [ INFO ] 数据库连接池 - Shutdown completed.
+2022-10-13 16:38:53 [ main:448 ] - [ INFO ] Starting QimenBotApplication on LAPTOP-FNT7SMLI with PID 24276 (D:\Project\JAVA\Bot\QimenBot\target\classes started by lvyunqi in D:\Project\JAVA\Bot\QimenBot)
+2022-10-13 16:38:53 [ main:450 ] - [ INFO ] No active profile set, falling back to default profiles: default
+2022-10-13 16:38:54 [ main:1129 ] - [ INFO ] Bean 'taskConfig' of type [com.mryunqi.qimenbot.config.TaskConfig$$EnhancerBySpringCGLIB$$6ea10baa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-13 16:38:54 [ main:1378 ] - [ INFO ] Tomcat initialized with port(s): 8088 (http)
+2022-10-13 16:38:54 [ main:1385 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-8088"]
+2022-10-13 16:38:54 [ main:1386 ] - [ INFO ] Starting service [Tomcat]
+2022-10-13 16:38:54 [ main:1386 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-10-13 16:38:54 [ main:1464 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2022-10-13 16:38:54 [ main:1465 ] - [ INFO ] Root WebApplicationContext: initialization completed in 980 ms
+2022-10-13 16:38:54 [ main:1699 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK](1.0) @夜空
+2022-10-13 16:38:54 [ main:1715 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK]成功！
+2022-10-13 16:38:54 [ main:1716 ] - [ INFO ] 数据库初始化...
+2022-10-13 16:38:57 [ main:4726 ] - [ INFO ] 数据库连接池 - Starting...
+2022-10-13 16:38:58 [ main:5018 ] - [ INFO ] 数据库连接池 - Start completed.
+2022-10-13 16:38:58 [ main:5070 ] - [ INFO ] user表:success!
+2022-10-13 16:38:58 [ main:5532 ] - [ INFO ] command表:success!
+2022-10-13 16:38:59 [ main:5814 ] - [ INFO ] 启动成功
+2022-10-13 16:38:59 [ main:5816 ] - [ INFO ] 正在启动Go-Cqhttp客户端...
+2022-10-13 16:38:59 [ main:5823 ] - [ WARN ] 即将登录QQ-->2733944636
+2022-10-13 16:39:02 [ main:9267 ] - [ INFO ] 检查更新中.....
+2022-10-13 16:39:02 [ main:9267 ] - [ INFO ] 当前主体框架已更新到最新版！
+2022-10-13 16:39:03 [ main:9949 ] - [ INFO ] Initializing ExecutorService
+2022-10-13 16:39:03 [ main:9951 ] - [ INFO ] Initializing ExecutorService 'taskScheduler'
+2022-10-13 16:39:03 [ main:10075 ] - [ INFO ] Adding welcome page template: index
+2022-10-13 16:39:03 [ main:10127 ] - [ INFO ] Initializing ExecutorService
+2022-10-13 16:39:03 [ main:10127 ] - [ INFO ] Initializing ExecutorService 'shiroTaskExecutor'
+2022-10-13 16:39:03 [ main:10209 ] - [ INFO ] Starting ProtocolHandler ["http-nio-8088"]
+2022-10-13 16:39:03 [ main:10233 ] - [ INFO ] Tomcat started on port(s): 8088 (http) with context path ''
+2022-10-13 16:39:03 [ taskScheduler-1:10241 ] - [ INFO ] Initializing ExecutorService
+2022-10-13 16:39:03 [ main:10242 ] - [ INFO ] Started QimenBotApplication in 10.127 seconds (JVM running for 10.676)
+2022-10-13 16:39:08 [ http-nio-8088-exec-1:15672 ] - [ INFO ] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-13 16:39:08 [ http-nio-8088-exec-1:15672 ] - [ INFO ] Initializing Servlet 'dispatcherServlet'
+2022-10-13 16:39:08 [ http-nio-8088-exec-1:15676 ] - [ INFO ] Completed initialization in 4 ms
+2022-10-13 16:39:08 [ http-nio-8088-exec-1:15727 ] - [ INFO ] Account 2733944636 connected
+2022-10-13 16:51:28 [ SpringContextShutdownHook:755154 ] - [ WARN ] Account 2733944636 disconnected
+2022-10-13 16:51:28 [ SpringContextShutdownHook:755160 ] - [ INFO ] Shutting down ExecutorService 'shiroTaskExecutor'
+2022-10-13 16:51:28 [ SpringContextShutdownHook:755160 ] - [ INFO ] Shutting down ExecutorService 'taskScheduler'
+2022-10-13 16:51:28 [ SpringContextShutdownHook:755167 ] - [ INFO ] 数据库连接池 - Shutdown initiated...
+2022-10-13 16:51:28 [ SpringContextShutdownHook:755172 ] - [ INFO ] 数据库连接池 - Shutdown completed.
+2022-10-13 16:51:43 [ main:449 ] - [ INFO ] Starting QimenBotApplication on LAPTOP-FNT7SMLI with PID 26280 (D:\Project\JAVA\Bot\QimenBot\target\classes started by lvyunqi in D:\Project\JAVA\Bot\QimenBot)
+2022-10-13 16:51:43 [ main:451 ] - [ INFO ] No active profile set, falling back to default profiles: default
+2022-10-13 16:51:44 [ main:1096 ] - [ INFO ] Bean 'taskConfig' of type [com.mryunqi.qimenbot.config.TaskConfig$$EnhancerBySpringCGLIB$$6ea10baa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-13 16:51:44 [ main:1307 ] - [ INFO ] Tomcat initialized with port(s): 8088 (http)
+2022-10-13 16:51:44 [ main:1311 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-8088"]
+2022-10-13 16:51:44 [ main:1312 ] - [ INFO ] Starting service [Tomcat]
+2022-10-13 16:51:44 [ main:1312 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-10-13 16:51:44 [ main:1380 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2022-10-13 16:51:44 [ main:1380 ] - [ INFO ] Root WebApplicationContext: initialization completed in 896 ms
+2022-10-13 16:51:44 [ main:1583 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK](1.0) @夜空
+2022-10-13 16:51:44 [ main:1595 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK]成功！
+2022-10-13 16:51:44 [ main:1597 ] - [ INFO ] 数据库初始化...
+2022-10-13 16:51:47 [ main:4606 ] - [ INFO ] 数据库连接池 - Starting...
+2022-10-13 16:51:48 [ main:4878 ] - [ INFO ] 数据库连接池 - Start completed.
+2022-10-13 16:51:48 [ main:4931 ] - [ INFO ] user表:success!
+2022-10-13 16:51:48 [ main:5821 ] - [ INFO ] command表:success!
+2022-10-13 16:51:49 [ main:6080 ] - [ INFO ] 启动成功
+2022-10-13 16:51:49 [ main:6082 ] - [ INFO ] 正在启动Go-Cqhttp客户端...
+2022-10-13 16:51:49 [ main:6091 ] - [ WARN ] 即将登录QQ-->2733944636
+2022-10-13 16:51:52 [ main:9840 ] - [ INFO ] 检查更新中.....
+2022-10-13 16:51:52 [ main:9840 ] - [ INFO ] 当前主体框架已更新到最新版！
+2022-10-13 16:51:53 [ main:10468 ] - [ INFO ] Initializing ExecutorService
+2022-10-13 16:51:53 [ main:10470 ] - [ INFO ] Initializing ExecutorService 'taskScheduler'
+2022-10-13 16:51:53 [ main:10596 ] - [ INFO ] Adding welcome page template: index
+2022-10-13 16:51:53 [ main:10649 ] - [ INFO ] Initializing ExecutorService
+2022-10-13 16:51:53 [ main:10650 ] - [ INFO ] Initializing ExecutorService 'shiroTaskExecutor'
+2022-10-13 16:51:53 [ main:10733 ] - [ INFO ] Starting ProtocolHandler ["http-nio-8088"]
+2022-10-13 16:51:53 [ main:10758 ] - [ INFO ] Tomcat started on port(s): 8088 (http) with context path ''
+2022-10-13 16:51:53 [ taskScheduler-1:10767 ] - [ INFO ] Initializing ExecutorService
+2022-10-13 16:51:53 [ main:10767 ] - [ INFO ] Started QimenBotApplication in 10.647 seconds (JVM running for 11.205)
+2022-10-13 16:51:59 [ http-nio-8088-exec-1:15884 ] - [ INFO ] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-13 16:51:59 [ http-nio-8088-exec-1:15884 ] - [ INFO ] Initializing Servlet 'dispatcherServlet'
+2022-10-13 16:51:59 [ http-nio-8088-exec-1:15888 ] - [ INFO ] Completed initialization in 4 ms
+2022-10-13 16:51:59 [ http-nio-8088-exec-1:15931 ] - [ INFO ] Account 2733944636 connected
+2022-10-13 16:53:58 [ SpringContextShutdownHook:135384 ] - [ WARN ] Account 2733944636 disconnected
+2022-10-13 16:53:58 [ SpringContextShutdownHook:135391 ] - [ INFO ] Shutting down ExecutorService 'shiroTaskExecutor'
+2022-10-13 16:53:58 [ SpringContextShutdownHook:135392 ] - [ INFO ] Shutting down ExecutorService 'taskScheduler'
+2022-10-13 16:53:58 [ SpringContextShutdownHook:135399 ] - [ INFO ] 数据库连接池 - Shutdown initiated...
+2022-10-13 16:53:58 [ SpringContextShutdownHook:135403 ] - [ INFO ] 数据库连接池 - Shutdown completed.
+2022-10-13 16:54:14 [ main:613 ] - [ INFO ] Starting QimenBotApplication on LAPTOP-FNT7SMLI with PID 11780 (D:\Project\JAVA\Bot\QimenBot\target\classes started by lvyunqi in D:\Project\JAVA\Bot\QimenBot)
+2022-10-13 16:54:14 [ main:614 ] - [ INFO ] No active profile set, falling back to default profiles: default
+2022-10-13 16:54:14 [ main:1278 ] - [ INFO ] Bean 'taskConfig' of type [com.mryunqi.qimenbot.config.TaskConfig$$EnhancerBySpringCGLIB$$6ea10baa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-13 16:54:15 [ main:1494 ] - [ INFO ] Tomcat initialized with port(s): 8088 (http)
+2022-10-13 16:54:15 [ main:1500 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-8088"]
+2022-10-13 16:54:15 [ main:1501 ] - [ INFO ] Starting service [Tomcat]
+2022-10-13 16:54:15 [ main:1501 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-10-13 16:54:15 [ main:1569 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2022-10-13 16:54:15 [ main:1569 ] - [ INFO ] Root WebApplicationContext: initialization completed in 916 ms
+2022-10-13 16:54:15 [ main:1776 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK](1.0) @夜空
+2022-10-13 16:54:15 [ main:1788 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK]成功！
+2022-10-13 16:54:15 [ main:1789 ] - [ INFO ] 数据库初始化...
+2022-10-13 16:54:18 [ main:4802 ] - [ INFO ] 数据库连接池 - Starting...
+2022-10-13 16:54:18 [ main:5048 ] - [ INFO ] 数据库连接池 - Start completed.
+2022-10-13 16:54:18 [ main:5089 ] - [ INFO ] user表:success!
+2022-10-13 16:54:18 [ main:5437 ] - [ INFO ] command表:success!
+2022-10-13 16:54:19 [ main:5646 ] - [ INFO ] 启动成功
+2022-10-13 16:54:19 [ main:5647 ] - [ INFO ] 正在启动Go-Cqhttp客户端...
+2022-10-13 16:54:19 [ main:5656 ] - [ WARN ] 即将登录QQ-->2733944636
+2022-10-13 16:54:23 [ main:9748 ] - [ INFO ] 检查更新中.....
+2022-10-13 16:54:23 [ main:9748 ] - [ INFO ] 当前主体框架已更新到最新版！
+2022-10-13 16:54:23 [ main:10436 ] - [ INFO ] Initializing ExecutorService
+2022-10-13 16:54:23 [ main:10437 ] - [ INFO ] Initializing ExecutorService 'taskScheduler'
+2022-10-13 16:54:24 [ main:10564 ] - [ INFO ] Adding welcome page template: index
+2022-10-13 16:54:24 [ main:10620 ] - [ INFO ] Initializing ExecutorService
+2022-10-13 16:54:24 [ main:10621 ] - [ INFO ] Initializing ExecutorService 'shiroTaskExecutor'
+2022-10-13 16:54:24 [ main:10706 ] - [ INFO ] Starting ProtocolHandler ["http-nio-8088"]
+2022-10-13 16:54:24 [ main:10732 ] - [ INFO ] Tomcat started on port(s): 8088 (http) with context path ''
+2022-10-13 16:54:24 [ taskScheduler-1:10740 ] - [ INFO ] Initializing ExecutorService
+2022-10-13 16:54:24 [ main:10741 ] - [ INFO ] Started QimenBotApplication in 10.56 seconds (JVM running for 11.216)
+2022-10-13 16:54:30 [ http-nio-8088-exec-6:16606 ] - [ INFO ] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-13 16:54:30 [ http-nio-8088-exec-6:16606 ] - [ INFO ] Initializing Servlet 'dispatcherServlet'
+2022-10-13 16:54:30 [ http-nio-8088-exec-6:16611 ] - [ INFO ] Completed initialization in 5 ms
+2022-10-13 16:54:30 [ http-nio-8088-exec-6:16666 ] - [ INFO ] Account 2733944636 connected
+2022-10-13 16:56:44 [ SpringContextShutdownHook:151039 ] - [ WARN ] Account 2733944636 disconnected
+2022-10-13 16:56:44 [ SpringContextShutdownHook:151045 ] - [ INFO ] Shutting down ExecutorService 'shiroTaskExecutor'
+2022-10-13 16:56:44 [ SpringContextShutdownHook:151046 ] - [ INFO ] Shutting down ExecutorService 'taskScheduler'
+2022-10-13 16:56:44 [ SpringContextShutdownHook:151052 ] - [ INFO ] 数据库连接池 - Shutdown initiated...
+2022-10-13 16:56:44 [ SpringContextShutdownHook:151056 ] - [ INFO ] 数据库连接池 - Shutdown completed.
+2022-10-13 16:56:59 [ main:628 ] - [ INFO ] Starting QimenBotApplication on LAPTOP-FNT7SMLI with PID 27240 (D:\Project\JAVA\Bot\QimenBot\target\classes started by lvyunqi in D:\Project\JAVA\Bot\QimenBot)
+2022-10-13 16:56:59 [ main:629 ] - [ INFO ] No active profile set, falling back to default profiles: default
+2022-10-13 16:57:00 [ main:1292 ] - [ INFO ] Bean 'taskConfig' of type [com.mryunqi.qimenbot.config.TaskConfig$$EnhancerBySpringCGLIB$$ff806067] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-13 16:57:00 [ main:1502 ] - [ INFO ] Tomcat initialized with port(s): 8088 (http)
+2022-10-13 16:57:00 [ main:1508 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-8088"]
+2022-10-13 16:57:00 [ main:1509 ] - [ INFO ] Starting service [Tomcat]
+2022-10-13 16:57:00 [ main:1509 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-10-13 16:57:00 [ main:1577 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2022-10-13 16:57:00 [ main:1577 ] - [ INFO ] Root WebApplicationContext: initialization completed in 911 ms
+2022-10-13 16:57:00 [ main:1781 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK](1.0) @夜空
+2022-10-13 16:57:00 [ main:1792 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK]成功！
+2022-10-13 16:57:00 [ main:1793 ] - [ INFO ] 数据库初始化...
+2022-10-13 16:57:03 [ main:4809 ] - [ INFO ] 数据库连接池 - Starting...
+2022-10-13 16:57:04 [ main:5069 ] - [ INFO ] 数据库连接池 - Start completed.
+2022-10-13 16:57:04 [ main:5119 ] - [ INFO ] user表:success!
+2022-10-13 16:57:04 [ main:5517 ] - [ INFO ] command表:success!
+2022-10-13 16:57:04 [ main:5758 ] - [ INFO ] 启动成功
+2022-10-13 16:57:04 [ main:5760 ] - [ INFO ] 正在启动Go-Cqhttp客户端...
+2022-10-13 16:57:04 [ main:5769 ] - [ WARN ] 即将登录QQ-->2733944636
+2022-10-13 16:57:08 [ main:9568 ] - [ INFO ] 检查更新中.....
+2022-10-13 16:57:08 [ main:9568 ] - [ INFO ] 当前主体框架已更新到最新版！
+2022-10-13 16:57:09 [ main:10204 ] - [ INFO ] Initializing ExecutorService
+2022-10-13 16:57:09 [ main:10206 ] - [ INFO ] Initializing ExecutorService 'taskScheduler'
+2022-10-13 16:57:09 [ main:10329 ] - [ INFO ] Adding welcome page template: index
+2022-10-13 16:57:09 [ main:10384 ] - [ INFO ] Initializing ExecutorService
+2022-10-13 16:57:09 [ main:10385 ] - [ INFO ] Initializing ExecutorService 'shiroTaskExecutor'
+2022-10-13 16:57:09 [ main:10481 ] - [ INFO ] Starting ProtocolHandler ["http-nio-8088"]
+2022-10-13 16:57:09 [ main:10507 ] - [ INFO ] Tomcat started on port(s): 8088 (http) with context path ''
+2022-10-13 16:57:09 [ taskScheduler-1:10517 ] - [ INFO ] Initializing ExecutorService
+2022-10-13 16:57:09 [ main:10519 ] - [ INFO ] Started QimenBotApplication in 10.331 seconds (JVM running for 10.972)
+2022-10-13 16:57:14 [ http-nio-8088-exec-1:15548 ] - [ INFO ] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-13 16:57:14 [ http-nio-8088-exec-1:15548 ] - [ INFO ] Initializing Servlet 'dispatcherServlet'
+2022-10-13 16:57:14 [ http-nio-8088-exec-1:15553 ] - [ INFO ] Completed initialization in 5 ms
+2022-10-13 16:57:14 [ http-nio-8088-exec-1:15597 ] - [ INFO ] Account 2733944636 connected
+2022-10-13 17:00:10 [ http-nio-8088-exec-2:191300 ] - [ WARN ] Account 2733944636 disconnected
+2022-10-13 17:19:19 [ SpringContextShutdownHook:1340827 ] - [ INFO ] Shutting down ExecutorService 'shiroTaskExecutor'
+2022-10-13 17:19:19 [ SpringContextShutdownHook:1340828 ] - [ INFO ] Shutting down ExecutorService 'taskScheduler'
+2022-10-13 17:19:19 [ SpringContextShutdownHook:1340834 ] - [ INFO ] 数据库连接池 - Shutdown initiated...
+2022-10-13 17:19:19 [ SpringContextShutdownHook:1340840 ] - [ INFO ] 数据库连接池 - Shutdown completed.
+2022-10-13 17:19:34 [ main:478 ] - [ INFO ] Starting QimenBotApplication on LAPTOP-FNT7SMLI with PID 27308 (D:\Project\JAVA\Bot\QimenBot\target\classes started by lvyunqi in D:\Project\JAVA\Bot\QimenBot)
+2022-10-13 17:19:34 [ main:480 ] - [ INFO ] No active profile set, falling back to default profiles: default
+2022-10-13 17:19:35 [ main:1145 ] - [ INFO ] Bean 'taskConfig' of type [com.mryunqi.qimenbot.config.TaskConfig$$EnhancerBySpringCGLIB$$b3b16fac] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-13 17:19:35 [ main:1366 ] - [ INFO ] Tomcat initialized with port(s): 8088 (http)
+2022-10-13 17:19:35 [ main:1372 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-8088"]
+2022-10-13 17:19:35 [ main:1372 ] - [ INFO ] Starting service [Tomcat]
+2022-10-13 17:19:35 [ main:1372 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-10-13 17:19:35 [ main:1440 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2022-10-13 17:19:35 [ main:1440 ] - [ INFO ] Root WebApplicationContext: initialization completed in 920 ms
+2022-10-13 17:19:35 [ main:1665 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK](1.0) @夜空
+2022-10-13 17:19:35 [ main:1676 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK]成功！
+2022-10-13 17:19:35 [ main:1677 ] - [ INFO ] 数据库初始化...
+2022-10-13 17:19:38 [ main:4691 ] - [ INFO ] 数据库连接池 - Starting...
+2022-10-13 17:19:39 [ main:5010 ] - [ INFO ] 数据库连接池 - Start completed.
+2022-10-13 17:19:39 [ main:5070 ] - [ INFO ] user表:success!
+2022-10-13 17:19:39 [ main:5632 ] - [ INFO ] command表:success!
+2022-10-13 17:19:40 [ main:5964 ] - [ INFO ] 启动成功
+2022-10-13 17:19:40 [ main:5965 ] - [ INFO ] 正在启动Go-Cqhttp客户端...
+2022-10-13 17:19:40 [ main:5975 ] - [ WARN ] 即将登录QQ-->2733944636
+2022-10-13 17:19:44 [ main:10180 ] - [ INFO ] 检查更新中.....
+2022-10-13 17:19:44 [ main:10180 ] - [ INFO ] 当前主体框架已更新到最新版！
+2022-10-13 17:19:44 [ main:10811 ] - [ INFO ] Initializing ExecutorService
+2022-10-13 17:19:44 [ main:10812 ] - [ INFO ] Initializing ExecutorService 'taskScheduler'
+2022-10-13 17:19:45 [ main:10939 ] - [ INFO ] Adding welcome page template: index
+2022-10-13 17:19:45 [ main:10995 ] - [ INFO ] Initializing ExecutorService
+2022-10-13 17:19:45 [ main:10996 ] - [ INFO ] Initializing ExecutorService 'shiroTaskExecutor'
+2022-10-13 17:19:45 [ main:11077 ] - [ INFO ] Starting ProtocolHandler ["http-nio-8088"]
+2022-10-13 17:19:45 [ main:11101 ] - [ INFO ] Tomcat started on port(s): 8088 (http) with context path ''
+2022-10-13 17:19:45 [ taskScheduler-1:11111 ] - [ INFO ] Initializing ExecutorService
+2022-10-13 17:19:45 [ main:11112 ] - [ INFO ] Started QimenBotApplication in 10.994 seconds (JVM running for 11.557)
+2022-10-13 17:19:49 [ http-nio-8088-exec-8:15678 ] - [ INFO ] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-13 17:19:49 [ http-nio-8088-exec-8:15678 ] - [ INFO ] Initializing Servlet 'dispatcherServlet'
+2022-10-13 17:19:49 [ http-nio-8088-exec-8:15683 ] - [ INFO ] Completed initialization in 5 ms
+2022-10-13 17:19:49 [ http-nio-8088-exec-8:15729 ] - [ INFO ] Account 2733944636 connected
+2022-10-13 17:22:04 [ SpringContextShutdownHook:150205 ] - [ WARN ] Account 2733944636 disconnected
+2022-10-13 17:22:04 [ SpringContextShutdownHook:150211 ] - [ INFO ] Shutting down ExecutorService 'shiroTaskExecutor'
+2022-10-13 17:22:04 [ SpringContextShutdownHook:150212 ] - [ INFO ] Shutting down ExecutorService 'taskScheduler'
+2022-10-13 17:22:04 [ SpringContextShutdownHook:150219 ] - [ INFO ] 数据库连接池 - Shutdown initiated...
+2022-10-13 17:22:04 [ SpringContextShutdownHook:150223 ] - [ INFO ] 数据库连接池 - Shutdown completed.
+2022-10-13 17:22:19 [ main:463 ] - [ INFO ] Starting QimenBotApplication on LAPTOP-FNT7SMLI with PID 23904 (D:\Project\JAVA\Bot\QimenBot\target\classes started by lvyunqi in D:\Project\JAVA\Bot\QimenBot)
+2022-10-13 17:22:19 [ main:464 ] - [ INFO ] No active profile set, falling back to default profiles: default
+2022-10-13 17:22:19 [ main:1123 ] - [ INFO ] Bean 'taskConfig' of type [com.mryunqi.qimenbot.config.TaskConfig$$EnhancerBySpringCGLIB$$6ea10baa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-13 17:22:20 [ main:1339 ] - [ INFO ] Tomcat initialized with port(s): 8088 (http)
+2022-10-13 17:22:20 [ main:1346 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-8088"]
+2022-10-13 17:22:20 [ main:1346 ] - [ INFO ] Starting service [Tomcat]
+2022-10-13 17:22:20 [ main:1346 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-10-13 17:22:20 [ main:1415 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2022-10-13 17:22:20 [ main:1415 ] - [ INFO ] Root WebApplicationContext: initialization completed in 915 ms
+2022-10-13 17:22:20 [ main:1625 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK](1.0) @夜空
+2022-10-13 17:22:20 [ main:1638 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK]成功！
+2022-10-13 17:22:20 [ main:1640 ] - [ INFO ] 数据库初始化...
+2022-10-13 17:22:23 [ main:4656 ] - [ INFO ] 数据库连接池 - Starting...
+2022-10-13 17:22:23 [ main:4923 ] - [ INFO ] 数据库连接池 - Start completed.
+2022-10-13 17:22:23 [ main:4974 ] - [ INFO ] user表:success!
+2022-10-13 17:22:24 [ main:5648 ] - [ INFO ] command表:success!
+2022-10-13 17:22:24 [ main:6147 ] - [ INFO ] 启动成功
+2022-10-13 17:22:24 [ main:6150 ] - [ INFO ] 正在启动Go-Cqhttp客户端...
+2022-10-13 17:22:24 [ main:6157 ] - [ WARN ] 即将登录QQ-->2733944636
+2022-10-13 17:22:28 [ main:9808 ] - [ INFO ] 检查更新中.....
+2022-10-13 17:22:28 [ main:9808 ] - [ INFO ] 当前主体框架已更新到最新版！
+2022-10-13 17:22:29 [ main:10456 ] - [ INFO ] Initializing ExecutorService
+2022-10-13 17:22:29 [ main:10457 ] - [ INFO ] Initializing ExecutorService 'taskScheduler'
+2022-10-13 17:22:29 [ main:10590 ] - [ INFO ] Adding welcome page template: index
+2022-10-13 17:22:29 [ main:10644 ] - [ INFO ] Initializing ExecutorService
+2022-10-13 17:22:29 [ main:10644 ] - [ INFO ] Initializing ExecutorService 'shiroTaskExecutor'
+2022-10-13 17:22:29 [ main:10732 ] - [ INFO ] Starting ProtocolHandler ["http-nio-8088"]
+2022-10-13 17:22:29 [ main:10756 ] - [ INFO ] Tomcat started on port(s): 8088 (http) with context path ''
+2022-10-13 17:22:29 [ taskScheduler-1:10764 ] - [ INFO ] Initializing ExecutorService
+2022-10-13 17:22:29 [ main:10765 ] - [ INFO ] Started QimenBotApplication in 10.648 seconds (JVM running for 11.204)
+2022-10-13 17:22:34 [ http-nio-8088-exec-8:15895 ] - [ INFO ] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-13 17:22:34 [ http-nio-8088-exec-8:15895 ] - [ INFO ] Initializing Servlet 'dispatcherServlet'
+2022-10-13 17:22:34 [ http-nio-8088-exec-8:15899 ] - [ INFO ] Completed initialization in 4 ms
+2022-10-13 17:22:34 [ http-nio-8088-exec-8:15946 ] - [ INFO ] Account 2733944636 connected
+2022-10-13 17:24:00 [ SpringContextShutdownHook:101349 ] - [ WARN ] Account 2733944636 disconnected
+2022-10-13 17:24:00 [ SpringContextShutdownHook:101356 ] - [ INFO ] Shutting down ExecutorService 'shiroTaskExecutor'
+2022-10-13 17:24:00 [ SpringContextShutdownHook:101356 ] - [ INFO ] Shutting down ExecutorService 'taskScheduler'
+2022-10-13 17:24:00 [ SpringContextShutdownHook:101362 ] - [ INFO ] 数据库连接池 - Shutdown initiated...
+2022-10-13 17:24:00 [ SpringContextShutdownHook:101367 ] - [ INFO ] 数据库连接池 - Shutdown completed.
+2022-10-13 17:24:16 [ main:469 ] - [ INFO ] Starting QimenBotApplication on LAPTOP-FNT7SMLI with PID 24276 (D:\Project\JAVA\Bot\QimenBot\target\classes started by lvyunqi in D:\Project\JAVA\Bot\QimenBot)
+2022-10-13 17:24:16 [ main:471 ] - [ INFO ] No active profile set, falling back to default profiles: default
+2022-10-13 17:24:17 [ main:1141 ] - [ INFO ] Bean 'taskConfig' of type [com.mryunqi.qimenbot.config.TaskConfig$$EnhancerBySpringCGLIB$$6ea10baa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-13 17:24:17 [ main:1397 ] - [ INFO ] Tomcat initialized with port(s): 8088 (http)
+2022-10-13 17:24:17 [ main:1404 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-8088"]
+2022-10-13 17:24:17 [ main:1404 ] - [ INFO ] Starting service [Tomcat]
+2022-10-13 17:24:17 [ main:1406 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-10-13 17:24:17 [ main:1490 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2022-10-13 17:24:17 [ main:1491 ] - [ INFO ] Root WebApplicationContext: initialization completed in 986 ms
+2022-10-13 17:24:18 [ main:1717 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK](1.0) @夜空
+2022-10-13 17:24:18 [ main:1730 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK]成功！
+2022-10-13 17:24:18 [ main:1731 ] - [ INFO ] 数据库初始化...
+2022-10-13 17:24:21 [ main:4745 ] - [ INFO ] 数据库连接池 - Starting...
+2022-10-13 17:24:21 [ main:5012 ] - [ INFO ] 数据库连接池 - Start completed.
+2022-10-13 17:24:21 [ main:5058 ] - [ INFO ] user表:success!
+2022-10-13 17:24:21 [ main:5467 ] - [ INFO ] command表:success!
+2022-10-13 17:24:22 [ main:5714 ] - [ INFO ] 启动成功
+2022-10-13 17:24:22 [ main:5715 ] - [ INFO ] 正在启动Go-Cqhttp客户端...
+2022-10-13 17:24:22 [ main:5724 ] - [ WARN ] 即将登录QQ-->2733944636
+2022-10-13 17:24:26 [ main:9909 ] - [ INFO ] 检查更新中.....
+2022-10-13 17:24:26 [ main:9909 ] - [ INFO ] 当前主体框架已更新到最新版！
+2022-10-13 17:24:26 [ main:10556 ] - [ INFO ] Initializing ExecutorService
+2022-10-13 17:24:26 [ main:10558 ] - [ INFO ] Initializing ExecutorService 'taskScheduler'
+2022-10-13 17:24:27 [ main:10684 ] - [ INFO ] Adding welcome page template: index
+2022-10-13 17:24:27 [ main:10744 ] - [ INFO ] Initializing ExecutorService
+2022-10-13 17:24:27 [ main:10744 ] - [ INFO ] Initializing ExecutorService 'shiroTaskExecutor'
+2022-10-13 17:24:27 [ main:10834 ] - [ INFO ] Starting ProtocolHandler ["http-nio-8088"]
+2022-10-13 17:24:27 [ main:10858 ] - [ INFO ] Tomcat started on port(s): 8088 (http) with context path ''
+2022-10-13 17:24:27 [ taskScheduler-1:10867 ] - [ INFO ] Initializing ExecutorService
+2022-10-13 17:24:27 [ main:10868 ] - [ INFO ] Started QimenBotApplication in 10.752 seconds (JVM running for 11.31)
+2022-10-13 17:24:32 [ http-nio-8088-exec-1:16576 ] - [ INFO ] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-13 17:24:32 [ http-nio-8088-exec-1:16576 ] - [ INFO ] Initializing Servlet 'dispatcherServlet'
+2022-10-13 17:24:32 [ http-nio-8088-exec-1:16582 ] - [ INFO ] Completed initialization in 5 ms
+2022-10-13 17:24:33 [ http-nio-8088-exec-1:16626 ] - [ INFO ] Account 2733944636 connected
+2022-10-13 17:26:07 [ SpringContextShutdownHook:110635 ] - [ WARN ] Account 2733944636 disconnected
+2022-10-13 17:26:07 [ SpringContextShutdownHook:110641 ] - [ INFO ] Shutting down ExecutorService 'shiroTaskExecutor'
+2022-10-13 17:26:07 [ SpringContextShutdownHook:110642 ] - [ INFO ] Shutting down ExecutorService 'taskScheduler'
+2022-10-13 17:26:07 [ SpringContextShutdownHook:110649 ] - [ INFO ] 数据库连接池 - Shutdown initiated...
+2022-10-13 17:26:07 [ SpringContextShutdownHook:110653 ] - [ INFO ] 数据库连接池 - Shutdown completed.
+2022-10-13 17:26:22 [ main:466 ] - [ INFO ] Starting QimenBotApplication on LAPTOP-FNT7SMLI with PID 2524 (D:\Project\JAVA\Bot\QimenBot\target\classes started by lvyunqi in D:\Project\JAVA\Bot\QimenBot)
+2022-10-13 17:26:22 [ main:468 ] - [ INFO ] No active profile set, falling back to default profiles: default
+2022-10-13 17:26:23 [ main:1127 ] - [ INFO ] Bean 'taskConfig' of type [com.mryunqi.qimenbot.config.TaskConfig$$EnhancerBySpringCGLIB$$6ea10baa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-13 17:26:23 [ main:1342 ] - [ INFO ] Tomcat initialized with port(s): 8088 (http)
+2022-10-13 17:26:23 [ main:1347 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-8088"]
+2022-10-13 17:26:23 [ main:1348 ] - [ INFO ] Starting service [Tomcat]
+2022-10-13 17:26:23 [ main:1348 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-10-13 17:26:23 [ main:1416 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2022-10-13 17:26:23 [ main:1416 ] - [ INFO ] Root WebApplicationContext: initialization completed in 914 ms
+2022-10-13 17:26:23 [ main:1621 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK](1.0) @夜空
+2022-10-13 17:26:23 [ main:1635 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK]成功！
+2022-10-13 17:26:23 [ main:1636 ] - [ INFO ] 数据库初始化...
+2022-10-13 17:26:26 [ main:4644 ] - [ INFO ] 数据库连接池 - Starting...
+2022-10-13 17:26:26 [ main:4913 ] - [ INFO ] 数据库连接池 - Start completed.
+2022-10-13 17:26:26 [ main:4963 ] - [ INFO ] user表:success!
+2022-10-13 17:26:27 [ main:5386 ] - [ INFO ] command表:success!
+2022-10-13 17:26:27 [ main:5643 ] - [ INFO ] 启动成功
+2022-10-13 17:26:27 [ main:5644 ] - [ INFO ] 正在启动Go-Cqhttp客户端...
+2022-10-13 17:26:27 [ main:5653 ] - [ WARN ] 即将登录QQ-->2733944636
+2022-10-13 17:26:31 [ main:9657 ] - [ INFO ] 检查更新中.....
+2022-10-13 17:26:31 [ main:9657 ] - [ INFO ] 当前主体框架已更新到最新版！
+2022-10-13 17:26:32 [ main:10333 ] - [ INFO ] Initializing ExecutorService
+2022-10-13 17:26:32 [ main:10334 ] - [ INFO ] Initializing ExecutorService 'taskScheduler'
+2022-10-13 17:26:32 [ main:10485 ] - [ INFO ] Adding welcome page template: index
+2022-10-13 17:26:32 [ main:10543 ] - [ INFO ] Initializing ExecutorService
+2022-10-13 17:26:32 [ main:10544 ] - [ INFO ] Initializing ExecutorService 'shiroTaskExecutor'
+2022-10-13 17:26:32 [ main:10627 ] - [ INFO ] Starting ProtocolHandler ["http-nio-8088"]
+2022-10-13 17:26:32 [ main:10653 ] - [ INFO ] Tomcat started on port(s): 8088 (http) with context path ''
+2022-10-13 17:26:32 [ taskScheduler-1:10660 ] - [ INFO ] Initializing ExecutorService
+2022-10-13 17:26:32 [ main:10663 ] - [ INFO ] Started QimenBotApplication in 10.54 seconds (JVM running for 11.097)
+2022-10-13 17:26:37 [ http-nio-8088-exec-1:15470 ] - [ INFO ] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-13 17:26:37 [ http-nio-8088-exec-1:15471 ] - [ INFO ] Initializing Servlet 'dispatcherServlet'
+2022-10-13 17:26:37 [ http-nio-8088-exec-1:15476 ] - [ INFO ] Completed initialization in 5 ms
+2022-10-13 17:26:37 [ http-nio-8088-exec-1:15527 ] - [ INFO ] Account 2733944636 connected
+2022-10-13 17:28:38 [ ThreadPoolTaskExecutor-21:136621 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@229fe025 (Communications link failure
+
+The last packet successfully received from the server was 5,984 milliseconds ago. The last packet sent successfully to the server was 6,001 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 17:28:39 [ ThreadPoolTaskExecutor-22:137606 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@241b6a90 (Communications link failure
+
+The last packet successfully received from the server was 25,096 milliseconds ago. The last packet sent successfully to the server was 25,113 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 17:28:40 [ ThreadPoolTaskExecutor-23:138626 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5c6cfd6f (Communications link failure
+
+The last packet successfully received from the server was 133,323 milliseconds ago. The last packet sent successfully to the server was 133,337 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 17:28:43 [ ThreadPoolTaskExecutor-1:141637 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1afa633e (Communications link failure
+
+The last packet successfully received from the server was 135,669 milliseconds ago. The last packet sent successfully to the server was 135,690 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 17:28:43 [ ThreadPoolTaskExecutor-21:141637 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@71ae60dd (Communications link failure
+
+The last packet successfully received from the server was 135,843 milliseconds ago. The last packet sent successfully to the server was 135,860 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 17:28:48 [ ThreadPoolTaskExecutor-21:146637 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2ced2805 (Communications link failure
+
+The last packet successfully received from the server was 6,646 milliseconds ago. The last packet sent successfully to the server was 6,663 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 17:28:48 [ ThreadPoolTaskExecutor-1:146637 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@20ea005e (Communications link failure
+
+The last packet successfully received from the server was 6,221 milliseconds ago. The last packet sent successfully to the server was 6,241 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 17:28:48 [ ThreadPoolTaskExecutor-6:146668 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5f250c70 (Communications link failure
+
+The last packet successfully received from the server was 6,648 milliseconds ago. The last packet sent successfully to the server was 6,664 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 17:28:49 [ ThreadPoolTaskExecutor-7:147683 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1dd607c0 (Communications link failure
+
+The last packet successfully received from the server was 8,457 milliseconds ago. The last packet sent successfully to the server was 8,476 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 17:29:13 [ ThreadPoolTaskExecutor-6:171862 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1aa0f062 (Communications link failure
+
+The last packet successfully received from the server was 5,987 milliseconds ago. The last packet sent successfully to the server was 6,003 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 17:29:14 [ ThreadPoolTaskExecutor-11:172856 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@392ab30a (Communications link failure
+
+The last packet successfully received from the server was 24,378 milliseconds ago. The last packet sent successfully to the server was 24,397 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 17:29:15 [ ThreadPoolTaskExecutor-7:173864 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6a497122 (Communications link failure
+
+The last packet successfully received from the server was 24,384 milliseconds ago. The last packet sent successfully to the server was 24,401 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 17:29:16 [ ThreadPoolTaskExecutor-12:174872 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@228914ba (Communications link failure
+
+The last packet successfully received from the server was 24,369 milliseconds ago. The last packet sent successfully to the server was 24,386 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 17:30:00 [ SpringContextShutdownHook:218641 ] - [ WARN ] Account 2733944636 disconnected
+2022-10-13 17:30:00 [ SpringContextShutdownHook:218648 ] - [ INFO ] Shutting down ExecutorService 'shiroTaskExecutor'
+2022-10-13 17:30:00 [ SpringContextShutdownHook:218649 ] - [ INFO ] Shutting down ExecutorService 'taskScheduler'
+2022-10-13 17:30:00 [ SpringContextShutdownHook:218656 ] - [ INFO ] 数据库连接池 - Shutdown initiated...
+2022-10-13 17:30:00 [ SpringContextShutdownHook:218659 ] - [ INFO ] 数据库连接池 - Shutdown completed.
+2022-10-13 17:30:16 [ main:449 ] - [ INFO ] Starting QimenBotApplication on LAPTOP-FNT7SMLI with PID 23716 (D:\Project\JAVA\Bot\QimenBot\target\classes started by lvyunqi in D:\Project\JAVA\Bot\QimenBot)
+2022-10-13 17:30:16 [ main:451 ] - [ INFO ] No active profile set, falling back to default profiles: default
+2022-10-13 17:30:17 [ main:1098 ] - [ INFO ] Bean 'taskConfig' of type [com.mryunqi.qimenbot.config.TaskConfig$$EnhancerBySpringCGLIB$$6ea10baa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-13 17:30:17 [ main:1312 ] - [ INFO ] Tomcat initialized with port(s): 8088 (http)
+2022-10-13 17:30:17 [ main:1319 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-8088"]
+2022-10-13 17:30:17 [ main:1319 ] - [ INFO ] Starting service [Tomcat]
+2022-10-13 17:30:17 [ main:1319 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-10-13 17:30:17 [ main:1388 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2022-10-13 17:30:17 [ main:1388 ] - [ INFO ] Root WebApplicationContext: initialization completed in 905 ms
+2022-10-13 17:30:17 [ main:1593 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK](1.0) @夜空
+2022-10-13 17:30:17 [ main:1605 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK]成功！
+2022-10-13 17:30:17 [ main:1606 ] - [ INFO ] 数据库初始化...
+2022-10-13 17:30:20 [ main:4617 ] - [ INFO ] 数据库连接池 - Starting...
+2022-10-13 17:30:20 [ main:4875 ] - [ INFO ] 数据库连接池 - Start completed.
+2022-10-13 17:30:20 [ main:4921 ] - [ INFO ] user表:success!
+2022-10-13 17:30:21 [ main:5316 ] - [ INFO ] command表:success!
+2022-10-13 17:30:21 [ main:5554 ] - [ INFO ] 启动成功
+2022-10-13 17:30:21 [ main:5556 ] - [ INFO ] 正在启动Go-Cqhttp客户端...
+2022-10-13 17:30:21 [ main:5567 ] - [ WARN ] 即将登录QQ-->2733944636
+2022-10-13 17:30:25 [ main:9624 ] - [ INFO ] 检查更新中.....
+2022-10-13 17:30:25 [ main:9624 ] - [ INFO ] 当前主体框架已更新到最新版！
+2022-10-13 17:30:26 [ main:10270 ] - [ INFO ] Initializing ExecutorService
+2022-10-13 17:30:26 [ main:10271 ] - [ INFO ] Initializing ExecutorService 'taskScheduler'
+2022-10-13 17:30:26 [ main:10408 ] - [ INFO ] Adding welcome page template: index
+2022-10-13 17:30:26 [ main:10467 ] - [ INFO ] Initializing ExecutorService
+2022-10-13 17:30:26 [ main:10468 ] - [ INFO ] Initializing ExecutorService 'shiroTaskExecutor'
+2022-10-13 17:30:26 [ main:10558 ] - [ INFO ] Starting ProtocolHandler ["http-nio-8088"]
+2022-10-13 17:30:26 [ main:10587 ] - [ INFO ] Tomcat started on port(s): 8088 (http) with context path ''
+2022-10-13 17:30:26 [ taskScheduler-1:10597 ] - [ INFO ] Initializing ExecutorService
+2022-10-13 17:30:26 [ main:10599 ] - [ INFO ] Started QimenBotApplication in 10.476 seconds (JVM running for 11.022)
+2022-10-13 17:30:31 [ http-nio-8088-exec-1:15434 ] - [ INFO ] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-13 17:30:31 [ http-nio-8088-exec-1:15434 ] - [ INFO ] Initializing Servlet 'dispatcherServlet'
+2022-10-13 17:30:31 [ http-nio-8088-exec-1:15438 ] - [ INFO ] Completed initialization in 4 ms
+2022-10-13 17:30:31 [ http-nio-8088-exec-1:15485 ] - [ INFO ] Account 2733944636 connected
+2022-10-13 17:46:25 [ ThreadPoolTaskExecutor-23:969816 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@69f89b8f (Communications link failure
+
+The last packet successfully received from the server was 5,993 milliseconds ago. The last packet sent successfully to the server was 6,011 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 17:46:26 [ ThreadPoolTaskExecutor-24:970800 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@34a39503 (Communications link failure
+
+The last packet successfully received from the server was 7,127 milliseconds ago. The last packet sent successfully to the server was 7,144 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 17:46:27 [ ThreadPoolTaskExecutor-25:971821 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@68b0af79 (Communications link failure
+
+The last packet successfully received from the server was 18,089 milliseconds ago. The last packet sent successfully to the server was 18,105 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 17:46:28 [ ThreadPoolTaskExecutor-1:972813 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@790ff818 (Communications link failure
+
+The last packet successfully received from the server was 967,363 milliseconds ago. The last packet sent successfully to the server was 967,381 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 17:46:29 [ ThreadPoolTaskExecutor-2:973818 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@41895708 (Communications link failure
+
+The last packet successfully received from the server was 968,201 milliseconds ago. The last packet sent successfully to the server was 968,218 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 17:49:09 [ ThreadPoolTaskExecutor-10:1133216 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4ae272a6 (Communications link failure
+
+The last packet successfully received from the server was 8,758 milliseconds ago. The last packet sent successfully to the server was 8,775 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 17:49:10 [ ThreadPoolTaskExecutor-11:1134224 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@773ae908 (Communications link failure
+
+The last packet successfully received from the server was 6,981 milliseconds ago. The last packet sent successfully to the server was 6,997 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 17:49:11 [ ThreadPoolTaskExecutor-12:1135230 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@78f5c954 (Communications link failure
+
+The last packet successfully received from the server was 10,007 milliseconds ago. The last packet sent successfully to the server was 10,021 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 17:52:37 [ ThreadPoolTaskExecutor-19:1341885 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3e66d6df (Communications link failure
+
+The last packet successfully received from the server was 9,023 milliseconds ago. The last packet sent successfully to the server was 9,037 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 17:52:38 [ ThreadPoolTaskExecutor-10:1342890 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@48ff9eae (Communications link failure
+
+The last packet successfully received from the server was 30,205 milliseconds ago. The last packet sent successfully to the server was 30,220 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 17:52:39 [ ThreadPoolTaskExecutor-15:1343902 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1f5985c1 (Communications link failure
+
+The last packet successfully received from the server was 30,190 milliseconds ago. The last packet sent successfully to the server was 30,212 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 17:52:40 [ ThreadPoolTaskExecutor-20:1344908 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@60105a3 (Communications link failure
+
+The last packet successfully received from the server was 9,004 milliseconds ago. The last packet sent successfully to the server was 9,019 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 17:52:41 [ ThreadPoolTaskExecutor-21:1345933 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@68babdc2 (Communications link failure
+
+The last packet successfully received from the server was 12,059 milliseconds ago. The last packet sent successfully to the server was 12,074 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 17:56:59 [ SpringContextShutdownHook:1603631 ] - [ WARN ] Account 2733944636 disconnected
+2022-10-13 17:56:59 [ SpringContextShutdownHook:1603638 ] - [ INFO ] Shutting down ExecutorService 'shiroTaskExecutor'
+2022-10-13 17:56:59 [ SpringContextShutdownHook:1603639 ] - [ INFO ] Shutting down ExecutorService 'taskScheduler'
+2022-10-13 17:56:59 [ SpringContextShutdownHook:1603646 ] - [ INFO ] 数据库连接池 - Shutdown initiated...
+2022-10-13 17:56:59 [ SpringContextShutdownHook:1603649 ] - [ INFO ] 数据库连接池 - Shutdown completed.
+2022-10-13 17:57:15 [ main:462 ] - [ INFO ] Starting QimenBotApplication on LAPTOP-FNT7SMLI with PID 24076 (D:\Project\JAVA\Bot\QimenBot\target\classes started by lvyunqi in D:\Project\JAVA\Bot\QimenBot)
+2022-10-13 17:57:15 [ main:463 ] - [ INFO ] No active profile set, falling back to default profiles: default
+2022-10-13 17:57:15 [ main:1113 ] - [ INFO ] Bean 'taskConfig' of type [com.mryunqi.qimenbot.config.TaskConfig$$EnhancerBySpringCGLIB$$ff806067] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-13 17:57:16 [ main:1332 ] - [ INFO ] Tomcat initialized with port(s): 8088 (http)
+2022-10-13 17:57:16 [ main:1339 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-8088"]
+2022-10-13 17:57:16 [ main:1340 ] - [ INFO ] Starting service [Tomcat]
+2022-10-13 17:57:16 [ main:1340 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-10-13 17:57:16 [ main:1409 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2022-10-13 17:57:16 [ main:1409 ] - [ INFO ] Root WebApplicationContext: initialization completed in 911 ms
+2022-10-13 17:57:16 [ main:1617 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK](1.0) @夜空
+2022-10-13 17:57:16 [ main:1628 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK]成功！
+2022-10-13 17:57:16 [ main:1629 ] - [ INFO ] 数据库初始化...
+2022-10-13 17:57:19 [ main:4638 ] - [ INFO ] 数据库连接池 - Starting...
+2022-10-13 17:57:19 [ main:4926 ] - [ INFO ] 数据库连接池 - Start completed.
+2022-10-13 17:57:19 [ main:4976 ] - [ INFO ] user表:success!
+2022-10-13 17:57:20 [ main:5423 ] - [ INFO ] command表:success!
+2022-10-13 17:57:20 [ main:5700 ] - [ INFO ] 启动成功
+2022-10-13 17:57:20 [ main:5702 ] - [ INFO ] 正在启动Go-Cqhttp客户端...
+2022-10-13 17:57:20 [ main:5712 ] - [ WARN ] 即将登录QQ-->2733944636
+2022-10-13 17:57:24 [ main:9767 ] - [ INFO ] 检查更新中.....
+2022-10-13 17:57:24 [ main:9767 ] - [ INFO ] 当前主体框架已更新到最新版！
+2022-10-13 17:57:25 [ main:10405 ] - [ INFO ] Initializing ExecutorService
+2022-10-13 17:57:25 [ main:10407 ] - [ INFO ] Initializing ExecutorService 'taskScheduler'
+2022-10-13 17:57:25 [ main:10541 ] - [ INFO ] Adding welcome page template: index
+2022-10-13 17:57:25 [ main:10597 ] - [ INFO ] Initializing ExecutorService
+2022-10-13 17:57:25 [ main:10597 ] - [ INFO ] Initializing ExecutorService 'shiroTaskExecutor'
+2022-10-13 17:57:25 [ main:10684 ] - [ INFO ] Starting ProtocolHandler ["http-nio-8088"]
+2022-10-13 17:57:25 [ main:10711 ] - [ INFO ] Tomcat started on port(s): 8088 (http) with context path ''
+2022-10-13 17:57:25 [ taskScheduler-1:10719 ] - [ INFO ] Initializing ExecutorService
+2022-10-13 17:57:25 [ main:10720 ] - [ INFO ] Started QimenBotApplication in 10.593 seconds (JVM running for 11.16)
+2022-10-13 17:57:30 [ http-nio-8088-exec-1:16056 ] - [ INFO ] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-13 17:57:30 [ http-nio-8088-exec-1:16056 ] - [ INFO ] Initializing Servlet 'dispatcherServlet'
+2022-10-13 17:57:30 [ http-nio-8088-exec-1:16061 ] - [ INFO ] Completed initialization in 5 ms
+2022-10-13 17:57:30 [ http-nio-8088-exec-1:16105 ] - [ INFO ] Account 2733944636 connected
+2022-10-13 18:10:29 [ ThreadPoolTaskExecutor-25:795228 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@60e6f2f9 (Communications link failure
+
+The last packet successfully received from the server was 5,981 milliseconds ago. The last packet sent successfully to the server was 6,004 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 18:10:30 [ ThreadPoolTaskExecutor-1:796230 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@12ed293b (Communications link failure
+
+The last packet successfully received from the server was 7,768 milliseconds ago. The last packet sent successfully to the server was 8,026 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 18:10:31 [ ThreadPoolTaskExecutor-2:797237 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@51c0680d (Communications link failure
+
+The last packet successfully received from the server was 791,885 milliseconds ago. The last packet sent successfully to the server was 791,903 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 18:10:33 [ ThreadPoolTaskExecutor-3:798244 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2aa7b66c (Communications link failure
+
+The last packet successfully received from the server was 792,463 milliseconds ago. The last packet sent successfully to the server was 792,483 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 18:15:43 [ ThreadPoolTaskExecutor-11:1108617 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@55b1076e (Communications link failure
+
+The last packet successfully received from the server was 5,987 milliseconds ago. The last packet sent successfully to the server was 6,003 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 18:15:44 [ ThreadPoolTaskExecutor-12:1109621 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@229b97a (Communications link failure
+
+The last packet successfully received from the server was 9,008 milliseconds ago. The last packet sent successfully to the server was 9,025 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 18:15:45 [ ThreadPoolTaskExecutor-13:1110632 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@47295cbb (Communications link failure
+
+The last packet successfully received from the server was 9,006 milliseconds ago. The last packet sent successfully to the server was 9,026 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 18:28:19 [ ThreadPoolTaskExecutor-18:1864431 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1c5adcf1 (Communications link failure
+
+The last packet successfully received from the server was 30,157 milliseconds ago. The last packet sent successfully to the server was 30,173 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 18:28:20 [ ThreadPoolTaskExecutor-17:1865437 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7370e2c7 (Communications link failure
+
+The last packet successfully received from the server was 30,150 milliseconds ago. The last packet sent successfully to the server was 30,169 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 18:28:21 [ ThreadPoolTaskExecutor-13:1866442 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@75d87141 (Communications link failure
+
+The last packet successfully received from the server was 30,143 milliseconds ago. The last packet sent successfully to the server was 30,163 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 18:28:22 [ ThreadPoolTaskExecutor-11:1867462 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@866b1ee (Communications link failure
+
+The last packet successfully received from the server was 9,018 milliseconds ago. The last packet sent successfully to the server was 9,033 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 18:28:23 [ ThreadPoolTaskExecutor-16:1868453 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@19268771 (Communications link failure
+
+The last packet successfully received from the server was 755,367 milliseconds ago. The last packet sent successfully to the server was 755,387 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 18:34:11 [ ThreadPoolTaskExecutor-13:2216714 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6b41408e (Communications link failure
+
+The last packet successfully received from the server was 5,988 milliseconds ago. The last packet sent successfully to the server was 6,005 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 18:34:12 [ ThreadPoolTaskExecutor-15:2217722 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7a15fccf (Communications link failure
+
+The last packet successfully received from the server was 24,187 milliseconds ago. The last packet sent successfully to the server was 24,203 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 18:34:13 [ ThreadPoolTaskExecutor-11:2218741 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@14d27ba7 (Communications link failure
+
+The last packet successfully received from the server was 23,179 milliseconds ago. The last packet sent successfully to the server was 23,196 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 18:34:14 [ ThreadPoolTaskExecutor-20:2219747 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2922ffd3 (Communications link failure
+
+The last packet successfully received from the server was 23,170 milliseconds ago. The last packet sent successfully to the server was 23,188 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 18:34:15 [ ThreadPoolTaskExecutor-16:2220762 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@15c89bf7 (Communications link failure
+
+The last packet successfully received from the server was 29,242 milliseconds ago. The last packet sent successfully to the server was 29,261 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 18:34:16 [ ThreadPoolTaskExecutor-13:2221722 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@196c4dd8 (Communications link failure
+
+The last packet successfully received from the server was 352,118 milliseconds ago. The last packet sent successfully to the server was 352,135 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 20:42:01 [ ThreadPoolTaskExecutor-17:9886992 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7fc3caf0 (Communications link failure
+
+The last packet successfully received from the server was 5,984 milliseconds ago. The last packet sent successfully to the server was 6,002 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 20:42:02 [ ThreadPoolTaskExecutor-13:9888001 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7fd40838 (Communications link failure
+
+The last packet successfully received from the server was 924,948 milliseconds ago. The last packet sent successfully to the server was 924,963 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 20:42:03 [ ThreadPoolTaskExecutor-19:9888999 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@28b9f18e (Communications link failure
+
+The last packet successfully received from the server was 925,618 milliseconds ago. The last packet sent successfully to the server was 925,637 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 20:42:04 [ ThreadPoolTaskExecutor-15:9890002 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3830360d (Communications link failure
+
+The last packet successfully received from the server was 886,932 milliseconds ago. The last packet sent successfully to the server was 886,952 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 20:42:05 [ ThreadPoolTaskExecutor-18:9891002 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1db010d7 (Communications link failure
+
+The last packet successfully received from the server was 587,061 milliseconds ago. The last packet sent successfully to the server was 587,079 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 20:43:04 [ ThreadPoolTaskExecutor-1:9949344 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@48fff17c (Communications link failure
+
+The last packet successfully received from the server was 6,988 milliseconds ago. The last packet sent successfully to the server was 7,005 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 20:43:05 [ ThreadPoolTaskExecutor-6:9950347 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@69300404 (Communications link failure
+
+The last packet successfully received from the server was 13,007 milliseconds ago. The last packet sent successfully to the server was 13,025 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 20:43:06 [ ThreadPoolTaskExecutor-4:9951345 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6673b100 (Communications link failure
+
+The last packet successfully received from the server was 9,997 milliseconds ago. The last packet sent successfully to the server was 10,013 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 20:46:04 [ ThreadPoolTaskExecutor-5:10129260 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2c40d3aa (Communications link failure
+
+The last packet successfully received from the server was 30,095 milliseconds ago. The last packet sent successfully to the server was 30,114 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 20:46:05 [ ThreadPoolTaskExecutor-1:10130263 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2451ca19 (Communications link failure
+
+The last packet successfully received from the server was 30,094 milliseconds ago. The last packet sent successfully to the server was 30,115 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 20:46:06 [ ThreadPoolTaskExecutor-9:10131266 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3f95625 (Communications link failure
+
+The last packet successfully received from the server was 10,982 milliseconds ago. The last packet sent successfully to the server was 11,000 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 20:47:44 [ ThreadPoolTaskExecutor-12:10229839 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4d6bdf1b (Communications link failure
+
+The last packet successfully received from the server was 9,004 milliseconds ago. The last packet sent successfully to the server was 9,019 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 20:47:45 [ ThreadPoolTaskExecutor-22:10230843 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4a4167e0 (Communications link failure
+
+The last packet successfully received from the server was 7,983 milliseconds ago. The last packet sent successfully to the server was 8,001 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 20:47:46 [ ThreadPoolTaskExecutor-16:10231848 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@431da8d1 (Communications link failure
+
+The last packet successfully received from the server was 9,998 milliseconds ago. The last packet sent successfully to the server was 10,013 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 20:47:47 [ ThreadPoolTaskExecutor-9:10232861 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6d4a3624 (Communications link failure
+
+The last packet successfully received from the server was 30,157 milliseconds ago. The last packet sent successfully to the server was 30,170 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 20:47:48 [ ThreadPoolTaskExecutor-1:10233879 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@21a56883 (Communications link failure
+
+The last packet successfully received from the server was 30,168 milliseconds ago. The last packet sent successfully to the server was 30,182 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 20:54:38 [ ThreadPoolTaskExecutor-15:10644001 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@655fe305 (Communications link failure
+
+The last packet successfully received from the server was 5,960 milliseconds ago. The last packet sent successfully to the server was 5,982 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 20:54:39 [ ThreadPoolTaskExecutor-2:10645016 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6ae913c7 (Communications link failure
+
+The last packet successfully received from the server was 10,987 milliseconds ago. The last packet sent successfully to the server was 11,004 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 20:54:40 [ ThreadPoolTaskExecutor-18:10646006 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3c309467 (Communications link failure
+
+The last packet successfully received from the server was 9,978 milliseconds ago. The last packet sent successfully to the server was 9,994 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 20:54:41 [ ThreadPoolTaskExecutor-7:10647023 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6ed3159a (Communications link failure
+
+The last packet successfully received from the server was 9,991 milliseconds ago. The last packet sent successfully to the server was 10,014 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 20:54:42 [ ThreadPoolTaskExecutor-3:10648041 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@628ad0cc (Communications link failure
+
+The last packet successfully received from the server was 16,019 milliseconds ago. The last packet sent successfully to the server was 16,036 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 20:54:43 [ ThreadPoolTaskExecutor-15:10649014 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@73d8a51b (Communications link failure
+
+The last packet successfully received from the server was 413,976 milliseconds ago. The last packet sent successfully to the server was 413,993 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 20:54:43 [ ThreadPoolTaskExecutor-11:10649062 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@40a905d1 (Communications link failure
+
+The last packet successfully received from the server was 413,830 milliseconds ago. The last packet sent successfully to the server was 413,851 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 21:02:44 [ ThreadPoolTaskExecutor-15:11129554 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@24a5a372 (Communications link failure
+
+The last packet successfully received from the server was 5,999 milliseconds ago. The last packet sent successfully to the server was 6,014 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 21:02:45 [ ThreadPoolTaskExecutor-11:11130564 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@299876f4 (Communications link failure
+
+The last packet successfully received from the server was 30,227 milliseconds ago. The last packet sent successfully to the server was 30,251 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 21:02:46 [ ThreadPoolTaskExecutor-21:11131575 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@475f3988 (Communications link failure
+
+The last packet successfully received from the server was 28,205 milliseconds ago. The last packet sent successfully to the server was 28,224 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 21:02:47 [ ThreadPoolTaskExecutor-10:11132588 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@18d65813 (Communications link failure
+
+The last packet successfully received from the server was 481,150 milliseconds ago. The last packet sent successfully to the server was 481,167 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 21:02:48 [ ThreadPoolTaskExecutor-18:11133598 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1ee64f53 (Communications link failure
+
+The last packet successfully received from the server was 481,991 milliseconds ago. The last packet sent successfully to the server was 482,010 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 21:02:49 [ ThreadPoolTaskExecutor-15:11134559 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7c81d09f (Communications link failure
+
+The last packet successfully received from the server was 482,783 milliseconds ago. The last packet sent successfully to the server was 482,800 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 21:02:49 [ ThreadPoolTaskExecutor-4:11134606 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@13847624 (Communications link failure
+
+The last packet successfully received from the server was 482,684 milliseconds ago. The last packet sent successfully to the server was 482,700 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 21:02:50 [ ThreadPoolTaskExecutor-11:11135569 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@310f95f4 (Communications link failure
+
+The last packet successfully received from the server was 483,495 milliseconds ago. The last packet sent successfully to the server was 483,511 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 21:02:50 [ ThreadPoolTaskExecutor-16:11135616 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@37d3d007 (Communications link failure
+
+The last packet successfully received from the server was 483,386 milliseconds ago. The last packet sent successfully to the server was 483,403 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 21:02:51 [ ThreadPoolTaskExecutor-21:11136580 ] - [ WARN ] 数据库连接池 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@27efd34b (Communications link failure
+
+The last packet successfully received from the server was 484,196 milliseconds ago. The last packet sent successfully to the server was 484,215 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+2022-10-13 21:05:05 [ http-nio-8088-exec-6:11270640 ] - [ WARN ] Account 2733944636 disconnected
+2022-10-13 22:15:26 [ SpringContextShutdownHook:15491493 ] - [ INFO ] Shutting down ExecutorService 'shiroTaskExecutor'
+2022-10-13 22:15:26 [ SpringContextShutdownHook:15491499 ] - [ INFO ] Shutting down ExecutorService 'taskScheduler'
+2022-10-13 22:15:26 [ SpringContextShutdownHook:15491531 ] - [ INFO ] 数据库连接池 - Shutdown initiated...
+2022-10-13 22:15:26 [ SpringContextShutdownHook:15491571 ] - [ INFO ] 数据库连接池 - Shutdown completed.

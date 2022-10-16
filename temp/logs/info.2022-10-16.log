@@ -1,0 +1,701 @@
+2022-10-16 10:32:29 [ main:507 ] - [ INFO ] Starting QimenBotApplication on LAPTOP-FNT7SMLI with PID 13376 (D:\Project\JAVA\Bot\QimenBot\target\classes started by lvyunqi in D:\Project\JAVA\Bot\QimenBot)
+2022-10-16 10:32:29 [ main:510 ] - [ INFO ] No active profile set, falling back to default profiles: default
+2022-10-16 10:32:30 [ main:1302 ] - [ INFO ] Bean 'taskConfig' of type [com.mryunqi.qimenbot.config.TaskConfig$$EnhancerBySpringCGLIB$$29a0e0fd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-16 10:32:30 [ main:1529 ] - [ INFO ] Tomcat initialized with port(s): 8088 (http)
+2022-10-16 10:32:30 [ main:1536 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-8088"]
+2022-10-16 10:32:30 [ main:1536 ] - [ INFO ] Starting service [Tomcat]
+2022-10-16 10:32:30 [ main:1536 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-10-16 10:32:30 [ main:1617 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2022-10-16 10:32:30 [ main:1617 ] - [ INFO ] Root WebApplicationContext: initialization completed in 1069 ms
+2022-10-16 10:32:30 [ main:1874 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK](1.0) @夜空
+2022-10-16 10:32:30 [ main:1886 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK]成功！
+2022-10-16 10:32:30 [ main:1888 ] - [ INFO ] 数据库初始化...
+2022-10-16 10:32:30 [ main:1891 ] - [ INFO ] 数据库连接池 - Starting...
+2022-10-16 10:32:31 [ main:2200 ] - [ INFO ] 数据库连接池 - Start completed.
+2022-10-16 10:32:31 [ main:2248 ] - [ INFO ] user表:success!
+2022-10-16 10:32:31 [ main:2692 ] - [ INFO ] command表:success!
+2022-10-16 10:32:32 [ main:3206 ] - [ INFO ] 启动成功
+2022-10-16 10:32:32 [ main:3217 ] - [ INFO ] 开始初始化!
+2022-10-16 10:32:32 [ main:3218 ] - [ INFO ] [文件夹]/斗罗大陆图片/地图已存在
+2022-10-16 10:32:32 [ main:3218 ] - [ INFO ] [文件夹]/斗罗大陆图片/魂兽已存在
+2022-10-16 10:32:32 [ main:3218 ] - [ INFO ] [文件夹]/斗罗大陆图片/魂环已存在
+2022-10-16 10:32:32 [ main:3218 ] - [ INFO ] [文件夹]/斗罗大陆图片/魂兽已存在
+2022-10-16 10:32:32 [ main:3218 ] - [ INFO ] [文件夹]/斗罗大陆图片/武魂已存在
+2022-10-16 10:32:32 [ main:3218 ] - [ INFO ] [文件夹]/斗罗大陆图片/其他已存在
+2022-10-16 10:32:33 [ main:4397 ] - [ INFO ] 检查更新中.....
+2022-10-16 10:32:33 [ main:4397 ] - [ INFO ] 当前主体框架已更新到最新版！
+2022-10-16 10:32:34 [ main:5113 ] - [ INFO ] Initializing ExecutorService
+2022-10-16 10:32:34 [ main:5114 ] - [ INFO ] Initializing ExecutorService 'taskScheduler'
+2022-10-16 10:32:34 [ main:5246 ] - [ INFO ] Adding welcome page template: index
+2022-10-16 10:32:34 [ main:5302 ] - [ INFO ] Initializing ExecutorService
+2022-10-16 10:32:34 [ main:5303 ] - [ INFO ] Initializing ExecutorService 'shiroTaskExecutor'
+2022-10-16 10:32:34 [ main:5394 ] - [ INFO ] Starting ProtocolHandler ["http-nio-8088"]
+2022-10-16 10:32:34 [ main:5430 ] - [ INFO ] Tomcat started on port(s): 8088 (http) with context path ''
+2022-10-16 10:32:34 [ taskScheduler-1:5437 ] - [ INFO ] Initializing ExecutorService
+2022-10-16 10:32:34 [ main:5440 ] - [ INFO ] Started QimenBotApplication in 5.321 seconds (JVM running for 6.092)
+2022-10-16 10:32:36 [ http-nio-8088-exec-1:8037 ] - [ INFO ] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-16 10:32:36 [ http-nio-8088-exec-1:8037 ] - [ INFO ] Initializing Servlet 'dispatcherServlet'
+2022-10-16 10:32:36 [ http-nio-8088-exec-1:8041 ] - [ INFO ] Completed initialization in 4 ms
+2022-10-16 10:32:36 [ http-nio-8088-exec-1:8087 ] - [ INFO ] Account 2733944636 connected
+2022-10-16 10:42:03 [ http-nio-8088-exec-4:574101 ] - [ WARN ] Account 2733944636 disconnected
+2022-10-16 10:42:49 [ http-nio-8088-exec-5:620488 ] - [ INFO ] Account 2733944636 connected
+2022-10-16 10:49:35 [ SpringContextShutdownHook:1026943 ] - [ WARN ] Account 2733944636 disconnected
+2022-10-16 10:49:35 [ SpringContextShutdownHook:1026950 ] - [ INFO ] Shutting down ExecutorService 'shiroTaskExecutor'
+2022-10-16 10:49:35 [ SpringContextShutdownHook:1026951 ] - [ INFO ] Shutting down ExecutorService 'taskScheduler'
+2022-10-16 10:49:35 [ SpringContextShutdownHook:1026952 ] - [ INFO ] 数据库连接池 - Shutdown initiated...
+2022-10-16 10:49:35 [ SpringContextShutdownHook:1026957 ] - [ INFO ] 数据库连接池 - Shutdown completed.
+2022-10-16 10:50:13 [ main:451 ] - [ INFO ] Starting QimenBotApplication on LAPTOP-FNT7SMLI with PID 6108 (D:\Project\JAVA\Bot\QimenBot\target\classes started by lvyunqi in D:\Project\JAVA\Bot\QimenBot)
+2022-10-16 10:50:13 [ main:454 ] - [ INFO ] No active profile set, falling back to default profiles: default
+2022-10-16 10:50:14 [ main:1135 ] - [ INFO ] Bean 'taskConfig' of type [com.mryunqi.qimenbot.config.TaskConfig$$EnhancerBySpringCGLIB$$1e095d01] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-16 10:50:14 [ main:1373 ] - [ INFO ] Tomcat initialized with port(s): 8088 (http)
+2022-10-16 10:50:14 [ main:1379 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-8088"]
+2022-10-16 10:50:14 [ main:1380 ] - [ INFO ] Starting service [Tomcat]
+2022-10-16 10:50:14 [ main:1380 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-10-16 10:50:14 [ main:1466 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2022-10-16 10:50:14 [ main:1466 ] - [ INFO ] Root WebApplicationContext: initialization completed in 979 ms
+2022-10-16 10:50:14 [ main:1699 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK](1.0) @夜空
+2022-10-16 10:50:14 [ main:1713 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK]成功！
+2022-10-16 10:50:14 [ main:1714 ] - [ INFO ] 数据库初始化...
+2022-10-16 10:50:14 [ main:1718 ] - [ INFO ] 数据库连接池 - Starting...
+2022-10-16 10:50:14 [ main:2017 ] - [ INFO ] 数据库连接池 - Start completed.
+2022-10-16 10:50:14 [ main:2074 ] - [ INFO ] user表:success!
+2022-10-16 10:50:15 [ main:2737 ] - [ INFO ] command表:success!
+2022-10-16 10:50:16 [ main:3235 ] - [ INFO ] 启动成功
+2022-10-16 10:50:16 [ main:3247 ] - [ INFO ] 开始初始化!
+2022-10-16 10:50:16 [ main:3247 ] - [ INFO ] [文件夹]/斗罗大陆图片/地图已存在
+2022-10-16 10:50:16 [ main:3247 ] - [ INFO ] [文件夹]/斗罗大陆图片/魂兽已存在
+2022-10-16 10:50:16 [ main:3247 ] - [ INFO ] [文件夹]/斗罗大陆图片/魂环已存在
+2022-10-16 10:50:16 [ main:3247 ] - [ INFO ] [文件夹]/斗罗大陆图片/魂兽已存在
+2022-10-16 10:50:16 [ main:3248 ] - [ INFO ] [文件夹]/斗罗大陆图片/武魂已存在
+2022-10-16 10:50:16 [ main:3248 ] - [ INFO ] [文件夹]/斗罗大陆图片/其他已存在
+2022-10-16 10:50:17 [ main:4151 ] - [ INFO ] 检查更新中.....
+2022-10-16 10:50:17 [ main:4151 ] - [ INFO ] 当前主体框架已更新到最新版！
+2022-10-16 10:50:17 [ main:4828 ] - [ INFO ] Initializing ExecutorService
+2022-10-16 10:50:17 [ main:4829 ] - [ INFO ] Initializing ExecutorService 'taskScheduler'
+2022-10-16 10:50:17 [ main:4967 ] - [ INFO ] Adding welcome page template: index
+2022-10-16 10:50:17 [ main:5020 ] - [ INFO ] Initializing ExecutorService
+2022-10-16 10:50:17 [ main:5021 ] - [ INFO ] Initializing ExecutorService 'shiroTaskExecutor'
+2022-10-16 10:50:18 [ main:5110 ] - [ INFO ] Starting ProtocolHandler ["http-nio-8088"]
+2022-10-16 10:50:18 [ main:5138 ] - [ INFO ] Tomcat started on port(s): 8088 (http) with context path ''
+2022-10-16 10:50:18 [ taskScheduler-1:5146 ] - [ INFO ] Initializing ExecutorService
+2022-10-16 10:50:18 [ main:5148 ] - [ INFO ] Started QimenBotApplication in 5.032 seconds (JVM running for 5.65)
+2022-10-16 10:50:18 [ http-nio-8088-exec-1:5427 ] - [ INFO ] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-16 10:50:18 [ http-nio-8088-exec-1:5427 ] - [ INFO ] Initializing Servlet 'dispatcherServlet'
+2022-10-16 10:50:18 [ http-nio-8088-exec-1:5432 ] - [ INFO ] Completed initialization in 5 ms
+2022-10-16 10:50:18 [ http-nio-8088-exec-1:5482 ] - [ INFO ] Account 2733944636 connected
+2022-10-16 11:10:27 [ SpringContextShutdownHook:1214626 ] - [ WARN ] Account 2733944636 disconnected
+2022-10-16 11:10:27 [ SpringContextShutdownHook:1214632 ] - [ INFO ] Shutting down ExecutorService 'shiroTaskExecutor'
+2022-10-16 11:10:27 [ SpringContextShutdownHook:1214633 ] - [ INFO ] Shutting down ExecutorService 'taskScheduler'
+2022-10-16 11:10:27 [ SpringContextShutdownHook:1214634 ] - [ INFO ] 数据库连接池 - Shutdown initiated...
+2022-10-16 11:10:27 [ SpringContextShutdownHook:1214639 ] - [ INFO ] 数据库连接池 - Shutdown completed.
+2022-10-16 11:20:17 [ main:454 ] - [ INFO ] Starting QimenBotApplication on LAPTOP-FNT7SMLI with PID 12036 (D:\Project\JAVA\Bot\QimenBot\target\classes started by lvyunqi in D:\Project\JAVA\Bot\QimenBot)
+2022-10-16 11:20:17 [ main:456 ] - [ INFO ] No active profile set, falling back to default profiles: default
+2022-10-16 11:20:18 [ main:1152 ] - [ INFO ] Bean 'taskConfig' of type [com.mryunqi.qimenbot.config.TaskConfig$$EnhancerBySpringCGLIB$$a8007c61] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-16 11:20:18 [ main:1381 ] - [ INFO ] Tomcat initialized with port(s): 8088 (http)
+2022-10-16 11:20:18 [ main:1386 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-8088"]
+2022-10-16 11:20:18 [ main:1387 ] - [ INFO ] Starting service [Tomcat]
+2022-10-16 11:20:18 [ main:1387 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-10-16 11:20:18 [ main:1462 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2022-10-16 11:20:18 [ main:1462 ] - [ INFO ] Root WebApplicationContext: initialization completed in 973 ms
+2022-10-16 11:20:18 [ main:1688 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK](1.0) @夜空
+2022-10-16 11:20:18 [ main:1702 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK]成功！
+2022-10-16 11:20:18 [ main:1703 ] - [ INFO ] 数据库初始化...
+2022-10-16 11:20:18 [ main:1707 ] - [ INFO ] 数据库连接池 - Starting...
+2022-10-16 11:20:18 [ main:1962 ] - [ INFO ] 数据库连接池 - Start completed.
+2022-10-16 11:20:18 [ main:2005 ] - [ INFO ] user表:success!
+2022-10-16 11:20:19 [ main:2359 ] - [ INFO ] command表:success!
+2022-10-16 11:20:19 [ main:2569 ] - [ INFO ] 启动成功
+2022-10-16 11:20:19 [ main:2583 ] - [ INFO ] 开始初始化!
+2022-10-16 11:20:19 [ main:2584 ] - [ INFO ] [文件夹]/斗罗大陆图片/地图已存在
+2022-10-16 11:20:19 [ main:2584 ] - [ INFO ] [文件夹]/斗罗大陆图片/魂兽已存在
+2022-10-16 11:20:19 [ main:2584 ] - [ INFO ] [文件夹]/斗罗大陆图片/魂环已存在
+2022-10-16 11:20:19 [ main:2584 ] - [ INFO ] [文件夹]/斗罗大陆图片/魂兽已存在
+2022-10-16 11:20:19 [ main:2584 ] - [ INFO ] [文件夹]/斗罗大陆图片/武魂已存在
+2022-10-16 11:20:19 [ main:2584 ] - [ INFO ] [文件夹]/斗罗大陆图片/其他已存在
+2022-10-16 11:20:20 [ main:3397 ] - [ INFO ] 检查更新中.....
+2022-10-16 11:20:20 [ main:3397 ] - [ INFO ] 当前主体框架已更新到最新版！
+2022-10-16 11:20:20 [ main:4037 ] - [ INFO ] Initializing ExecutorService
+2022-10-16 11:20:20 [ main:4039 ] - [ INFO ] Initializing ExecutorService 'taskScheduler'
+2022-10-16 11:20:21 [ main:4161 ] - [ INFO ] Adding welcome page template: index
+2022-10-16 11:20:21 [ main:4216 ] - [ INFO ] Initializing ExecutorService
+2022-10-16 11:20:21 [ main:4217 ] - [ INFO ] Initializing ExecutorService 'shiroTaskExecutor'
+2022-10-16 11:20:21 [ main:4304 ] - [ INFO ] Starting ProtocolHandler ["http-nio-8088"]
+2022-10-16 11:20:21 [ main:4330 ] - [ INFO ] Tomcat started on port(s): 8088 (http) with context path ''
+2022-10-16 11:20:21 [ taskScheduler-1:4341 ] - [ INFO ] Initializing ExecutorService
+2022-10-16 11:20:21 [ main:4342 ] - [ INFO ] Started QimenBotApplication in 4.223 seconds (JVM running for 4.821)
+2022-10-16 11:20:22 [ http-nio-8088-exec-1:5760 ] - [ INFO ] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-16 11:20:22 [ http-nio-8088-exec-1:5760 ] - [ INFO ] Initializing Servlet 'dispatcherServlet'
+2022-10-16 11:20:22 [ http-nio-8088-exec-1:5765 ] - [ INFO ] Completed initialization in 5 ms
+2022-10-16 11:20:22 [ http-nio-8088-exec-1:5822 ] - [ INFO ] Account 2733944636 connected
+2022-10-16 11:23:35 [ http-nio-8088-exec-2:198113 ] - [ WARN ] Account 2733944636 disconnected
+2022-10-16 11:23:48 [ http-nio-8088-exec-3:211794 ] - [ INFO ] Account 2733944636 connected
+2022-10-16 11:38:37 [ SpringContextShutdownHook:1100982 ] - [ WARN ] Account 2733944636 disconnected
+2022-10-16 11:38:37 [ SpringContextShutdownHook:1100990 ] - [ INFO ] Shutting down ExecutorService 'shiroTaskExecutor'
+2022-10-16 11:38:37 [ SpringContextShutdownHook:1100990 ] - [ INFO ] Shutting down ExecutorService 'taskScheduler'
+2022-10-16 11:38:37 [ SpringContextShutdownHook:1100992 ] - [ INFO ] 数据库连接池 - Shutdown initiated...
+2022-10-16 11:38:37 [ SpringContextShutdownHook:1100996 ] - [ INFO ] 数据库连接池 - Shutdown completed.
+2022-10-16 11:38:54 [ main:452 ] - [ INFO ] Starting QimenBotApplication on LAPTOP-FNT7SMLI with PID 7580 (D:\Project\JAVA\Bot\QimenBot\target\classes started by lvyunqi in D:\Project\JAVA\Bot\QimenBot)
+2022-10-16 11:38:54 [ main:453 ] - [ INFO ] No active profile set, falling back to default profiles: default
+2022-10-16 11:38:54 [ main:1116 ] - [ INFO ] Bean 'taskConfig' of type [com.mryunqi.qimenbot.config.TaskConfig$$EnhancerBySpringCGLIB$$da1b0076] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-16 11:38:54 [ main:1329 ] - [ INFO ] Tomcat initialized with port(s): 8088 (http)
+2022-10-16 11:38:54 [ main:1334 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-8088"]
+2022-10-16 11:38:54 [ main:1334 ] - [ INFO ] Starting service [Tomcat]
+2022-10-16 11:38:54 [ main:1334 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-10-16 11:38:55 [ main:1407 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2022-10-16 11:38:55 [ main:1407 ] - [ INFO ] Root WebApplicationContext: initialization completed in 921 ms
+2022-10-16 11:38:55 [ main:1625 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK](1.0) @夜空
+2022-10-16 11:38:55 [ main:1637 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK]成功！
+2022-10-16 11:38:55 [ main:1638 ] - [ INFO ] 数据库初始化...
+2022-10-16 11:38:55 [ main:1641 ] - [ INFO ] 数据库连接池 - Starting...
+2022-10-16 11:38:55 [ main:1979 ] - [ INFO ] 数据库连接池 - Start completed.
+2022-10-16 11:38:55 [ main:2037 ] - [ INFO ] user表:success!
+2022-10-16 11:38:56 [ main:2573 ] - [ INFO ] command表:success!
+2022-10-16 11:38:56 [ main:2899 ] - [ INFO ] 启动成功
+2022-10-16 11:38:56 [ main:2913 ] - [ INFO ] 开始初始化!
+2022-10-16 11:38:56 [ main:2913 ] - [ INFO ] [文件夹]/斗罗大陆图片/地图已存在
+2022-10-16 11:38:56 [ main:2913 ] - [ INFO ] [文件夹]/斗罗大陆图片/魂兽已存在
+2022-10-16 11:38:56 [ main:2914 ] - [ INFO ] [文件夹]/斗罗大陆图片/魂环已存在
+2022-10-16 11:38:56 [ main:2914 ] - [ INFO ] [文件夹]/斗罗大陆图片/魂兽已存在
+2022-10-16 11:38:56 [ main:2914 ] - [ INFO ] [文件夹]/斗罗大陆图片/武魂已存在
+2022-10-16 11:38:56 [ main:2914 ] - [ INFO ] [文件夹]/斗罗大陆图片/其他已存在
+2022-10-16 11:38:57 [ main:3443 ] - [ INFO ] 检查更新中.....
+2022-10-16 11:38:57 [ main:3443 ] - [ INFO ] 当前主体框架已更新到最新版！
+2022-10-16 11:38:57 [ main:4079 ] - [ INFO ] Initializing ExecutorService
+2022-10-16 11:38:57 [ main:4080 ] - [ INFO ] Initializing ExecutorService 'taskScheduler'
+2022-10-16 11:38:57 [ main:4206 ] - [ INFO ] Adding welcome page template: index
+2022-10-16 11:38:57 [ main:4262 ] - [ INFO ] Initializing ExecutorService
+2022-10-16 11:38:57 [ main:4262 ] - [ INFO ] Initializing ExecutorService 'shiroTaskExecutor'
+2022-10-16 11:38:57 [ main:4348 ] - [ INFO ] Starting ProtocolHandler ["http-nio-8088"]
+2022-10-16 11:38:57 [ main:4375 ] - [ INFO ] Tomcat started on port(s): 8088 (http) with context path ''
+2022-10-16 11:38:57 [ taskScheduler-1:4383 ] - [ INFO ] Initializing ExecutorService
+2022-10-16 11:38:57 [ main:4385 ] - [ INFO ] Started QimenBotApplication in 4.263 seconds (JVM running for 4.854)
+2022-10-16 11:38:58 [ http-nio-8088-exec-1:4806 ] - [ INFO ] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-16 11:38:58 [ http-nio-8088-exec-1:4806 ] - [ INFO ] Initializing Servlet 'dispatcherServlet'
+2022-10-16 11:38:58 [ http-nio-8088-exec-1:4810 ] - [ INFO ] Completed initialization in 4 ms
+2022-10-16 11:38:58 [ http-nio-8088-exec-1:4862 ] - [ INFO ] Account 2733944636 connected
+2022-10-16 11:45:08 [ SpringContextShutdownHook:375149 ] - [ WARN ] Account 2733944636 disconnected
+2022-10-16 11:45:08 [ SpringContextShutdownHook:375156 ] - [ INFO ] Shutting down ExecutorService 'shiroTaskExecutor'
+2022-10-16 11:45:08 [ SpringContextShutdownHook:375157 ] - [ INFO ] Shutting down ExecutorService 'taskScheduler'
+2022-10-16 11:45:08 [ SpringContextShutdownHook:375158 ] - [ INFO ] 数据库连接池 - Shutdown initiated...
+2022-10-16 11:45:08 [ SpringContextShutdownHook:375162 ] - [ INFO ] 数据库连接池 - Shutdown completed.
+2022-10-16 11:45:24 [ main:456 ] - [ INFO ] Starting QimenBotApplication on LAPTOP-FNT7SMLI with PID 21360 (D:\Project\JAVA\Bot\QimenBot\target\classes started by lvyunqi in D:\Project\JAVA\Bot\QimenBot)
+2022-10-16 11:45:24 [ main:457 ] - [ INFO ] No active profile set, falling back to default profiles: default
+2022-10-16 11:45:25 [ main:1126 ] - [ INFO ] Bean 'taskConfig' of type [com.mryunqi.qimenbot.config.TaskConfig$$EnhancerBySpringCGLIB$$a8007c61] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-16 11:45:25 [ main:1340 ] - [ INFO ] Tomcat initialized with port(s): 8088 (http)
+2022-10-16 11:45:25 [ main:1345 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-8088"]
+2022-10-16 11:45:25 [ main:1346 ] - [ INFO ] Starting service [Tomcat]
+2022-10-16 11:45:25 [ main:1346 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-10-16 11:45:25 [ main:1420 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2022-10-16 11:45:25 [ main:1420 ] - [ INFO ] Root WebApplicationContext: initialization completed in 928 ms
+2022-10-16 11:45:25 [ main:1646 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK](1.0) @夜空
+2022-10-16 11:45:25 [ main:1659 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK]成功！
+2022-10-16 11:45:25 [ main:1661 ] - [ INFO ] 数据库初始化...
+2022-10-16 11:45:25 [ main:1664 ] - [ INFO ] 数据库连接池 - Starting...
+2022-10-16 11:45:26 [ main:1924 ] - [ INFO ] 数据库连接池 - Start completed.
+2022-10-16 11:45:26 [ main:1968 ] - [ INFO ] user表:success!
+2022-10-16 11:45:26 [ main:2333 ] - [ INFO ] command表:success!
+2022-10-16 11:45:26 [ main:2590 ] - [ INFO ] 启动成功
+2022-10-16 11:45:26 [ main:2603 ] - [ INFO ] 开始初始化!
+2022-10-16 11:45:26 [ main:2603 ] - [ INFO ] [文件夹]/斗罗大陆图片/地图已存在
+2022-10-16 11:45:26 [ main:2604 ] - [ INFO ] [文件夹]/斗罗大陆图片/魂兽已存在
+2022-10-16 11:45:26 [ main:2604 ] - [ INFO ] [文件夹]/斗罗大陆图片/魂环已存在
+2022-10-16 11:45:26 [ main:2604 ] - [ INFO ] [文件夹]/斗罗大陆图片/魂兽已存在
+2022-10-16 11:45:26 [ main:2604 ] - [ INFO ] [文件夹]/斗罗大陆图片/武魂已存在
+2022-10-16 11:45:26 [ main:2604 ] - [ INFO ] [文件夹]/斗罗大陆图片/其他已存在
+2022-10-16 11:45:27 [ main:3477 ] - [ INFO ] 检查更新中.....
+2022-10-16 11:45:27 [ main:3477 ] - [ INFO ] 当前主体框架已更新到最新版！
+2022-10-16 11:45:28 [ main:4120 ] - [ INFO ] Initializing ExecutorService
+2022-10-16 11:45:28 [ main:4121 ] - [ INFO ] Initializing ExecutorService 'taskScheduler'
+2022-10-16 11:45:28 [ main:4246 ] - [ INFO ] Adding welcome page template: index
+2022-10-16 11:45:28 [ main:4299 ] - [ INFO ] Initializing ExecutorService
+2022-10-16 11:45:28 [ main:4300 ] - [ INFO ] Initializing ExecutorService 'shiroTaskExecutor'
+2022-10-16 11:45:28 [ main:4385 ] - [ INFO ] Starting ProtocolHandler ["http-nio-8088"]
+2022-10-16 11:45:28 [ main:4413 ] - [ INFO ] Tomcat started on port(s): 8088 (http) with context path ''
+2022-10-16 11:45:28 [ taskScheduler-1:4423 ] - [ INFO ] Initializing ExecutorService
+2022-10-16 11:45:28 [ main:4425 ] - [ INFO ] Started QimenBotApplication in 4.299 seconds (JVM running for 4.905)
+2022-10-16 11:45:28 [ http-nio-8088-exec-1:4813 ] - [ INFO ] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-16 11:45:28 [ http-nio-8088-exec-1:4813 ] - [ INFO ] Initializing Servlet 'dispatcherServlet'
+2022-10-16 11:45:28 [ http-nio-8088-exec-1:4818 ] - [ INFO ] Completed initialization in 5 ms
+2022-10-16 11:45:28 [ http-nio-8088-exec-1:4875 ] - [ INFO ] Account 2733944636 connected
+2022-10-16 12:03:48 [ SpringContextShutdownHook:1104787 ] - [ WARN ] Account 2733944636 disconnected
+2022-10-16 12:03:48 [ SpringContextShutdownHook:1104793 ] - [ INFO ] Shutting down ExecutorService 'shiroTaskExecutor'
+2022-10-16 12:03:48 [ SpringContextShutdownHook:1104793 ] - [ INFO ] Shutting down ExecutorService 'taskScheduler'
+2022-10-16 12:03:48 [ SpringContextShutdownHook:1104796 ] - [ INFO ] 数据库连接池 - Shutdown initiated...
+2022-10-16 12:03:48 [ SpringContextShutdownHook:1104801 ] - [ INFO ] 数据库连接池 - Shutdown completed.
+2022-10-16 12:04:05 [ main:463 ] - [ INFO ] Starting QimenBotApplication on LAPTOP-FNT7SMLI with PID 26404 (D:\Project\JAVA\Bot\QimenBot\target\classes started by lvyunqi in D:\Project\JAVA\Bot\QimenBot)
+2022-10-16 12:04:05 [ main:465 ] - [ INFO ] No active profile set, falling back to default profiles: default
+2022-10-16 12:04:06 [ main:1135 ] - [ INFO ] Bean 'taskConfig' of type [com.mryunqi.qimenbot.config.TaskConfig$$EnhancerBySpringCGLIB$$a8007c61] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-16 12:04:06 [ main:1344 ] - [ INFO ] Tomcat initialized with port(s): 8088 (http)
+2022-10-16 12:04:06 [ main:1352 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-8088"]
+2022-10-16 12:04:06 [ main:1352 ] - [ INFO ] Starting service [Tomcat]
+2022-10-16 12:04:06 [ main:1352 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-10-16 12:04:06 [ main:1432 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2022-10-16 12:04:06 [ main:1432 ] - [ INFO ] Root WebApplicationContext: initialization completed in 930 ms
+2022-10-16 12:04:06 [ main:1640 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK](1.0) @夜空
+2022-10-16 12:04:06 [ main:1652 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK]成功！
+2022-10-16 12:04:06 [ main:1653 ] - [ INFO ] 数据库初始化...
+2022-10-16 12:04:06 [ main:1656 ] - [ INFO ] 数据库连接池 - Starting...
+2022-10-16 12:04:07 [ main:1913 ] - [ INFO ] 数据库连接池 - Start completed.
+2022-10-16 12:04:07 [ main:1953 ] - [ INFO ] user表:success!
+2022-10-16 12:04:07 [ main:2547 ] - [ INFO ] command表:success!
+2022-10-16 12:04:08 [ main:2762 ] - [ INFO ] 启动成功
+2022-10-16 12:04:08 [ main:2775 ] - [ INFO ] 开始初始化!
+2022-10-16 12:04:08 [ main:2775 ] - [ INFO ] [文件夹]/斗罗大陆图片/地图已存在
+2022-10-16 12:04:08 [ main:2776 ] - [ INFO ] [文件夹]/斗罗大陆图片/魂兽已存在
+2022-10-16 12:04:08 [ main:2776 ] - [ INFO ] [文件夹]/斗罗大陆图片/魂环已存在
+2022-10-16 12:04:08 [ main:2776 ] - [ INFO ] [文件夹]/斗罗大陆图片/魂兽已存在
+2022-10-16 12:04:08 [ main:2776 ] - [ INFO ] [文件夹]/斗罗大陆图片/武魂已存在
+2022-10-16 12:04:08 [ main:2776 ] - [ INFO ] [文件夹]/斗罗大陆图片/其他已存在
+2022-10-16 12:04:09 [ main:4232 ] - [ INFO ] 检查更新中.....
+2022-10-16 12:04:09 [ main:4232 ] - [ INFO ] 当前主体框架已更新到最新版！
+2022-10-16 12:04:10 [ main:4889 ] - [ INFO ] Initializing ExecutorService
+2022-10-16 12:04:10 [ main:4890 ] - [ INFO ] Initializing ExecutorService 'taskScheduler'
+2022-10-16 12:04:10 [ main:5027 ] - [ INFO ] Adding welcome page template: index
+2022-10-16 12:04:10 [ main:5086 ] - [ INFO ] Initializing ExecutorService
+2022-10-16 12:04:10 [ main:5086 ] - [ INFO ] Initializing ExecutorService 'shiroTaskExecutor'
+2022-10-16 12:04:10 [ main:5180 ] - [ INFO ] Starting ProtocolHandler ["http-nio-8088"]
+2022-10-16 12:04:10 [ main:5206 ] - [ INFO ] Tomcat started on port(s): 8088 (http) with context path ''
+2022-10-16 12:04:10 [ taskScheduler-1:5215 ] - [ INFO ] Initializing ExecutorService
+2022-10-16 12:04:10 [ main:5217 ] - [ INFO ] Started QimenBotApplication in 5.096 seconds (JVM running for 5.691)
+2022-10-16 12:04:11 [ http-nio-8088-exec-1:6587 ] - [ INFO ] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-16 12:04:11 [ http-nio-8088-exec-1:6589 ] - [ INFO ] Initializing Servlet 'dispatcherServlet'
+2022-10-16 12:04:11 [ http-nio-8088-exec-1:6594 ] - [ INFO ] Completed initialization in 5 ms
+2022-10-16 12:04:11 [ http-nio-8088-exec-1:6656 ] - [ INFO ] Account 2733944636 connected
+2022-10-16 13:28:21 [ TaskPool-7:5056362 ] - [ WARN ] Cookie rejected [BAIDUID="A58F25361388E65915429F6214A6C859:FG=1", version:0, domain:baidu.com, path:/, expiry:Fri Jan 01 07:55:55 CST 2038] Illegal 'domain' attribute "baidu.com". Domain of origin: "aip.baidubce.com"
+2022-10-16 15:04:28 [ SpringContextShutdownHook:10823227 ] - [ WARN ] Account 2733944636 disconnected
+2022-10-16 15:04:28 [ SpringContextShutdownHook:10823233 ] - [ INFO ] Shutting down ExecutorService 'shiroTaskExecutor'
+2022-10-16 15:04:28 [ SpringContextShutdownHook:10823234 ] - [ INFO ] Shutting down ExecutorService 'taskScheduler'
+2022-10-16 15:04:28 [ SpringContextShutdownHook:10823236 ] - [ INFO ] 数据库连接池 - Shutdown initiated...
+2022-10-16 15:04:28 [ SpringContextShutdownHook:10823238 ] - [ INFO ] 数据库连接池 - Shutdown completed.
+2022-10-16 15:04:44 [ main:462 ] - [ INFO ] Starting QimenBotApplication on LAPTOP-FNT7SMLI with PID 24968 (D:\Project\JAVA\Bot\QimenBot\target\classes started by lvyunqi in D:\Project\JAVA\Bot\QimenBot)
+2022-10-16 15:04:44 [ main:464 ] - [ INFO ] No active profile set, falling back to default profiles: default
+2022-10-16 15:04:45 [ main:1190 ] - [ INFO ] Bean 'taskConfig' of type [com.mryunqi.qimenbot.config.TaskConfig$$EnhancerBySpringCGLIB$$a8007c61] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-16 15:04:45 [ main:1403 ] - [ INFO ] Tomcat initialized with port(s): 8088 (http)
+2022-10-16 15:04:45 [ main:1409 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-8088"]
+2022-10-16 15:04:45 [ main:1409 ] - [ INFO ] Starting service [Tomcat]
+2022-10-16 15:04:45 [ main:1409 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-10-16 15:04:45 [ main:1482 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2022-10-16 15:04:45 [ main:1482 ] - [ INFO ] Root WebApplicationContext: initialization completed in 979 ms
+2022-10-16 15:04:45 [ main:1693 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK](1.0) @夜空
+2022-10-16 15:04:45 [ main:1707 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK]成功！
+2022-10-16 15:04:45 [ main:1708 ] - [ INFO ] 数据库初始化...
+2022-10-16 15:04:45 [ main:1711 ] - [ INFO ] 数据库连接池 - Starting...
+2022-10-16 15:04:46 [ main:1997 ] - [ INFO ] 数据库连接池 - Start completed.
+2022-10-16 15:04:46 [ main:2048 ] - [ INFO ] user表:success!
+2022-10-16 15:04:46 [ main:2483 ] - [ INFO ] command表:success!
+2022-10-16 15:04:46 [ main:2775 ] - [ INFO ] 启动成功
+2022-10-16 15:04:46 [ main:2785 ] - [ INFO ] 开始初始化!
+2022-10-16 15:04:46 [ main:2786 ] - [ INFO ] [文件夹]/斗罗大陆图片/地图已存在
+2022-10-16 15:04:46 [ main:2786 ] - [ INFO ] [文件夹]/斗罗大陆图片/魂兽已存在
+2022-10-16 15:04:46 [ main:2786 ] - [ INFO ] [文件夹]/斗罗大陆图片/魂环已存在
+2022-10-16 15:04:46 [ main:2786 ] - [ INFO ] [文件夹]/斗罗大陆图片/魂兽已存在
+2022-10-16 15:04:46 [ main:2786 ] - [ INFO ] [文件夹]/斗罗大陆图片/武魂已存在
+2022-10-16 15:04:46 [ main:2787 ] - [ INFO ] [文件夹]/斗罗大陆图片/其他已存在
+2022-10-16 15:04:47 [ main:3492 ] - [ INFO ] 检查更新中.....
+2022-10-16 15:04:47 [ main:3492 ] - [ INFO ] 当前主体框架已更新到最新版！
+2022-10-16 15:04:48 [ main:4120 ] - [ INFO ] Initializing ExecutorService
+2022-10-16 15:04:48 [ main:4121 ] - [ INFO ] Initializing ExecutorService 'taskScheduler'
+2022-10-16 15:04:48 [ main:4244 ] - [ INFO ] Adding welcome page template: index
+2022-10-16 15:04:48 [ main:4299 ] - [ INFO ] Initializing ExecutorService
+2022-10-16 15:04:48 [ main:4299 ] - [ INFO ] Initializing ExecutorService 'shiroTaskExecutor'
+2022-10-16 15:04:48 [ main:4385 ] - [ INFO ] Starting ProtocolHandler ["http-nio-8088"]
+2022-10-16 15:04:48 [ main:4412 ] - [ INFO ] Tomcat started on port(s): 8088 (http) with context path ''
+2022-10-16 15:04:48 [ taskScheduler-1:4420 ] - [ INFO ] Initializing ExecutorService
+2022-10-16 15:04:48 [ main:4421 ] - [ INFO ] Started QimenBotApplication in 4.314 seconds (JVM running for 4.91)
+2022-10-16 15:04:48 [ http-nio-8088-exec-1:4934 ] - [ INFO ] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-16 15:04:48 [ http-nio-8088-exec-1:4934 ] - [ INFO ] Initializing Servlet 'dispatcherServlet'
+2022-10-16 15:04:48 [ http-nio-8088-exec-1:4939 ] - [ INFO ] Completed initialization in 5 ms
+2022-10-16 15:04:49 [ http-nio-8088-exec-1:4986 ] - [ INFO ] Account 2733944636 connected
+2022-10-16 15:09:17 [ SpringContextShutdownHook:273840 ] - [ WARN ] Account 2733944636 disconnected
+2022-10-16 15:09:17 [ SpringContextShutdownHook:273847 ] - [ INFO ] Shutting down ExecutorService 'shiroTaskExecutor'
+2022-10-16 15:09:17 [ SpringContextShutdownHook:273847 ] - [ INFO ] Shutting down ExecutorService 'taskScheduler'
+2022-10-16 15:09:17 [ SpringContextShutdownHook:273849 ] - [ INFO ] 数据库连接池 - Shutdown initiated...
+2022-10-16 15:09:17 [ SpringContextShutdownHook:273854 ] - [ INFO ] 数据库连接池 - Shutdown completed.
+2022-10-16 15:09:33 [ main:448 ] - [ INFO ] Starting QimenBotApplication on LAPTOP-FNT7SMLI with PID 392 (D:\Project\JAVA\Bot\QimenBot\target\classes started by lvyunqi in D:\Project\JAVA\Bot\QimenBot)
+2022-10-16 15:09:33 [ main:449 ] - [ INFO ] No active profile set, falling back to default profiles: default
+2022-10-16 15:09:34 [ main:1104 ] - [ INFO ] Bean 'taskConfig' of type [com.mryunqi.qimenbot.config.TaskConfig$$EnhancerBySpringCGLIB$$a8007c61] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-16 15:09:34 [ main:1320 ] - [ INFO ] Tomcat initialized with port(s): 8088 (http)
+2022-10-16 15:09:34 [ main:1326 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-8088"]
+2022-10-16 15:09:34 [ main:1326 ] - [ INFO ] Starting service [Tomcat]
+2022-10-16 15:09:34 [ main:1326 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-10-16 15:09:34 [ main:1396 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2022-10-16 15:09:34 [ main:1396 ] - [ INFO ] Root WebApplicationContext: initialization completed in 913 ms
+2022-10-16 15:09:34 [ main:1599 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK](1.0) @夜空
+2022-10-16 15:09:35 [ main:1613 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK]成功！
+2022-10-16 15:09:35 [ main:1614 ] - [ INFO ] 数据库初始化...
+2022-10-16 15:09:35 [ main:1617 ] - [ INFO ] 数据库连接池 - Starting...
+2022-10-16 15:09:35 [ main:1926 ] - [ INFO ] 数据库连接池 - Start completed.
+2022-10-16 15:09:35 [ main:1977 ] - [ INFO ] user表:success!
+2022-10-16 15:09:35 [ main:2430 ] - [ INFO ] command表:success!
+2022-10-16 15:09:36 [ main:2703 ] - [ INFO ] 启动成功
+2022-10-16 15:09:36 [ main:2713 ] - [ INFO ] 开始初始化!
+2022-10-16 15:09:36 [ main:2714 ] - [ INFO ] [文件夹]/斗罗大陆图片/地图已存在
+2022-10-16 15:09:36 [ main:2714 ] - [ INFO ] [文件夹]/斗罗大陆图片/魂兽已存在
+2022-10-16 15:09:36 [ main:2714 ] - [ INFO ] [文件夹]/斗罗大陆图片/魂环已存在
+2022-10-16 15:09:36 [ main:2714 ] - [ INFO ] [文件夹]/斗罗大陆图片/魂兽已存在
+2022-10-16 15:09:36 [ main:2715 ] - [ INFO ] [文件夹]/斗罗大陆图片/武魂已存在
+2022-10-16 15:09:36 [ main:2715 ] - [ INFO ] [文件夹]/斗罗大陆图片/其他已存在
+2022-10-16 15:09:37 [ main:3690 ] - [ INFO ] 检查更新中.....
+2022-10-16 15:09:37 [ main:3690 ] - [ INFO ] 当前主体框架已更新到最新版！
+2022-10-16 15:09:37 [ main:4316 ] - [ INFO ] Initializing ExecutorService
+2022-10-16 15:09:37 [ main:4317 ] - [ INFO ] Initializing ExecutorService 'taskScheduler'
+2022-10-16 15:09:37 [ main:4442 ] - [ INFO ] Adding welcome page template: index
+2022-10-16 15:09:37 [ main:4498 ] - [ INFO ] Initializing ExecutorService
+2022-10-16 15:09:37 [ main:4499 ] - [ INFO ] Initializing ExecutorService 'shiroTaskExecutor'
+2022-10-16 15:09:37 [ main:4586 ] - [ INFO ] Starting ProtocolHandler ["http-nio-8088"]
+2022-10-16 15:09:38 [ main:4611 ] - [ INFO ] Tomcat started on port(s): 8088 (http) with context path ''
+2022-10-16 15:09:38 [ taskScheduler-1:4620 ] - [ INFO ] Initializing ExecutorService
+2022-10-16 15:09:38 [ main:4621 ] - [ INFO ] Started QimenBotApplication in 4.502 seconds (JVM running for 5.108)
+2022-10-16 15:09:38 [ http-nio-8088-exec-1:5034 ] - [ INFO ] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-16 15:09:38 [ http-nio-8088-exec-1:5034 ] - [ INFO ] Initializing Servlet 'dispatcherServlet'
+2022-10-16 15:09:38 [ http-nio-8088-exec-1:5039 ] - [ INFO ] Completed initialization in 5 ms
+2022-10-16 15:09:38 [ http-nio-8088-exec-1:5088 ] - [ INFO ] Account 2733944636 connected
+2022-10-16 15:20:25 [ SpringContextShutdownHook:651885 ] - [ WARN ] Account 2733944636 disconnected
+2022-10-16 15:20:25 [ SpringContextShutdownHook:651890 ] - [ INFO ] Shutting down ExecutorService 'shiroTaskExecutor'
+2022-10-16 15:20:25 [ SpringContextShutdownHook:651891 ] - [ INFO ] Shutting down ExecutorService 'taskScheduler'
+2022-10-16 15:20:25 [ SpringContextShutdownHook:651894 ] - [ INFO ] 数据库连接池 - Shutdown initiated...
+2022-10-16 15:20:25 [ SpringContextShutdownHook:651898 ] - [ INFO ] 数据库连接池 - Shutdown completed.
+2022-10-16 15:20:35 [ main:460 ] - [ INFO ] Starting QimenBotApplication on LAPTOP-FNT7SMLI with PID 16336 (D:\Project\JAVA\Bot\QimenBot\target\classes started by lvyunqi in D:\Project\JAVA\Bot\QimenBot)
+2022-10-16 15:20:35 [ main:463 ] - [ INFO ] No active profile set, falling back to default profiles: default
+2022-10-16 15:20:36 [ main:1146 ] - [ INFO ] Bean 'taskConfig' of type [com.mryunqi.qimenbot.config.TaskConfig$$EnhancerBySpringCGLIB$$8e3bdb03] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-16 15:20:36 [ main:1376 ] - [ INFO ] Tomcat initialized with port(s): 8088 (http)
+2022-10-16 15:20:36 [ main:1382 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-8088"]
+2022-10-16 15:20:36 [ main:1382 ] - [ INFO ] Starting service [Tomcat]
+2022-10-16 15:20:36 [ main:1382 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-10-16 15:20:36 [ main:1453 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2022-10-16 15:20:36 [ main:1453 ] - [ INFO ] Root WebApplicationContext: initialization completed in 958 ms
+2022-10-16 15:20:36 [ main:1657 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK](1.0) @夜空
+2022-10-16 15:20:36 [ main:1669 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK]成功！
+2022-10-16 15:20:36 [ main:1671 ] - [ INFO ] 数据库初始化...
+2022-10-16 15:20:36 [ main:1674 ] - [ INFO ] 数据库连接池 - Starting...
+2022-10-16 15:20:37 [ main:1956 ] - [ INFO ] 数据库连接池 - Start completed.
+2022-10-16 15:20:37 [ main:2002 ] - [ INFO ] user表:success!
+2022-10-16 15:20:37 [ main:2398 ] - [ INFO ] command表:success!
+2022-10-16 15:20:37 [ main:2635 ] - [ INFO ] 启动成功
+2022-10-16 15:20:37 [ main:2650 ] - [ INFO ] 开始初始化!
+2022-10-16 15:20:37 [ main:2650 ] - [ INFO ] [文件夹]/斗罗大陆图片/地图已存在
+2022-10-16 15:20:37 [ main:2650 ] - [ INFO ] [文件夹]/斗罗大陆图片/魂兽已存在
+2022-10-16 15:20:37 [ main:2651 ] - [ INFO ] [文件夹]/斗罗大陆图片/魂环已存在
+2022-10-16 15:20:37 [ main:2651 ] - [ INFO ] [文件夹]/斗罗大陆图片/魂兽已存在
+2022-10-16 15:20:37 [ main:2651 ] - [ INFO ] [文件夹]/斗罗大陆图片/武魂已存在
+2022-10-16 15:20:37 [ main:2651 ] - [ INFO ] [文件夹]/斗罗大陆图片/其他已存在
+2022-10-16 15:20:38 [ main:3155 ] - [ INFO ] 检查更新中.....
+2022-10-16 15:20:38 [ main:3155 ] - [ INFO ] 当前主体框架已更新到最新版！
+2022-10-16 15:20:39 [ main:3795 ] - [ INFO ] Initializing ExecutorService
+2022-10-16 15:20:39 [ main:3796 ] - [ INFO ] Initializing ExecutorService 'taskScheduler'
+2022-10-16 15:20:39 [ main:3920 ] - [ INFO ] Adding welcome page template: index
+2022-10-16 15:20:39 [ main:3974 ] - [ INFO ] Initializing ExecutorService
+2022-10-16 15:20:39 [ main:3975 ] - [ INFO ] Initializing ExecutorService 'shiroTaskExecutor'
+2022-10-16 15:20:39 [ main:4065 ] - [ INFO ] Starting ProtocolHandler ["http-nio-8088"]
+2022-10-16 15:20:39 [ main:4091 ] - [ INFO ] Tomcat started on port(s): 8088 (http) with context path ''
+2022-10-16 15:20:39 [ taskScheduler-1:4101 ] - [ INFO ] Initializing ExecutorService
+2022-10-16 15:20:39 [ main:4101 ] - [ INFO ] Started QimenBotApplication in 3.977 seconds (JVM running for 4.6)
+2022-10-16 15:20:41 [ http-nio-8088-exec-1:6571 ] - [ INFO ] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-16 15:20:41 [ http-nio-8088-exec-1:6572 ] - [ INFO ] Initializing Servlet 'dispatcherServlet'
+2022-10-16 15:20:41 [ http-nio-8088-exec-1:6576 ] - [ INFO ] Completed initialization in 4 ms
+2022-10-16 15:20:41 [ http-nio-8088-exec-1:6623 ] - [ INFO ] Account 2733944636 connected
+2022-10-16 15:22:44 [ SpringContextShutdownHook:129063 ] - [ WARN ] Account 2733944636 disconnected
+2022-10-16 15:22:44 [ SpringContextShutdownHook:129070 ] - [ INFO ] Shutting down ExecutorService 'shiroTaskExecutor'
+2022-10-16 15:22:44 [ SpringContextShutdownHook:129070 ] - [ INFO ] Shutting down ExecutorService 'taskScheduler'
+2022-10-16 15:22:44 [ SpringContextShutdownHook:129072 ] - [ INFO ] 数据库连接池 - Shutdown initiated...
+2022-10-16 15:22:44 [ SpringContextShutdownHook:129076 ] - [ INFO ] 数据库连接池 - Shutdown completed.
+2022-10-16 15:23:00 [ main:452 ] - [ INFO ] Starting QimenBotApplication on LAPTOP-FNT7SMLI with PID 2968 (D:\Project\JAVA\Bot\QimenBot\target\classes started by lvyunqi in D:\Project\JAVA\Bot\QimenBot)
+2022-10-16 15:23:00 [ main:454 ] - [ INFO ] No active profile set, falling back to default profiles: default
+2022-10-16 15:23:01 [ main:1111 ] - [ INFO ] Bean 'taskConfig' of type [com.mryunqi.qimenbot.config.TaskConfig$$EnhancerBySpringCGLIB$$a8007c61] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-16 15:23:01 [ main:1326 ] - [ INFO ] Tomcat initialized with port(s): 8088 (http)
+2022-10-16 15:23:01 [ main:1331 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-8088"]
+2022-10-16 15:23:01 [ main:1331 ] - [ INFO ] Starting service [Tomcat]
+2022-10-16 15:23:01 [ main:1332 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-10-16 15:23:01 [ main:1407 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2022-10-16 15:23:01 [ main:1407 ] - [ INFO ] Root WebApplicationContext: initialization completed in 920 ms
+2022-10-16 15:23:02 [ main:1609 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK](1.0) @夜空
+2022-10-16 15:23:02 [ main:1622 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK]成功！
+2022-10-16 15:23:02 [ main:1624 ] - [ INFO ] 数据库初始化...
+2022-10-16 15:23:02 [ main:1626 ] - [ INFO ] 数据库连接池 - Starting...
+2022-10-16 15:23:02 [ main:1906 ] - [ INFO ] 数据库连接池 - Start completed.
+2022-10-16 15:23:02 [ main:1952 ] - [ INFO ] user表:success!
+2022-10-16 15:23:02 [ main:2362 ] - [ INFO ] command表:success!
+2022-10-16 15:23:03 [ main:2613 ] - [ INFO ] 启动成功
+2022-10-16 15:23:03 [ main:2626 ] - [ INFO ] 开始初始化!
+2022-10-16 15:23:03 [ main:2627 ] - [ INFO ] [文件夹]/斗罗大陆图片/地图已存在
+2022-10-16 15:23:03 [ main:2627 ] - [ INFO ] [文件夹]/斗罗大陆图片/魂兽已存在
+2022-10-16 15:23:03 [ main:2627 ] - [ INFO ] [文件夹]/斗罗大陆图片/魂环已存在
+2022-10-16 15:23:03 [ main:2628 ] - [ INFO ] [文件夹]/斗罗大陆图片/魂兽已存在
+2022-10-16 15:23:03 [ main:2628 ] - [ INFO ] [文件夹]/斗罗大陆图片/武魂已存在
+2022-10-16 15:23:03 [ main:2628 ] - [ INFO ] [文件夹]/斗罗大陆图片/其他已存在
+2022-10-16 15:23:03 [ main:3160 ] - [ INFO ] 检查更新中.....
+2022-10-16 15:23:03 [ main:3160 ] - [ INFO ] 当前主体框架已更新到最新版！
+2022-10-16 15:23:04 [ main:3802 ] - [ INFO ] Initializing ExecutorService
+2022-10-16 15:23:04 [ main:3803 ] - [ INFO ] Initializing ExecutorService 'taskScheduler'
+2022-10-16 15:23:04 [ main:3926 ] - [ INFO ] Adding welcome page template: index
+2022-10-16 15:23:04 [ main:3991 ] - [ INFO ] Initializing ExecutorService
+2022-10-16 15:23:04 [ main:3991 ] - [ INFO ] Initializing ExecutorService 'shiroTaskExecutor'
+2022-10-16 15:23:04 [ main:4087 ] - [ INFO ] Starting ProtocolHandler ["http-nio-8088"]
+2022-10-16 15:23:04 [ main:4116 ] - [ INFO ] Tomcat started on port(s): 8088 (http) with context path ''
+2022-10-16 15:23:04 [ taskScheduler-1:4126 ] - [ INFO ] Initializing ExecutorService
+2022-10-16 15:23:04 [ main:4127 ] - [ INFO ] Started QimenBotApplication in 4.012 seconds (JVM running for 4.602)
+2022-10-16 15:23:06 [ http-nio-8088-exec-1:6464 ] - [ INFO ] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-16 15:23:06 [ http-nio-8088-exec-1:6464 ] - [ INFO ] Initializing Servlet 'dispatcherServlet'
+2022-10-16 15:23:06 [ http-nio-8088-exec-1:6468 ] - [ INFO ] Completed initialization in 4 ms
+2022-10-16 15:23:06 [ http-nio-8088-exec-1:6527 ] - [ INFO ] Account 2733944636 connected
+2022-10-16 15:48:06 [ SpringContextShutdownHook:1506152 ] - [ WARN ] Account 2733944636 disconnected
+2022-10-16 15:48:06 [ SpringContextShutdownHook:1506159 ] - [ INFO ] Shutting down ExecutorService 'shiroTaskExecutor'
+2022-10-16 15:48:06 [ SpringContextShutdownHook:1506159 ] - [ INFO ] Shutting down ExecutorService 'taskScheduler'
+2022-10-16 15:48:06 [ SpringContextShutdownHook:1506161 ] - [ INFO ] 数据库连接池 - Shutdown initiated...
+2022-10-16 15:48:06 [ SpringContextShutdownHook:1506166 ] - [ INFO ] 数据库连接池 - Shutdown completed.
+2022-10-16 15:48:22 [ main:445 ] - [ INFO ] Starting QimenBotApplication on LAPTOP-FNT7SMLI with PID 20436 (D:\Project\JAVA\Bot\QimenBot\target\classes started by lvyunqi in D:\Project\JAVA\Bot\QimenBot)
+2022-10-16 15:48:22 [ main:447 ] - [ INFO ] No active profile set, falling back to default profiles: default
+2022-10-16 15:48:23 [ main:1134 ] - [ INFO ] Bean 'taskConfig' of type [com.mryunqi.qimenbot.config.TaskConfig$$EnhancerBySpringCGLIB$$a8007c61] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-16 15:48:23 [ main:1349 ] - [ INFO ] Tomcat initialized with port(s): 8088 (http)
+2022-10-16 15:48:23 [ main:1356 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-8088"]
+2022-10-16 15:48:23 [ main:1356 ] - [ INFO ] Starting service [Tomcat]
+2022-10-16 15:48:23 [ main:1356 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-10-16 15:48:23 [ main:1428 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2022-10-16 15:48:23 [ main:1430 ] - [ INFO ] Root WebApplicationContext: initialization completed in 948 ms
+2022-10-16 15:48:24 [ main:1654 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK](1.0) @夜空
+2022-10-16 15:48:24 [ main:1665 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK]成功！
+2022-10-16 15:48:24 [ main:1666 ] - [ INFO ] 数据库初始化...
+2022-10-16 15:48:24 [ main:1669 ] - [ INFO ] 数据库连接池 - Starting...
+2022-10-16 15:48:24 [ main:1942 ] - [ INFO ] 数据库连接池 - Start completed.
+2022-10-16 15:48:24 [ main:1987 ] - [ INFO ] user表:success!
+2022-10-16 15:48:24 [ main:2339 ] - [ INFO ] command表:success!
+2022-10-16 15:48:24 [ main:2555 ] - [ INFO ] 启动成功
+2022-10-16 15:48:24 [ main:2565 ] - [ INFO ] 开始初始化!
+2022-10-16 15:48:24 [ main:2565 ] - [ INFO ] [文件夹]/斗罗大陆图片/地图已存在
+2022-10-16 15:48:24 [ main:2565 ] - [ INFO ] [文件夹]/斗罗大陆图片/魂兽已存在
+2022-10-16 15:48:24 [ main:2566 ] - [ INFO ] [文件夹]/斗罗大陆图片/魂环已存在
+2022-10-16 15:48:24 [ main:2566 ] - [ INFO ] [文件夹]/斗罗大陆图片/魂兽已存在
+2022-10-16 15:48:24 [ main:2566 ] - [ INFO ] [文件夹]/斗罗大陆图片/武魂已存在
+2022-10-16 15:48:24 [ main:2566 ] - [ INFO ] [文件夹]/斗罗大陆图片/其他已存在
+2022-10-16 15:48:25 [ main:3590 ] - [ INFO ] 检查更新中.....
+2022-10-16 15:48:25 [ main:3590 ] - [ INFO ] 当前主体框架已更新到最新版！
+2022-10-16 15:48:26 [ main:4255 ] - [ INFO ] Initializing ExecutorService
+2022-10-16 15:48:26 [ main:4257 ] - [ INFO ] Initializing ExecutorService 'taskScheduler'
+2022-10-16 15:48:26 [ main:4384 ] - [ INFO ] Adding welcome page template: index
+2022-10-16 15:48:26 [ main:4440 ] - [ INFO ] Initializing ExecutorService
+2022-10-16 15:48:26 [ main:4440 ] - [ INFO ] Initializing ExecutorService 'shiroTaskExecutor'
+2022-10-16 15:48:26 [ main:4527 ] - [ INFO ] Starting ProtocolHandler ["http-nio-8088"]
+2022-10-16 15:48:26 [ main:4559 ] - [ INFO ] Tomcat started on port(s): 8088 (http) with context path ''
+2022-10-16 15:48:26 [ taskScheduler-1:4569 ] - [ INFO ] Initializing ExecutorService
+2022-10-16 15:48:26 [ main:4570 ] - [ INFO ] Started QimenBotApplication in 4.457 seconds (JVM running for 5.072)
+2022-10-16 15:48:27 [ http-nio-8088-exec-1:5031 ] - [ INFO ] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-16 15:48:27 [ http-nio-8088-exec-1:5031 ] - [ INFO ] Initializing Servlet 'dispatcherServlet'
+2022-10-16 15:48:27 [ http-nio-8088-exec-1:5036 ] - [ INFO ] Completed initialization in 4 ms
+2022-10-16 15:48:27 [ http-nio-8088-exec-1:5092 ] - [ INFO ] Account 2733944636 connected
+2022-10-16 16:27:44 [ SpringContextShutdownHook:2362070 ] - [ WARN ] Account 2733944636 disconnected
+2022-10-16 16:27:44 [ SpringContextShutdownHook:2362076 ] - [ INFO ] Shutting down ExecutorService 'shiroTaskExecutor'
+2022-10-16 16:27:44 [ SpringContextShutdownHook:2362076 ] - [ INFO ] Shutting down ExecutorService 'taskScheduler'
+2022-10-16 16:27:44 [ SpringContextShutdownHook:2362078 ] - [ INFO ] 数据库连接池 - Shutdown initiated...
+2022-10-16 16:27:44 [ SpringContextShutdownHook:2362081 ] - [ INFO ] 数据库连接池 - Shutdown completed.
+2022-10-16 16:30:17 [ main:480 ] - [ INFO ] Starting QimenBotApplication on LAPTOP-FNT7SMLI with PID 18768 (D:\Project\JAVA\Bot\QimenBot\target\classes started by lvyunqi in D:\Project\JAVA\Bot\QimenBot)
+2022-10-16 16:30:17 [ main:482 ] - [ INFO ] No active profile set, falling back to default profiles: default
+2022-10-16 16:30:18 [ main:1212 ] - [ INFO ] Bean 'taskConfig' of type [com.mryunqi.qimenbot.config.TaskConfig$$EnhancerBySpringCGLIB$$a8007c61] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-16 16:30:18 [ main:1426 ] - [ INFO ] Tomcat initialized with port(s): 8088 (http)
+2022-10-16 16:30:18 [ main:1432 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-8088"]
+2022-10-16 16:30:18 [ main:1432 ] - [ INFO ] Starting service [Tomcat]
+2022-10-16 16:30:18 [ main:1433 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-10-16 16:30:18 [ main:1507 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2022-10-16 16:30:18 [ main:1507 ] - [ INFO ] Root WebApplicationContext: initialization completed in 985 ms
+2022-10-16 16:30:19 [ main:1726 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK](1.0) @夜空
+2022-10-16 16:30:19 [ main:1738 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK]成功！
+2022-10-16 16:30:19 [ main:1740 ] - [ INFO ] 数据库初始化...
+2022-10-16 16:30:19 [ main:1743 ] - [ INFO ] 数据库连接池 - Starting...
+2022-10-16 16:30:19 [ main:2034 ] - [ INFO ] 数据库连接池 - Start completed.
+2022-10-16 16:30:19 [ main:2084 ] - [ INFO ] user表:success!
+2022-10-16 16:30:19 [ main:2610 ] - [ INFO ] command表:success!
+2022-10-16 16:30:20 [ main:2869 ] - [ INFO ] 启动成功
+2022-10-16 16:30:20 [ main:2883 ] - [ INFO ] 开始初始化!
+2022-10-16 16:30:20 [ main:2883 ] - [ INFO ] [文件夹]/斗罗大陆图片/地图已存在
+2022-10-16 16:30:20 [ main:2883 ] - [ INFO ] [文件夹]/斗罗大陆图片/魂兽已存在
+2022-10-16 16:30:20 [ main:2883 ] - [ INFO ] [文件夹]/斗罗大陆图片/魂环已存在
+2022-10-16 16:30:20 [ main:2884 ] - [ INFO ] [文件夹]/斗罗大陆图片/魂兽已存在
+2022-10-16 16:30:20 [ main:2884 ] - [ INFO ] [文件夹]/斗罗大陆图片/武魂已存在
+2022-10-16 16:30:20 [ main:2884 ] - [ INFO ] [文件夹]/斗罗大陆图片/其他已存在
+2022-10-16 16:30:21 [ main:3832 ] - [ INFO ] 检查更新中.....
+2022-10-16 16:30:21 [ main:3833 ] - [ INFO ] 当前主体框架已更新到最新版！
+2022-10-16 16:30:21 [ main:4494 ] - [ INFO ] Initializing ExecutorService
+2022-10-16 16:30:21 [ main:4496 ] - [ INFO ] Initializing ExecutorService 'taskScheduler'
+2022-10-16 16:30:22 [ main:4630 ] - [ INFO ] Adding welcome page template: index
+2022-10-16 16:30:22 [ main:4689 ] - [ INFO ] Initializing ExecutorService
+2022-10-16 16:30:22 [ main:4689 ] - [ INFO ] Initializing ExecutorService 'shiroTaskExecutor'
+2022-10-16 16:30:22 [ main:4801 ] - [ INFO ] Tomcat started on port(s): 8088 (http) with context path ''
+2022-10-16 16:30:22 [ taskScheduler-1:4810 ] - [ INFO ] Initializing ExecutorService
+2022-10-16 16:30:22 [ main:4812 ] - [ INFO ] Started QimenBotApplication in 4.676 seconds (JVM running for 5.307)
+2022-10-16 16:30:22 [ SpringContextShutdownHook:4843 ] - [ INFO ] Shutting down ExecutorService 'shiroTaskExecutor'
+2022-10-16 16:30:22 [ SpringContextShutdownHook:4843 ] - [ INFO ] Shutting down ExecutorService 'taskScheduler'
+2022-10-16 16:30:22 [ SpringContextShutdownHook:4846 ] - [ INFO ] 数据库连接池 - Shutdown initiated...
+2022-10-16 16:30:22 [ SpringContextShutdownHook:4851 ] - [ INFO ] 数据库连接池 - Shutdown completed.
+2022-10-16 16:33:35 [ main:525 ] - [ INFO ] Starting QimenBotApplication on LAPTOP-FNT7SMLI with PID 20988 (D:\Project\JAVA\Bot\QimenBot\target\classes started by lvyunqi in D:\Project\JAVA\Bot\QimenBot)
+2022-10-16 16:33:35 [ main:527 ] - [ INFO ] No active profile set, falling back to default profiles: default
+2022-10-16 16:33:36 [ main:1207 ] - [ INFO ] Bean 'taskConfig' of type [com.mryunqi.qimenbot.config.TaskConfig$$EnhancerBySpringCGLIB$$a8007c61] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-16 16:33:36 [ main:1412 ] - [ INFO ] Tomcat initialized with port(s): 8088 (http)
+2022-10-16 16:33:36 [ main:1417 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-8088"]
+2022-10-16 16:33:36 [ main:1418 ] - [ INFO ] Starting service [Tomcat]
+2022-10-16 16:33:36 [ main:1418 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-10-16 16:33:36 [ main:1491 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2022-10-16 16:33:36 [ main:1491 ] - [ INFO ] Root WebApplicationContext: initialization completed in 929 ms
+2022-10-16 16:33:36 [ main:1698 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK](1.0) @夜空
+2022-10-16 16:33:36 [ main:1710 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK]成功！
+2022-10-16 16:33:36 [ main:1711 ] - [ INFO ] 数据库初始化...
+2022-10-16 16:33:36 [ main:1714 ] - [ INFO ] 数据库连接池 - Starting...
+2022-10-16 16:33:36 [ main:1998 ] - [ INFO ] 数据库连接池 - Start completed.
+2022-10-16 16:33:37 [ main:2047 ] - [ INFO ] user表:success!
+2022-10-16 16:33:37 [ main:2455 ] - [ INFO ] command表:success!
+2022-10-16 16:33:37 [ main:2700 ] - [ INFO ] 启动成功
+2022-10-16 16:33:37 [ main:2712 ] - [ INFO ] 开始初始化!
+2022-10-16 16:33:37 [ main:2712 ] - [ INFO ] [文件夹]/斗罗大陆图片/地图已存在
+2022-10-16 16:33:37 [ main:2713 ] - [ INFO ] [文件夹]/斗罗大陆图片/魂兽已存在
+2022-10-16 16:33:37 [ main:2713 ] - [ INFO ] [文件夹]/斗罗大陆图片/魂环已存在
+2022-10-16 16:33:37 [ main:2713 ] - [ INFO ] [文件夹]/斗罗大陆图片/魂兽已存在
+2022-10-16 16:33:37 [ main:2713 ] - [ INFO ] [文件夹]/斗罗大陆图片/武魂已存在
+2022-10-16 16:33:37 [ main:2713 ] - [ INFO ] [文件夹]/斗罗大陆图片/其他已存在
+2022-10-16 16:33:38 [ main:3468 ] - [ INFO ] 检查更新中.....
+2022-10-16 16:33:38 [ main:3468 ] - [ INFO ] 当前主体框架已更新到最新版！
+2022-10-16 16:33:39 [ main:4152 ] - [ INFO ] Initializing ExecutorService
+2022-10-16 16:33:39 [ main:4154 ] - [ INFO ] Initializing ExecutorService 'taskScheduler'
+2022-10-16 16:33:39 [ main:4280 ] - [ INFO ] Adding welcome page template: index
+2022-10-16 16:33:39 [ main:4330 ] - [ INFO ] Initializing ExecutorService
+2022-10-16 16:33:39 [ main:4331 ] - [ INFO ] Initializing ExecutorService 'shiroTaskExecutor'
+2022-10-16 16:33:39 [ main:4416 ] - [ INFO ] Starting ProtocolHandler ["http-nio-8088"]
+2022-10-16 16:33:39 [ main:4442 ] - [ INFO ] Tomcat started on port(s): 8088 (http) with context path ''
+2022-10-16 16:33:39 [ taskScheduler-1:4451 ] - [ INFO ] Initializing ExecutorService
+2022-10-16 16:33:39 [ main:4452 ] - [ INFO ] Started QimenBotApplication in 4.302 seconds (JVM running for 4.961)
+2022-10-16 16:33:40 [ http-nio-8088-exec-1:5328 ] - [ INFO ] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-16 16:33:40 [ http-nio-8088-exec-1:5328 ] - [ INFO ] Initializing Servlet 'dispatcherServlet'
+2022-10-16 16:33:40 [ http-nio-8088-exec-1:5335 ] - [ INFO ] Completed initialization in 6 ms
+2022-10-16 16:33:40 [ http-nio-8088-exec-1:5395 ] - [ INFO ] Account 2733944636 connected
+2022-10-16 16:35:35 [ SpringContextShutdownHook:120443 ] - [ WARN ] Account 2733944636 disconnected
+2022-10-16 16:35:35 [ SpringContextShutdownHook:120449 ] - [ INFO ] Shutting down ExecutorService 'shiroTaskExecutor'
+2022-10-16 16:35:35 [ SpringContextShutdownHook:120450 ] - [ INFO ] Shutting down ExecutorService 'taskScheduler'
+2022-10-16 16:35:35 [ SpringContextShutdownHook:120451 ] - [ INFO ] 数据库连接池 - Shutdown initiated...
+2022-10-16 16:35:35 [ SpringContextShutdownHook:120454 ] - [ INFO ] 数据库连接池 - Shutdown completed.
+2022-10-16 16:35:52 [ main:460 ] - [ INFO ] Starting QimenBotApplication on LAPTOP-FNT7SMLI with PID 18528 (D:\Project\JAVA\Bot\QimenBot\target\classes started by lvyunqi in D:\Project\JAVA\Bot\QimenBot)
+2022-10-16 16:35:52 [ main:462 ] - [ INFO ] No active profile set, falling back to default profiles: default
+2022-10-16 16:35:52 [ main:1161 ] - [ INFO ] Bean 'taskConfig' of type [com.mryunqi.qimenbot.config.TaskConfig$$EnhancerBySpringCGLIB$$4d4b662] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-16 16:35:52 [ main:1383 ] - [ INFO ] Tomcat initialized with port(s): 8088 (http)
+2022-10-16 16:35:53 [ main:1389 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-8088"]
+2022-10-16 16:35:53 [ main:1390 ] - [ INFO ] Starting service [Tomcat]
+2022-10-16 16:35:53 [ main:1390 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-10-16 16:35:53 [ main:1464 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2022-10-16 16:35:53 [ main:1465 ] - [ INFO ] Root WebApplicationContext: initialization completed in 969 ms
+2022-10-16 16:35:53 [ main:1685 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK](1.0) @夜空
+2022-10-16 16:35:53 [ main:1697 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK]成功！
+2022-10-16 16:35:53 [ main:1698 ] - [ INFO ] 数据库初始化...
+2022-10-16 16:35:53 [ main:1701 ] - [ INFO ] 数据库连接池 - Starting...
+2022-10-16 16:35:53 [ main:1979 ] - [ INFO ] 数据库连接池 - Start completed.
+2022-10-16 16:35:53 [ main:2024 ] - [ INFO ] user表:success!
+2022-10-16 16:35:54 [ main:2421 ] - [ INFO ] command表:success!
+2022-10-16 16:35:54 [ main:2660 ] - [ INFO ] 启动成功
+2022-10-16 16:35:54 [ main:2671 ] - [ INFO ] 开始初始化!
+2022-10-16 16:35:54 [ main:2672 ] - [ INFO ] [文件夹]/斗罗大陆图片/地图已存在
+2022-10-16 16:35:54 [ main:2672 ] - [ INFO ] [文件夹]/斗罗大陆图片/魂兽已存在
+2022-10-16 16:35:54 [ main:2672 ] - [ INFO ] [文件夹]/斗罗大陆图片/魂环已存在
+2022-10-16 16:35:54 [ main:2672 ] - [ INFO ] [文件夹]/斗罗大陆图片/魂兽已存在
+2022-10-16 16:35:54 [ main:2672 ] - [ INFO ] [文件夹]/斗罗大陆图片/武魂已存在
+2022-10-16 16:35:54 [ main:2672 ] - [ INFO ] [文件夹]/斗罗大陆图片/其他已存在
+2022-10-16 16:35:55 [ main:3394 ] - [ INFO ] 检查更新中.....
+2022-10-16 16:35:55 [ main:3396 ] - [ INFO ] 当前主体框架已更新到最新版！
+2022-10-16 16:35:55 [ main:4064 ] - [ INFO ] Initializing ExecutorService
+2022-10-16 16:35:55 [ main:4065 ] - [ INFO ] Initializing ExecutorService 'taskScheduler'
+2022-10-16 16:35:55 [ main:4188 ] - [ INFO ] Adding welcome page template: index
+2022-10-16 16:35:55 [ main:4246 ] - [ INFO ] Initializing ExecutorService
+2022-10-16 16:35:55 [ main:4247 ] - [ INFO ] Initializing ExecutorService 'shiroTaskExecutor'
+2022-10-16 16:35:55 [ main:4331 ] - [ INFO ] Starting ProtocolHandler ["http-nio-8088"]
+2022-10-16 16:35:55 [ main:4358 ] - [ INFO ] Tomcat started on port(s): 8088 (http) with context path ''
+2022-10-16 16:35:55 [ taskScheduler-1:4367 ] - [ INFO ] Initializing ExecutorService
+2022-10-16 16:35:55 [ main:4368 ] - [ INFO ] Started QimenBotApplication in 4.248 seconds (JVM running for 4.853)
+2022-10-16 16:35:56 [ http-nio-8088-exec-1:5267 ] - [ INFO ] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-16 16:35:56 [ http-nio-8088-exec-1:5268 ] - [ INFO ] Initializing Servlet 'dispatcherServlet'
+2022-10-16 16:35:56 [ http-nio-8088-exec-1:5279 ] - [ INFO ] Completed initialization in 11 ms
+2022-10-16 16:35:56 [ http-nio-8088-exec-1:5383 ] - [ INFO ] Account 2733944636 connected
+2022-10-16 16:36:37 [ SpringContextShutdownHook:45660 ] - [ WARN ] Account 2733944636 disconnected
+2022-10-16 16:36:37 [ SpringContextShutdownHook:45665 ] - [ INFO ] Shutting down ExecutorService 'shiroTaskExecutor'
+2022-10-16 16:36:37 [ SpringContextShutdownHook:45666 ] - [ INFO ] Shutting down ExecutorService 'taskScheduler'
+2022-10-16 16:36:37 [ SpringContextShutdownHook:45667 ] - [ INFO ] 数据库连接池 - Shutdown initiated...
+2022-10-16 16:36:37 [ SpringContextShutdownHook:45672 ] - [ INFO ] 数据库连接池 - Shutdown completed.
+2022-10-16 16:36:53 [ main:457 ] - [ INFO ] Starting QimenBotApplication on LAPTOP-FNT7SMLI with PID 12172 (D:\Project\JAVA\Bot\QimenBot\target\classes started by lvyunqi in D:\Project\JAVA\Bot\QimenBot)
+2022-10-16 16:36:53 [ main:460 ] - [ INFO ] No active profile set, falling back to default profiles: default
+2022-10-16 16:36:54 [ main:1154 ] - [ INFO ] Bean 'taskConfig' of type [com.mryunqi.qimenbot.config.TaskConfig$$EnhancerBySpringCGLIB$$a8007c61] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-16 16:36:54 [ main:1382 ] - [ INFO ] Tomcat initialized with port(s): 8088 (http)
+2022-10-16 16:36:54 [ main:1388 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-8088"]
+2022-10-16 16:36:54 [ main:1389 ] - [ INFO ] Starting service [Tomcat]
+2022-10-16 16:36:54 [ main:1389 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-10-16 16:36:54 [ main:1462 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2022-10-16 16:36:54 [ main:1462 ] - [ INFO ] Root WebApplicationContext: initialization completed in 970 ms
+2022-10-16 16:36:54 [ main:1688 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK](1.0) @夜空
+2022-10-16 16:36:54 [ main:1702 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK]成功！
+2022-10-16 16:36:54 [ main:1703 ] - [ INFO ] 数据库初始化...
+2022-10-16 16:36:54 [ main:1706 ] - [ INFO ] 数据库连接池 - Starting...
+2022-10-16 16:36:54 [ main:1962 ] - [ INFO ] 数据库连接池 - Start completed.
+2022-10-16 16:36:54 [ main:2006 ] - [ INFO ] user表:success!
+2022-10-16 16:36:55 [ main:2357 ] - [ INFO ] command表:success!
+2022-10-16 16:36:55 [ main:2568 ] - [ INFO ] 启动成功
+2022-10-16 16:36:55 [ main:2579 ] - [ INFO ] 开始初始化!
+2022-10-16 16:36:55 [ main:2579 ] - [ INFO ] [文件夹]/斗罗大陆图片/地图已存在
+2022-10-16 16:36:55 [ main:2579 ] - [ INFO ] [文件夹]/斗罗大陆图片/魂兽已存在
+2022-10-16 16:36:55 [ main:2579 ] - [ INFO ] [文件夹]/斗罗大陆图片/魂环已存在
+2022-10-16 16:36:55 [ main:2579 ] - [ INFO ] [文件夹]/斗罗大陆图片/魂兽已存在
+2022-10-16 16:36:55 [ main:2579 ] - [ INFO ] [文件夹]/斗罗大陆图片/武魂已存在
+2022-10-16 16:36:55 [ main:2579 ] - [ INFO ] [文件夹]/斗罗大陆图片/其他已存在
+2022-10-16 16:36:55 [ main:3005 ] - [ INFO ] 检查更新中.....
+2022-10-16 16:36:55 [ main:3005 ] - [ INFO ] 当前主体框架已更新到最新版！
+2022-10-16 16:36:56 [ main:3657 ] - [ INFO ] Initializing ExecutorService
+2022-10-16 16:36:56 [ main:3659 ] - [ INFO ] Initializing ExecutorService 'taskScheduler'
+2022-10-16 16:36:56 [ main:3792 ] - [ INFO ] Adding welcome page template: index
+2022-10-16 16:36:56 [ main:3846 ] - [ INFO ] Initializing ExecutorService
+2022-10-16 16:36:56 [ main:3847 ] - [ INFO ] Initializing ExecutorService 'shiroTaskExecutor'
+2022-10-16 16:36:56 [ main:3934 ] - [ INFO ] Starting ProtocolHandler ["http-nio-8088"]
+2022-10-16 16:36:56 [ main:3959 ] - [ INFO ] Tomcat started on port(s): 8088 (http) with context path ''
+2022-10-16 16:36:56 [ taskScheduler-1:3968 ] - [ INFO ] Initializing ExecutorService
+2022-10-16 16:36:56 [ main:3971 ] - [ INFO ] Started QimenBotApplication in 3.856 seconds (JVM running for 4.47)
+2022-10-16 16:36:56 [ http-nio-8088-exec-1:4003 ] - [ INFO ] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-16 16:36:56 [ http-nio-8088-exec-1:4003 ] - [ INFO ] Initializing Servlet 'dispatcherServlet'
+2022-10-16 16:36:56 [ http-nio-8088-exec-1:4008 ] - [ INFO ] Completed initialization in 5 ms
+2022-10-16 16:36:56 [ http-nio-8088-exec-1:4056 ] - [ INFO ] Account 2733944636 connected
+2022-10-16 16:41:14 [ SpringContextShutdownHook:261468 ] - [ WARN ] Account 2733944636 disconnected
+2022-10-16 16:41:14 [ SpringContextShutdownHook:261474 ] - [ INFO ] Shutting down ExecutorService 'shiroTaskExecutor'
+2022-10-16 16:41:14 [ SpringContextShutdownHook:261475 ] - [ INFO ] Shutting down ExecutorService 'taskScheduler'
+2022-10-16 16:41:14 [ SpringContextShutdownHook:261477 ] - [ INFO ] 数据库连接池 - Shutdown initiated...
+2022-10-16 16:41:14 [ SpringContextShutdownHook:261480 ] - [ INFO ] 数据库连接池 - Shutdown completed.
+2022-10-16 17:30:05 [ main:487 ] - [ INFO ] Starting QimenBotApplication on LAPTOP-FNT7SMLI with PID 25008 (D:\Project\JAVA\Bot\QimenBot\target\classes started by lvyunqi in D:\Project\JAVA\Bot\QimenBot)
+2022-10-16 17:30:05 [ main:489 ] - [ INFO ] No active profile set, falling back to default profiles: default
+2022-10-16 17:30:06 [ main:1194 ] - [ INFO ] Bean 'taskConfig' of type [com.mryunqi.qimenbot.config.TaskConfig$$EnhancerBySpringCGLIB$$1ce85b83] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-16 17:30:06 [ main:1443 ] - [ INFO ] Tomcat initialized with port(s): 8088 (http)
+2022-10-16 17:30:06 [ main:1449 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-8088"]
+2022-10-16 17:30:06 [ main:1450 ] - [ INFO ] Starting service [Tomcat]
+2022-10-16 17:30:06 [ main:1450 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-10-16 17:30:06 [ main:1536 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2022-10-16 17:30:06 [ main:1536 ] - [ INFO ] Root WebApplicationContext: initialization completed in 1010 ms
+2022-10-16 17:30:06 [ main:1762 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK](1.0) @夜空
+2022-10-16 17:30:06 [ main:1775 ] - [ INFO ] 加载拓展[[Python]拓展插件SDK]成功！
+2022-10-16 17:30:06 [ main:1776 ] - [ INFO ] 数据库初始化...
+2022-10-16 17:30:06 [ main:1779 ] - [ INFO ] 数据库连接池 - Starting...
+2022-10-16 17:30:06 [ main:2047 ] - [ INFO ] 数据库连接池 - Start completed.
+2022-10-16 17:30:07 [ main:2090 ] - [ INFO ] user表:success!
+2022-10-16 17:30:07 [ main:2445 ] - [ INFO ] command表:success!
+2022-10-16 17:30:07 [ main:2657 ] - [ INFO ] 启动成功
+2022-10-16 17:30:07 [ main:2670 ] - [ INFO ] 开始初始化!
+2022-10-16 17:30:07 [ main:2671 ] - [ INFO ] [文件夹]/斗罗大陆图片/地图已存在
+2022-10-16 17:30:07 [ main:2671 ] - [ INFO ] [文件夹]/斗罗大陆图片/魂兽已存在
+2022-10-16 17:30:07 [ main:2671 ] - [ INFO ] [文件夹]/斗罗大陆图片/魂环已存在
+2022-10-16 17:30:07 [ main:2671 ] - [ INFO ] [文件夹]/斗罗大陆图片/魂兽已存在
+2022-10-16 17:30:07 [ main:2671 ] - [ INFO ] [文件夹]/斗罗大陆图片/武魂已存在
+2022-10-16 17:30:07 [ main:2671 ] - [ INFO ] [文件夹]/斗罗大陆图片/其他已存在
+2022-10-16 17:30:08 [ main:3398 ] - [ INFO ] 检查更新中.....
+2022-10-16 17:30:08 [ main:3398 ] - [ INFO ] 检查到最新版本：1.0.7-Beta
+2022-10-16 17:30:09 [ main:4128 ] - [ INFO ] Initializing ExecutorService
+2022-10-16 17:30:09 [ main:4129 ] - [ INFO ] Initializing ExecutorService 'taskScheduler'
+2022-10-16 17:30:09 [ main:4281 ] - [ INFO ] Adding welcome page template: index
+2022-10-16 17:30:09 [ main:4345 ] - [ INFO ] Initializing ExecutorService
+2022-10-16 17:30:09 [ main:4345 ] - [ INFO ] Initializing ExecutorService 'shiroTaskExecutor'
+2022-10-16 17:30:09 [ main:4440 ] - [ INFO ] Starting ProtocolHandler ["http-nio-8088"]
+2022-10-16 17:30:09 [ main:4477 ] - [ INFO ] Tomcat started on port(s): 8088 (http) with context path ''
+2022-10-16 17:30:09 [ taskScheduler-1:4488 ] - [ INFO ] Initializing ExecutorService
+2022-10-16 17:30:09 [ main:4490 ] - [ INFO ] Started QimenBotApplication in 4.367 seconds (JVM running for 5.048)
+2022-10-16 17:30:24 [ http-nio-8088-exec-1:19986 ] - [ INFO ] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-16 17:30:24 [ http-nio-8088-exec-1:19986 ] - [ INFO ] Initializing Servlet 'dispatcherServlet'
+2022-10-16 17:30:24 [ http-nio-8088-exec-1:19993 ] - [ INFO ] Completed initialization in 7 ms
+2022-10-16 17:32:01 [ SpringContextShutdownHook:116684 ] - [ INFO ] Shutting down ExecutorService 'shiroTaskExecutor'
+2022-10-16 17:32:01 [ SpringContextShutdownHook:116684 ] - [ INFO ] Shutting down ExecutorService 'taskScheduler'
+2022-10-16 17:32:01 [ SpringContextShutdownHook:116686 ] - [ INFO ] 数据库连接池 - Shutdown initiated...
+2022-10-16 17:32:01 [ SpringContextShutdownHook:116690 ] - [ INFO ] 数据库连接池 - Shutdown completed.
