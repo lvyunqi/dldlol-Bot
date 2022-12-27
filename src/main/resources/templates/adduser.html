@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>魂兽设置 - 斗罗大陆OL</title>
+  <link rel="icon" href="favicon.ico" type="image/ico">
+  <meta name="keywords" content="斗罗大陆OL,群大型网络RPG文字游戏">
+  <meta name="description" content="斗罗大陆OL是一个基于Java/Python等语言写的高拓展性群娱乐游戏。">
+  <meta name="author" content="yinqi">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/materialdesignicons.min.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
+  <link href="css/jquery.growl.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+<div class="lyear-layout-web">
+  <div class="lyear-layout-container">
+    <div id="header" th:include="common/header :: common_header(${title},${page},${page_tab})"></div>
+
+    <!--页面主要内容-->
+    <main class="lyear-layout-content">
+
+      <div class="container-fluid">
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-header"><h4>基本样式</h4></div>
+              <div class="card-body">
+
+                <form class="form-horizontal" action="#" method="post" enctype="multipart/form-data" onsubmit="return false;">
+                  <div class="form-group">
+                    <label class="col-xs-12" for="example-email-input">QQ</label>
+                    <div class="col-xs-12">
+                      <input class="form-control" type="number" id="example-email-input" name="example-email-input" placeholder="QQ账号">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-xs-12" for="example-password-input">姓名</label>
+                    <div class="col-xs-12">
+                      <input class="form-control" type="text" id="example-password-input" name="example-password-input" placeholder="用户姓名">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-xs-12">性别</label>
+                    <div class="col-xs-12">
+                      <div class="radio">
+                        <label for="example-radio1">
+                          <input type="radio" id="example-radio1" name="example-radios" value="男">
+                          男
+                        </label>
+                      </div>
+                      <div class="radio">
+                        <label for="example-radio2">
+                          <input type="radio" id="example-radio2" name="example-radios" value="女">
+                          女
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-xs-12" for="example-select" >武魂一</label>
+                    <div class="col-xs-12">
+                      <select class="form-control" id="wh1" onchange="change('spec1')" name="example-select" size="1" >
+                        <option value="0">请选择</option>
+                        <option value="1">选项 #1</option>
+                        <option value="2">选项 #2</option>
+                        <option value="3">选项 #3</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-xs-12" for="example-select" >武魂二</label>
+                    <div class="col-xs-12">
+                      <select class="form-control" id="wh2" onchange="change('spec2')" name="example-select" size="1" >
+                        <option value="0">请选择</option>
+                        <option value="1">选项 #1</option>
+                        <option value="2">选项 #2</option>
+                        <option value="3">选项 #3</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-xs-12">
+                      <button class="btn btn-primary" type="submit">提交</button>
+                    </div>
+                  </div>
+                </form>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </main>
+    <!--End 页面主要内容-->
+  </div>
+</div>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/perfect-scrollbar.min.js"></script>
+<!--标签插件-->
+<script src="js/jquery-tags-input/jquery.tagsinput.min.js"></script>
+<script type="text/javascript" src="js/main.min.js"></script>
+
+<script type="text/javascript" >
+  function change(spec){
+    if(spec=="spec1"){
+      $("#wh1 option").show();
+      $("#wh2 option").show();
+      $("#wh2 ").get(0).selectedIndex=0;
+      const values = $("#wh1 option:selected").val();
+      $("#wh2 option[value="+values+"]").hide();
+    }
+    if(spec=="spec2"){
+      $("#wh1 option").show();
+      const values = $("#wh2 option:selected").val();
+      $("#wh1 option[value="+values+"]").hide();
+    }
+  }
+
+    $(function () {
+      const url = "/api/wuhun/list"
+      $.ajax({
+        url: url,
+        type: "GET",
+        success: function (data) {
+          console.log(data);
+          var str = "<option value=\"0\">请选择武魂</option>";
+          for (let i = 0; i < data.data.length; i++) {
+            // const datajson = JSON.parse(data.data[0].records[i].stateInfo)
+            str +="<option id="+i+" value="+data.data[i].name+">"+data.data[i].name+"</option>"
+          }
+          $("#wh1").html(str);
+          $("#wh2").html(str);
+          const wh1 =$("#wh1 option:selected").val();
+          const wh2 =$("#wh2 option:selected").val();
+
+
+          console.log(wh1)
+        }
+      });
+    })
+</script>
+</body>
+</html>

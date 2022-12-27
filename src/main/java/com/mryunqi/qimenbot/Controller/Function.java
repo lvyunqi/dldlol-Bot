@@ -45,12 +45,12 @@ public class Function {
     }
 
     /* 计算升级到下一等级需要的经验 */
-    public static int Get_NextLevelExp(int lv,int up){
+    public static Long Get_NextLevelExp(long lv, long up){
         return ((lv * 1500) / 8) * up;
     }
 
     /* 距离下一等级经验百分比 */
-    public double Get_NextLevelExpPercent(int exp, int up_exp){
+    public double Get_NextLevelExpPercent(long exp, long up_exp){
         if (exp == 0){
             return 0.00;
         } else {
@@ -59,14 +59,14 @@ public class Function {
     }
 
     /* 计算玩家战力 */
-    public int Get_Ce(String UserData){
+    public Long Get_Ce(String UserData){
         JSONObject obj = JSONObject.parseObject(UserData);
-        int HP = Integer.parseInt(obj.getJSONObject("userData").getString("生命"));
-        int PR = Integer.parseInt(obj.getJSONObject("userData").getString("攻击"));
-        int DE = Integer.parseInt(obj.getJSONObject("userData").getString("防御"));
-        int SPEED = Integer.parseInt(obj.getJSONObject("userData").getString("速度"));
-        int SP = Integer.parseInt(obj.getJSONObject("userData").getString("精神力"));
-        return (int) ((0.12 * HP) + (0.75 * PR) + (0.12 * DE) + (0.12 * SPEED) + (0.1 * SP));
+        long HP = obj.getJSONObject("userData").getLong("生命");
+        long PR = obj.getJSONObject("userData").getLong("攻击");
+        long DE = obj.getJSONObject("userData").getLong("防御");
+        long SPEED = obj.getJSONObject("userData").getLong("速度");
+        long SP = obj.getJSONObject("userData").getLong("精神力");
+        return (long) ((0.12 * HP) + (0.75 * PR) + (0.12 * DE) + (0.12 * SPEED) + (0.1 * SP));
     }
 
     /* 获取消息跟随的内容 */
@@ -75,9 +75,9 @@ public class Function {
     }
 
     /* 单概率计算 */
-    public boolean Get_RandomRun(int probability){
-        int index = Get_Random_Range(1,101);
-        return index >= probability;
+    public static Boolean Get_RandomRun(int probability){
+        long index = Get_Random_Range(1,101);
+        return index <= probability;
     }
 
     /* 判断字符串是否为数字 */
@@ -140,9 +140,9 @@ public class Function {
     }
 
     /* 随机区间 */
-    public static int Get_Random_Range(int min,int max){
+    public static long Get_Random_Range(long min, long max){
         Random r = new Random();
-        return r.nextInt(max - min + 1) + min;
+        return r.nextInt(Math.toIntExact(max - min + 1)) + min;
     }
 
     /* 多概率合并计算 */
@@ -154,7 +154,7 @@ public class Function {
             sum += jsonObject.getInteger(key);
         }
         // 随机数
-        int random = Get_Random_Range(1,sum+1);
+        long random = Get_Random_Range(1,sum+1);
         // 根据随机数判断所在value概率区间，然后返回key值
         for (String key : jsonObject.keySet()) {
             if (random <= jsonObject.getInteger(key)) {
@@ -175,8 +175,8 @@ public class Function {
                 list.add(key);
             }
         }
-        int index = Get_Random_Range(0,list.size()-1);
-        return list.get(index);
+        long index = Get_Random_Range(0,list.size()-1);
+        return list.get(Math.toIntExact(index));
     }
 
     /* 复活扣除货币 */

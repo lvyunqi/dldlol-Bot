@@ -3,7 +3,7 @@ package com.mryunqi.qimenbot.Plugin;
 import com.mikuac.shiro.common.utils.MsgUtils;
 import com.mikuac.shiro.core.Bot;
 import com.mikuac.shiro.core.BotPlugin;
-import com.mikuac.shiro.dto.event.message.WholeMessageEvent;
+import com.mikuac.shiro.dto.event.message.AnyMessageEvent;
 import com.mryunqi.qimenbot.Util.CmdUtil;
 import org.jetbrains.annotations.NotNull;
 import org.springframework.stereotype.Component;
@@ -17,7 +17,7 @@ import java.net.URLEncoder;
 @Component
 public class Menu extends BotPlugin {
     @Override
-    public int onWholeMessage(@NotNull Bot bot, @NotNull WholeMessageEvent event) {
+    public int onAnyMessage(@NotNull Bot bot, @NotNull AnyMessageEvent event){
         String msg = event.getMessage();
         if ("斗罗系统".equals(msg)){
             //构建消息

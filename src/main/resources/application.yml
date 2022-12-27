@@ -7,9 +7,9 @@ project:
 MySQL:
   host: 127.0.0.1
   port: 3306
-  username: root
-  password: 123456
-  database: root
+  username: qimenbot
+  password: qimen
+  database: qimenbot
 
 task:
   pool:
@@ -38,10 +38,27 @@ spring:
       pool-name: "数据库连接池" # 连接池名称
       max-lifetime: 1800000         # 连接的生命时长（毫秒），超时而且没被使用则被释放（retired），默认： 30 分钟
       connection-test-query: SELECT * FROM user WHERE 1
+  thymeleaf:
+    prefix: classpath:/templates/ # 在构建 URL 时添加到视图名称前的前缀（默认值： classpath:/templates/ ）
+    suffix: .html # 在构建 URL 时添加到视图名称后的后缀（默认值： .html ）
+    mode: HTML5 # 要运⽤于模板之上的模板模式。另⻅ StandardTemplate-ModeHandlers( 默认值： HTML5)
+    cache: false # 开启模板缓存（默认值： true ）
+    encoding: UTF-8 # 模板编码
+    servlet:
+      content-type: text/html #Content-Type 的值（默认值： text/html ）
+    enabled: true # 开启 MVC Thymeleaf 视图解析（默认值： true ）
+    check-template-location: true # 检查模板位置是否正确（默认值 :true ）
+    check-template: true # 检查模板是否存在，然后再呈现
+  elasticsearch:
+    rest:
+      connection-timeout: 3000
+      read-timeout: 3000
 
 mybatis-plus:
   global-config:
     banner: false
+
+
 
 shiro:
   limiter:
@@ -89,9 +106,17 @@ shiro:
     - com.mryunqi.qimenbot.Plugin.DemoPlugin
     - com.mryunqi.qimenbot.Plugin.SetUserSkill
     - com.mryunqi.qimenbot.Plugin.Comic
-    - com.mryunqi.qimenbot.Plugin.PyExpand
     - com.mryunqi.qimenbot.Plugin.NovelAi
     - com.mryunqi.qimenbot.Plugin.HunHuanList
+    - com.mryunqi.qimenbot.Plugin.Weapons
+    - com.mryunqi.qimenbot.Plugin.UseGoods
+    - com.mryunqi.qimenbot.Plugin.SelectReservePool
+    - com.mryunqi.qimenbot.Plugin.NpcInteraction
+    - com.mryunqi.qimenbot.Plugin.SginIn
+    - com.mryunqi.qimenbot.Plugin.NpcShop
+    - com.mryunqi.qimenbot.Plugin.Task
+    - com.mryunqi.qimenbot.Plugin.AcceptTask
+    - com.mryunqi.qimenbot.Plugin.SelfTask
 #'%d{hh:mm:ss} %-5level %logger{50} : %msg%n'
 #logging:
   #pattern:

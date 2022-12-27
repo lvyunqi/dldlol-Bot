@@ -4,7 +4,7 @@ import com.alibaba.fastjson2.JSONObject;
 import com.mikuac.shiro.common.utils.MsgUtils;
 import com.mikuac.shiro.core.Bot;
 import com.mikuac.shiro.core.BotPlugin;
-import com.mikuac.shiro.dto.event.message.WholeMessageEvent;
+import com.mikuac.shiro.dto.event.message.AnyMessageEvent;
 import com.mryunqi.qimenbot.Controller.RestAPI;
 import org.jetbrains.annotations.NotNull;
 import org.springframework.http.ResponseEntity;
@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class Comic extends BotPlugin {
     @Override
-    public int onWholeMessage(@NotNull Bot bot, @NotNull WholeMessageEvent event){
+    public int onAnyMessage(@NotNull Bot bot, @NotNull AnyMessageEvent event){
         String msg = event.getMessage();
         if ("动漫壁纸".equals(msg)){
             bot.sendMsg(event,"正在找图。。。。",false);

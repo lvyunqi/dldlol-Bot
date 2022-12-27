@@ -7,17 +7,16 @@ import java.util.List;
 
 public class API_User {
     public static String UserList(JdbcTemplate jct, String ApiKey,String LocalApiKey){
-        API_Auth apiAuth = new API_Auth();
         JSONObject result = new JSONObject();
         try{
-            if (apiAuth.ApiKeyAuth(ApiKey,LocalApiKey)){
+            if (API_Auth.ApiKeyAuth(ApiKey,LocalApiKey)){
                 String sql = "SELECT qq FROM user";
                 List<String> list = jct.queryForList(sql, String.class);
                 result.put("status",200);
                 result.put("data",list);
                 return result.toString();
             }
-            if (!apiAuth.ApiKeyAuth(ApiKey,LocalApiKey)){
+            if (!API_Auth.ApiKeyAuth(ApiKey,LocalApiKey)){
                 result.put("status",403);
                 result.put("error","权限不足");
                 return result.toString();

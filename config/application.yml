@@ -1,13 +1,14 @@
 # mysql
 MySQL:
-  host: 111.172.243.59
-  port: 3306
-  username: qimenbot
-  password: qimen
-  database: qimenbot
+  host: localhost # 连接地址
+  port: 3306 # 端口
+  username: qimenbot # 用户名
+  password: qimen # 密码
+  database: qimenbot # 表名
 
 bot:
-  superusers: 434658198,123456 # 配置超管用户
+  administrator: 434658198 # 配置超管账号,只能设置一个
+  password: 123456 # 超管密码
   apikey: 123457 # 配置API访问密钥
 
   plugin:

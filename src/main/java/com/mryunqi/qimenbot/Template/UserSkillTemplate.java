@@ -28,7 +28,7 @@ public class UserSkillTemplate {
                 "附加魂环\n";
     }
 
-    public static String Get_UserAddSkill_NullSkill(String UserData,String Attribute,int HP){
+    public static String Get_UserAddSkill_NullSkill(String UserData, String Attribute, long HP){
         PublicAuth publicAuth = new PublicAuth();
         return publicAuth.Get_UserHead(UserData,Attribute) +
                 "[魂环附加失败！]\n" +
@@ -58,6 +58,15 @@ public class UserSkillTemplate {
         PublicAuth publicAuth = new PublicAuth();
         return publicAuth.Get_UserHead(UserData,Attribute) +
                 "您没有多余的魂环空位哦！\n" +
+                "<可用命令>\n" +
+                "状态\n";
+    }
+
+    /* 玩家经验不足 */
+    public static String Get_UserAddSkill_NoExp(String UserData,String Attribute){
+        PublicAuth publicAuth = new PublicAuth();
+        return publicAuth.Get_UserHead(UserData,Attribute) +
+                "您当前的经验值不足以附加魂环！\n" +
                 "<可用命令>\n" +
                 "状态\n";
     }

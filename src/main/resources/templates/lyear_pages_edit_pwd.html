@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>控制台 - 斗罗大陆OL</title>
+  <link rel="icon" href="favicon.ico" type="image/ico">
+  <meta name="keywords" content="斗罗大陆OL,群大型网络RPG文字游戏">
+  <meta name="description" content="斗罗大陆OL是一个基于Java/Python等语言写的高拓展性群娱乐游戏。">
+  <meta name="author" content="yinqi">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/materialdesignicons.min.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
+  <link href="css/jquery.growl.css" rel="stylesheet" type="text/css"/>
+</head>
+
+
+<body>
+<div class="lyear-layout-web">
+  <div class="lyear-layout-container">
+    <!--左侧导航-->
+    <div id="header" th:include="common/header :: common_header(${title},${page},${page_tab})"></div>
+
+    <!--页面主要内容-->
+    <main class="lyear-layout-content">
+      
+      <div class="container-fluid">
+        
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="card">
+              <div class="card-body">
+                
+                <form  class="site-form">
+                  <div class="form-group">
+                    <label for="old-password">旧密码</label>
+                    <input type="password" class="form-control" name="oldpwd" id="old-password" placeholder="输入账号的原登录密码">
+                  </div>
+                  <div class="form-group">
+                    <label for="new-password">新密码</label>
+                    <input type="password" class="form-control" name="newpwd" id="new-password" placeholder="输入新的密码">
+                  </div>
+                  <div class="form-group">
+                    <label for="confirm-password">确认新密码</label>
+                    <input type="password" class="form-control" name="confirmpwd" id="confirm-password" placeholder="请输入正确的邮箱地址">
+                  </div>
+                </form>
+                <button id="editpwd" type="submit" class="btn btn-primary">修改密码</button>
+       
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        
+      </div>
+      
+    </main>
+    <!--End 页面主要内容-->
+  </div>
+</div>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/perfect-scrollbar.min.js"></script>
+<script type="text/javascript" src="js/main.min.js"></script>
+<script src="js/jquery.growl.js" type="text/javascript"></script>
+<script type="text/javascript" >
+  $(function (){
+    $.ajax({
+      type: "GET",
+      url: "/api/LoginPng",
+      success:function (result) {
+        //let json_data = JSON.parse(data)
+        const qq = result.data;
+        console.log(qq);
+        $("#png").attr("src","https://q1.qlogo.cn/g?b=qq&nk="+qq+"&s=100");
+      }})
+  })
+</script>
+<script type="text/javascript" >
+  $("#editpwd").click(function ajaxEdit() {
+    var password = $('input[id="old-password"]').val();
+    var new_password = $('input[id="new-password"]').val();
+    var confirm_password = $('input[id="confirm-password"]').val();
+    if (password==="" ||new_password===""||confirm_password===""){
+      $.growl.error({
+        message: "所有字段不能为空！"
+      });
+      return 0
+    }else if (new_password.length<6){
+      $.growl.error({
+        message: "密码不得少于6位！"
+      });
+      return 0
+    }else if (new_password!==confirm_password){
+      $.growl.error({
+        message: "两次密码不一致！"
+      });
+      return 0
+    }else if (password===new_password){
+      $.growl.error({
+        message: "新密码不能与原来相同！"
+      });
+      return 0
+    }
+    $.ajax({
+      type: "POST",
+      url: "/api/EditPwd",
+      data: JSON.stringify({
+        password: password,
+        nwe_password: new_password
+      }),
+      contentType:'application/json',
+      success: function(result) {
+        //var json = JSON.parse(result);
+        if (result.code == 20000) {
+          $.growl.notice({
+            message: result.data
+          });
+        } else {
+          $.growl.error({
+            message: result.msg
+          });
+        }
+      }
+    });
+  })
+</script>
+</body>
+</html>

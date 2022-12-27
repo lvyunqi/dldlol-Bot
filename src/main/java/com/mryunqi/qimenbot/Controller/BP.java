@@ -80,16 +80,16 @@ public class BP {
                 }
             }
             if (Objects.equals(key, "probability")){
-                if (func.Get_RandomRun(30)){
+                if (Function.Get_RandomRun(30)){
                     // 随机选择一个类型
                     String[] type = {"material","consumables","currency"};
-                    int index = Function.Get_Random_Range(0,type.length-1);
-                    String type_ = type[index];
+                    long index = Function.Get_Random_Range(0,type.length-1);
+                    String type_ = type[Math.toIntExact(index)];
                     // 判断类型是否存在
                     if (DropJson.getJSONObject(key).containsKey(type_)){
                         // 随机选择一个物品
                         String[] item = DropJson.getJSONObject(key).getJSONObject(type_).keySet().toArray(new String[0]);
-                        String item_ = item[Function.Get_Random_Range(0,item.length-1)];
+                        String item_ = item[Math.toIntExact(Function.Get_Random_Range(0, item.length - 1))];
                         if (type_.equals("currency")){
                             user.Add_UserMoney(jct,Integer.parseInt(DropJson.getJSONObject(key).getJSONObject(type_).getString(item_)),item_);
                             message.append("·[概率-").append(item_).append("]x").append(DropJson.getJSONObject(key).getJSONObject(type_).getString(item_)).append("\n");
@@ -103,6 +103,55 @@ public class BP {
                             message.append("·[概率-消耗]").append(item_).append("x").append(DropJson.getJSONObject(key).getJSONObject(type_).getString(item_)).append("\n");
                         }
                     }
+                }
+            }
+        }
+        return message.toString();
+    }
+
+    /*签到*/
+    public static String sginInGoods(JdbcTemplate jct,User user,com.alibaba.fastjson2.JSONObject data,int day){
+        StringBuilder message = new StringBuilder();
+        com.alibaba.fastjson2.JSONObject goodsData = data.getJSONObject(String.valueOf(day));
+        for (String key : goodsData.keySet()){
+            if ("currency".equals(key)){
+                for (String key2 : goodsData.getJSONObject(key).keySet()){
+                    user.Add_UserMoney(jct,goodsData.getJSONObject(key).getIntValue(key2),key2);
+                    message.append("·").append(goodsData.getJSONObject(key).getIntValue(key2)).append(key2).append("\n");
+                }
+            }
+            if ("material".equals(key)){
+                for (String key2 : goodsData.getJSONObject(key).keySet()){
+                    user.Add_UserItemNum(jct,key2,"material",goodsData.getJSONObject(key).getIntValue(key2));
+                    message.append("·[材料]").append(key2).append("x").append(goodsData.getJSONObject(key).getIntValue(key2)).append("\n");
+                }
+            }
+            if ("consumables".equals(key)){
+                for (String key2 : goodsData.getJSONObject(key).keySet()){
+                    user.Add_UserItemNum(jct,key2,"consumables",goodsData.getJSONObject(key).getIntValue(key2));
+                    message.append("·[消耗]").append(key2).append("x").append(goodsData.getJSONObject(key).getIntValue(key2)).append("\n");
+                }
+            }
+        }
+        return message.toString();
+    }
+    /*任务奖励文字模板*/
+    public static String taskGoodsString(com.alibaba.fastjson2.JSONObject goodsData){
+        StringBuilder message = new StringBuilder();
+        for (String key : goodsData.keySet()){
+            if ("currency".equals(key)){
+                for (String key2 : goodsData.getJSONObject(key).keySet()){
+                    message.append("·").append(goodsData.getJSONObject(key).getIntValue(key2)).append(key2).append("\n");
+                }
+            }
+            if ("material".equals(key)){
+                for (String key2 : goodsData.getJSONObject(key).keySet()){
+                    message.append("·[材料]").append(key2).append("x").append(goodsData.getJSONObject(key).getIntValue(key2)).append("\n");
+                }
+            }
+            if ("consumables".equals(key)){
+                for (String key2 : goodsData.getJSONObject(key).keySet()){
+                    message.append("·[消耗]").append(key2).append("x").append(goodsData.getJSONObject(key).getIntValue(key2)).append("\n");
                 }
             }
         }

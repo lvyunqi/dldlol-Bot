@@ -39,6 +39,10 @@ public class AwakeTemplate {
         userData.put("闪避",dodge);
         userData.put("暴击率",crit);
         userData.put("暴击伤害",crit_damage);
+        userData.put("生命储备",0);
+        userData.put("魂力储备",0);
+        userData.put("生命储备上限",500);
+        userData.put("魂力储备上限",500);
         userData.put("技能加速",cdAdd);
         userData.put("第一武魂",wuhunName);
         userData.put("第一武魂类型",WuhunType);
@@ -96,6 +100,10 @@ public class AwakeTemplate {
         userData.put("闪避",dodge);
         userData.put("暴击率",crit);
         userData.put("暴击伤害",crit_damage);
+        userData.put("生命储备",0);
+        userData.put("魂力储备",0);
+        userData.put("生命储备上限",500);
+        userData.put("魂力储备上限",500);
         userData.put("技能加速",cdAdd);
         userData.put("第一武魂",wuhunFirstName);
         userData.put("第一武魂类型",WuhunFirstType);

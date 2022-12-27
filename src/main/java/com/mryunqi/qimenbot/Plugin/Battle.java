@@ -4,17 +4,19 @@ import com.alibaba.fastjson2.JSONObject;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.mikuac.shiro.core.Bot;
 import com.mikuac.shiro.core.BotPlugin;
-import com.mikuac.shiro.dto.event.message.WholeMessageEvent;
+import com.mikuac.shiro.dto.event.message.AnyMessageEvent;
 import com.mryunqi.qimenbot.Controller.*;
 import com.mryunqi.qimenbot.Template.BattleTemplate;
 import com.mryunqi.qimenbot.dao.FightdataDao;
 import com.mryunqi.qimenbot.dao.UserDao;
 import com.mryunqi.qimenbot.service.FightdataService;
 import com.mryunqi.qimenbot.service.UserService;
+import com.mryunqi.qimenbot.service.UserWeaponsDataService;
 import org.jetbrains.annotations.NotNull;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
 
+import static com.mryunqi.qimenbot.Controller.TaskAct.playerTaskHunshouBeat;
 import static com.mryunqi.qimenbot.Template.BattleTemplate.Escape_PVE;
 
 
@@ -23,17 +25,21 @@ public class Battle extends BotPlugin {
     private final FightdataService fightdataService;
     private final FightdataDao fightdataDao;
     private final UserService userService;
+    private final UserDao userDao;
+    private final UserWeaponsDataService userWeaponsDataService;
 
     private final JdbcTemplate jct;
 
-    public Battle(FightdataService fightdataService, FightdataDao fightdataDao, UserService userService, JdbcTemplate jct){
+    public Battle(FightdataService fightdataService, FightdataDao fightdataDao, UserService userService, UserDao userDao, UserWeaponsDataService userWeaponsDataService, JdbcTemplate jct){
         this.fightdataService = fightdataService;
         this.fightdataDao = fightdataDao;
         this.userService = userService;
+        this.userDao = userDao;
+        this.userWeaponsDataService = userWeaponsDataService;
         this.jct = jct;
     }
 
-    public static String PVEAttackMain(JdbcTemplate jct, User user, Function func, Fight fight,String BatterId, String UserData){
+    public static String PVEAttackMain(JdbcTemplate jct, UserDao userDao, UserService userService, UserWeaponsDataService userWeaponsDataService, User user, Function func, Fight fight, String BatterId, String UserData, String qq){
         JSONObject map = JSONObject.parseObject(UserData);
         String DropMessage;
         String Attribute = user.Get_UserNowAttribute(UserData);
@@ -47,19 +53,19 @@ public class Battle extends BotPlugin {
         GameHunshou hunshou = new GameHunshou();
         Skill skill = new Skill();
         String HunShouName = fight.Get_PVE_MonsterName(jct, Integer.parseInt(BatterId));
-        int UserCrit = Integer.parseInt(map.getJSONObject("userData").getString("暴击率"));
-        int UserCritDamage = Integer.parseInt(map.getJSONObject("userData").getString("暴击伤害"));
-        int UserPower = Integer.parseInt(map.getJSONObject("userData").getString("力量"));
-        int UserAtk = Integer.parseInt(map.getJSONObject("userData").getString("攻击"));
-        int UserSp = Integer.parseInt(map.getJSONObject("userData").getString("精神力"));
-        int UserLevel = Integer.parseInt(map.getJSONObject("userData").getString("等级"));
-        int UserExp = Integer.parseInt(map.getJSONObject("userData").getString("经验"));
-        int HunShouDef = Integer.parseInt(HunShouDataJson.getString("防御"));
-        int HunShouHP = Integer.parseInt(HunShouDataJson.getString("生命"));
-        int HunShouDodge = Integer.parseInt(HunShouDataJson.getString("闪避"));
-        int HunShouSpeed = Integer.parseInt(HunShouDataJson.getString("速度"));
-        int HunShouEXP = hunshou.Get_Hunshou_EXP(jct,HunShouName);
-        int ExpUP = Integer.parseInt(Command.Get_CommandExpUp(jct));
+        int UserCrit = map.getJSONObject("userData").getInteger("暴击率");
+        long UserCritDamage = map.getJSONObject("userData").getLong("暴击伤害");
+        long UserPower = map.getJSONObject("userData").getLong("力量");
+        long UserAtk = map.getJSONObject("userData").getLong("攻击");
+        long UserSp = map.getJSONObject("userData").getLong("精神力");
+        int UserLevel = map.getJSONObject("userData").getInteger("等级");
+        long UserExp = map.getJSONObject("userData").getLong("经验");
+        long HunShouDef = HunShouDataJson.getLong("防御");
+        long HunShouHP = HunShouDataJson.getLong("生命");
+        long HunShouDodge = HunShouDataJson.getLong("闪避");
+        long HunShouSpeed = HunShouDataJson.getLong("速度");
+        long HunShouEXP = hunshou.Get_Hunshou_EXP(jct,HunShouName);
+        long ExpUP = Long.parseLong(Command.Get_CommandExpUp(jct));
         String NowTime = Function.Get_NowTime();
         String LastFightTime = fight.Get_LastFightTime(jct, Integer.parseInt(BatterId));
         String LastTime = Function.DateToStamp(LastFightTime);
@@ -72,13 +78,13 @@ public class Battle extends BotPlugin {
             BatterCount = 12;
         }
         Fight.Update_FightLastdate(jct, Integer.parseInt(BatterId));
-        if(func.Get_RandomRun(UserCrit)){
-            if (!func.Get_RandomRun(fight.Get_Dodge(HunShouDodge, HunShouSpeed))){
+        if(Function.Get_RandomRun(UserCrit)){
+            if (!Function.Get_RandomRun(fight.Get_Dodge(HunShouDodge, HunShouSpeed))){
                 return BattleTemplate.Get_User_PVE_HunShou_Dodge_Attack(UserData, Attribute,HunShouHP,BatterCount,
                         HunShouBatter(jct,user,func,hunshou,fight,skill,BatterId,UserData,HunShouData,BatterCount));
             }
-            int Hurt = fight.Get_UserCritDamage(UserAtk,UserCritDamage,UserPower,UserSp,HunShouDef);
-            int NewHunShouHP = HunShouHP - Hurt;
+            long Hurt = fight.Get_UserCritDamage(UserAtk,UserCritDamage,UserPower,UserSp,HunShouDef);
+            long NewHunShouHP = HunShouHP - Hurt;
             if (NewHunShouHP < 0){
                 NewHunShouHP = 0;
             }
@@ -86,17 +92,17 @@ public class Battle extends BotPlugin {
             Fight.Update_HunShouAttribute(jct, Integer.parseInt(BatterId), HunShouDataJson.toJSONString());
             String HunShouFightData = HunShouBatter(jct,user,func,hunshou,fight,skill,BatterId,UserData,HunShouDataJson.toJSONString(),BatterCount);
             if(NewHunShouHP == 0){
-                int HunShouAge = hunshou.Get_Hunshou_Age(jct,HunShouName);
-                int AgeRange = (int) (HunShouAge * 0.25);
-                int AgeAroundMax = HunShouAge + AgeRange;
-                int AgeAroundMin = HunShouAge - AgeRange;
-                int NewHunShouAge = Function.Get_Random_Range(AgeAroundMin,AgeAroundMax);
+                long HunShouAge = hunshou.Get_Hunshou_Age(jct,HunShouName);
+                long AgeRange = (int) (HunShouAge * 0.25);
+                long AgeAroundMax = HunShouAge + AgeRange;
+                long AgeAroundMin = HunShouAge - AgeRange;
+                long NewHunShouAge = Function.Get_Random_Range(AgeAroundMin,AgeAroundMax);
                 String HunShouAgeLevelName = GameHunshou.Get_HunShouAgeLevelName(NewHunShouAge);
                 user.Set_UserTempHuan(jct,NewHunShouAge,HunShouName);
                 String HunShouDropAge = HunShouName+"["+HunShouAgeLevelName+"]\n";
-                int NextLevelEXE = Function.Get_NextLevelExp(UserLevel,ExpUP);
-                int NewUserEXP = UserExp + HunShouEXP;
-                user.Update_UserEXP(jct,HunShouEXP,NextLevelEXE);
+                long NextLevelEXE = Function.Get_NextLevelExp(UserLevel,ExpUP);
+                long NewUserEXP = UserExp + HunShouEXP;
+                user.Update_UserEXP(jct,userService,userWeaponsDataService, qq,HunShouEXP,NextLevelEXE);
                 user.Delete_UserPVEId(jct);
                 fight.PVE_EndFight(jct,Integer.parseInt(BatterId));
                 String HunShouDrop = hunshou.Get_Hunshou_Drop_Item(jct,HunShouName);
@@ -105,6 +111,8 @@ public class Battle extends BotPlugin {
                 } else {
                     DropMessage = "无掉落\n";
                 }
+                com.mryunqi.qimenbot.entity.User player = userService.getById(qq);
+                playerTaskHunshouBeat(userDao,player,HunShouName);
                 if (NewUserEXP >= NextLevelEXE) {
                     // 升级
                     if (user.Is_UserNeedHp(jct,NextLevelEXE)){
@@ -118,12 +126,12 @@ public class Battle extends BotPlugin {
             }
             return BattleTemplate.Get_User_PVE_HunShou_Crit_NotDie(UserData, Attribute,NewHunShouHP,BatterCount, Hurt,HunShouFightData);
         }
-        if (func.Get_RandomRun(fight.Get_Dodge(HunShouDodge, HunShouSpeed))){
+        if (Function.Get_RandomRun(fight.Get_Dodge(HunShouDodge, HunShouSpeed))){
             return BattleTemplate.Get_User_PVE_HunShou_Dodge_Attack(UserData, Attribute,HunShouHP,BatterCount,
                     HunShouBatter(jct,user,func,hunshou,fight,skill,BatterId,UserData,HunShouData,BatterCount));
         }
-        int Hurt = fight.Get_UserDamage(UserAtk,UserPower,UserSp,HunShouDef);
-        int NewHunShouHP = HunShouHP - Hurt;
+        long Hurt = fight.Get_UserDamage(UserAtk,UserPower,UserSp,HunShouDef);
+        long NewHunShouHP = HunShouHP - Hurt;
         if (NewHunShouHP < 0){
             NewHunShouHP = 0;
         }
@@ -131,17 +139,17 @@ public class Battle extends BotPlugin {
         Fight.Update_HunShouAttribute(jct, Integer.parseInt(BatterId), HunShouDataJson.toJSONString());
         String HunShouFightData = HunShouBatter(jct,user,func,hunshou,fight,skill,BatterId,UserData,HunShouDataJson.toJSONString(),BatterCount);
         if(NewHunShouHP == 0){
-            int HunShouAge = hunshou.Get_Hunshou_Age(jct,HunShouName);
-            int AgeRange = (int) (HunShouAge * 0.25);
-            int AgeAroundMax = HunShouAge + AgeRange;
-            int AgeAroundMin = HunShouAge - AgeRange;
-            int NewHunShouAge = Function.Get_Random_Range(AgeAroundMin,AgeAroundMax);
+            long HunShouAge = hunshou.Get_Hunshou_Age(jct,HunShouName);
+            long AgeRange = (int) (HunShouAge * 0.25);
+            long AgeAroundMax = HunShouAge + AgeRange;
+            long AgeAroundMin = HunShouAge - AgeRange;
+            long NewHunShouAge = Function.Get_Random_Range(AgeAroundMin,AgeAroundMax);
             String HunShouAgeLevelName = GameHunshou.Get_HunShouAgeLevelName(NewHunShouAge);
             user.Set_UserTempHuan(jct,NewHunShouAge,HunShouName);
             String HunShouDropAge = HunShouName+"["+HunShouAgeLevelName+"]\n";
-            int NextLevelEXE = Function.Get_NextLevelExp(UserLevel,ExpUP);
-            int NewUserEXP = UserExp + HunShouEXP;
-            user.Update_UserEXP(jct,HunShouEXP,NextLevelEXE);
+            long NextLevelEXE = Function.Get_NextLevelExp(UserLevel,ExpUP);
+            long NewUserEXP = UserExp + HunShouEXP;
+            user.Update_UserEXP(jct,userService,userWeaponsDataService, qq,HunShouEXP,NextLevelEXE);
             user.Delete_UserPVEId(jct);
             fight.PVE_EndFight(jct,Integer.parseInt(BatterId));
             String HunShouDrop = hunshou.Get_Hunshou_Drop_Item(jct,HunShouName);
@@ -150,6 +158,8 @@ public class Battle extends BotPlugin {
             } else {
                 DropMessage = "无掉落\n";
             }
+            com.mryunqi.qimenbot.entity.User player = userService.getById(qq);
+            playerTaskHunshouBeat(userDao,player,HunShouName);
             if (NewUserEXP >= NextLevelEXE) {
                 // 升级
                 if (user.Is_UserNeedHp(jct,NextLevelEXE)){
@@ -164,11 +174,10 @@ public class Battle extends BotPlugin {
         return BattleTemplate.Get_User_PVE_HunShou_NotDie(UserData, Attribute,NewHunShouHP,BatterCount, Hurt,HunShouFightData);
     }
 
-    public String PVESkillMain(JdbcTemplate jct, User user, Function func, Status status, Fight fight, String BatterId, int SillId){
+    public String PVESkillMain(JdbcTemplate jct, UserDao userDao,UserService userService,UserWeaponsDataService userWeaponsDataService,User user, Function func, Status status, Fight fight, String BatterId, int SillId,String qq){
         String UserData = user.Get_UserData(jct);
         JSONObject map = JSONObject.parseObject(UserData);
         String DropMessage;
-        String StatusMessage;
         String Attribute = user.Get_UserNowAttribute(UserData);
         PublicAuth publicAuth = new PublicAuth();
         // 判断玩家是否死亡
@@ -180,20 +189,16 @@ public class Battle extends BotPlugin {
         GameHunshou hunshou = new GameHunshou();
         Skill skill = new Skill();
         String HunShouName = fight.Get_PVE_MonsterName(jct, Integer.parseInt(BatterId));
-        int UserCrit = Integer.parseInt(map.getJSONObject("userData").getString("暴击率"));
-        int UserCritDamage = Integer.parseInt(map.getJSONObject("userData").getString("暴击伤害"));
-        int UserPower = Integer.parseInt(map.getJSONObject("userData").getString("力量"));
-        int UserAtk = Integer.parseInt(map.getJSONObject("userData").getString("攻击"));
-        int UserSp = Integer.parseInt(map.getJSONObject("userData").getString("精神力"));
-        int UserMP = Integer.parseInt(map.getJSONObject("userData").getString("当前魂力值"));
+        long UserPower = map.getJSONObject("userData").getLong("力量");
+        long UserAtk = map.getJSONObject("userData").getLong("攻击");
+        long UserSp = map.getJSONObject("userData").getLong("精神力");
+        long UserMP = map.getJSONObject("userData").getLong("当前魂力值");
         int UserLevel = Integer.parseInt(map.getJSONObject("userData").getString("等级"));
-        int UserExp = Integer.parseInt(map.getJSONObject("userData").getString("经验"));
-        int HunShouDef = Integer.parseInt(HunShouDataJson.getString("防御"));
-        int HunShouHP = Integer.parseInt(HunShouDataJson.getString("生命"));
-        int HunShouDodge = Integer.parseInt(HunShouDataJson.getString("闪避"));
-        int HunShouSpeed = Integer.parseInt(HunShouDataJson.getString("速度"));
-        int HunShouEXP = hunshou.Get_Hunshou_EXP(jct,HunShouName);
-        int ExpUP = Integer.parseInt(Command.Get_CommandExpUp(jct));
+        long UserExp = map.getJSONObject("userData").getLong("经验");
+        long HunShouDef = HunShouDataJson.getLong("防御");
+        long HunShouHP = HunShouDataJson.getLong("生命");
+        long HunShouEXP = hunshou.Get_Hunshou_EXP(jct,HunShouName);
+        long ExpUP = Long.parseLong(Command.Get_CommandExpUp(jct));
         String UserStatus = "";
         String HunShouStatus = "";
         String NowTime = Function.Get_NowTime();
@@ -209,31 +214,31 @@ public class Battle extends BotPlugin {
         }
         Fight.Update_FightLastdate(jct, Integer.parseInt(BatterId));
         String SkillName = user.Get_UserSkillName(jct, String.valueOf(SillId),Attribute);
-        int SkillMP = Integer.parseInt(skill.Get_SkillCost(jct,SkillName));
-        int SkillPower = Integer.parseInt(skill.Get_SkillPower(jct,SkillName));
-        int SkillCD = Integer.parseInt(skill.Get_SkillCD(jct,SkillName));
+        long SkillMP = Long.parseLong(skill.Get_SkillCost(jct,SkillName));
+        long SkillPower = Long.parseLong(skill.Get_SkillPower(jct,SkillName));
+        long SkillCD = Long.parseLong(skill.Get_SkillCD(jct,SkillName));
         String SkillInfo = skill.Get_SkillInfo(jct,SkillName);
         if (UserMP < SkillMP){
             String HunShouFightData = HunShouBatter(jct,user,func,hunshou,fight,skill,BatterId,UserData,HunShouDataJson.toJSONString(),BatterCount);
             return BattleTemplate.Get_User_PVE_HunShou_Skill_No_MP(UserData,Attribute,HunShouHP,TimeCha,HunShouFightData);
         }
         if (fight.Get_UserSkill_CoolDown(jct, Integer.parseInt(BatterId),SkillName) < SkillCD){
-            int CDCha = SkillCD - fight.Get_UserSkill_CoolDown(jct, Integer.parseInt(BatterId),SkillName);
+            long CDCha = SkillCD - fight.Get_UserSkill_CoolDown(jct, Integer.parseInt(BatterId),SkillName);
             String HunShouFightData = HunShouBatter(jct,user,func,hunshou,fight,skill,BatterId,UserData,HunShouDataJson.toJSONString(),BatterCount);
             return BattleTemplate.Get_User_PVE_HunShou_Skill_Cooling(UserData,Attribute,HunShouHP,TimeCha,CDCha,HunShouFightData,SkillName);
         }
         fight.Set_UserSkill_CoolDown(fightdataService,fightdataDao,Integer.parseInt(BatterId),SkillName);
         user.Sub_UserMP(jct,SkillMP);
         if (!(skill.Get_SkillSelfStatus(jct,SkillName) == null)){
-            /**
-             * 这里要为UserStatus附加状态名称
+            /*
+              这里要为UserStatus附加状态名称
              */
             UserStatus = skill.Get_SkillSelfStatus(jct,SkillName);
             user.Set_UserStatus(jct,status,skill.Get_SkillSelfStatus(jct,SkillName));
         }
         if (!(skill.Get_SkillStatus(jct,SkillName) == null)){
-            /**
-             * 这里要为HunShouStatus附加状态名称
+            /*
+              这里要为HunShouStatus附加状态名称
              */
             HunShouStatus = skill.Get_SkillStatus(jct,SkillName);
             status.Set_StatusPVE(jct,HunShouStatus, Integer.parseInt(BatterId));
@@ -242,13 +247,13 @@ public class Battle extends BotPlugin {
         if (SkillAround == 0){
             //敌全体
             int SkillHit = Integer.parseInt(skill.Get_SkillHit(jct,SkillName));
-            if(func.Get_RandomRun(SkillHit)){
+            if(Function.Get_RandomRun(SkillHit)){
                 String HunShouFightData = HunShouBatter(jct,user,func,hunshou,fight,skill,BatterId,UserData,HunShouDataJson.toJSONString(),BatterCount);
                 return BattleTemplate.Get_User_PVE_HunShou_Skill_No_Attack(UserData,Attribute,HunShouHP,TimeCha,HunShouFightData,SkillName);
             }
-            int UserDamage = fight.Get_UserDamage(UserAtk,UserPower,UserSp,HunShouDef);
-            int Hurt = UserDamage * SkillPower / 100;
-            int NewHunShouHP = HunShouHP - Hurt;
+            long UserDamage = fight.Get_UserDamage(UserAtk,UserPower,UserSp,HunShouDef);
+            long Hurt = UserDamage * SkillPower / 100;
+            long NewHunShouHP = HunShouHP - Hurt;
             if (NewHunShouHP <= 0){
                 NewHunShouHP = 0;
             }
@@ -256,17 +261,17 @@ public class Battle extends BotPlugin {
             Fight.Update_HunShouAttribute(jct, Integer.parseInt(BatterId), HunShouDataJson.toJSONString());
             String HunShouFightData = HunShouBatter(jct,user,func,hunshou,fight,skill,BatterId,UserData,HunShouDataJson.toJSONString(),BatterCount);
             if (NewHunShouHP == 0){
-                int HunShouAge = hunshou.Get_Hunshou_Age(jct,HunShouName);
-                int AgeRange = (int) (HunShouAge * 0.25);
-                int AgeAroundMax = HunShouAge + AgeRange;
-                int AgeAroundMin = HunShouAge - AgeRange;
-                int NewHunShouAge = Function.Get_Random_Range(AgeAroundMin,AgeAroundMax);
+                long HunShouAge = hunshou.Get_Hunshou_Age(jct,HunShouName);
+                long AgeRange = (int) (HunShouAge * 0.25);
+                long AgeAroundMax = HunShouAge + AgeRange;
+                long AgeAroundMin = HunShouAge - AgeRange;
+                long NewHunShouAge = Function.Get_Random_Range(AgeAroundMin,AgeAroundMax);
                 String HunShouAgeLevelName = GameHunshou.Get_HunShouAgeLevelName(NewHunShouAge);
                 user.Set_UserTempHuan(jct,NewHunShouAge,HunShouName);
                 String HunShouDropAge = HunShouName+"["+HunShouAgeLevelName+"]\n";
-                int NextLevelEXE = Function.Get_NextLevelExp(UserLevel,ExpUP);
-                int NewUserEXP = UserExp + HunShouEXP;
-                user.Update_UserEXP(jct,HunShouEXP,NextLevelEXE);
+                long NextLevelEXE = Function.Get_NextLevelExp(UserLevel,ExpUP);
+                long NewUserEXP = UserExp + HunShouEXP;
+                user.Update_UserEXP(jct,userService,userWeaponsDataService, qq,HunShouEXP,NextLevelEXE);
                 user.Delete_UserPVEId(jct);
                 fight.PVE_EndFight(jct,Integer.parseInt(BatterId));
                 String HunShouDrop = hunshou.Get_Hunshou_Drop_Item(jct,HunShouName);
@@ -275,6 +280,8 @@ public class Battle extends BotPlugin {
                 } else {
                     DropMessage = "无掉落\n";
                 }
+                com.mryunqi.qimenbot.entity.User player = userService.getById(qq);
+                playerTaskHunshouBeat(userDao,player,HunShouName);
                 if (NewUserEXP >= NextLevelEXE) {
                     // 升级
                     if (user.Is_UserNeedHp(jct,NextLevelEXE)){
@@ -302,8 +309,9 @@ public class Battle extends BotPlugin {
         }
         int UserLevel = Integer.parseInt(map.getJSONObject("userData").getString("等级"));
         Fight.Update_FightLastdate(jct, Integer.parseInt(BatterId));
-        int Coin = Function.Get_Revive_Cost(UserLevel);
+        long Coin = Function.Get_Revive_Cost(UserLevel);
         String Currency = Command.Get_CommandReviveCurrency(jct);
+        user.Sub_UserMoney(jct,Coin*2,Currency);
         user.Delete_UserPVEId(jct);
         fight.PVE_EndFight(jct,Integer.parseInt(BatterId)); // 结束战斗
         return Escape_PVE(UserData,Attribute,Coin*2,Currency);
@@ -314,12 +322,12 @@ public class Battle extends BotPlugin {
         JSONObject HunShouDataJson = JSONObject.parseObject(HunShouData);
         String HunShouName = fight.Get_PVE_MonsterName(jct, Integer.parseInt(BatterId));
         int HunShouCrit = Integer.parseInt(HunShouDataJson.getString("暴击率"));
-        int HunShouCritDamage = Integer.parseInt(HunShouDataJson.getString("暴伤"));
-        int HunShouPower = Integer.parseInt(HunShouDataJson.getString("力量"));
-        int HunShouMP = Integer.parseInt(HunShouDataJson.getString("魂力"));
-        int UserDef = Integer.parseInt(map.getJSONObject("userData").getString("防御"));
-        int UserDodge = Integer.parseInt(map.getJSONObject("userData").getString("闪避"));
-        int UserSpeed = Integer.parseInt(map.getJSONObject("userData").getString("速度"));
+        long HunShouCritDamage = HunShouDataJson.getLong("暴伤");
+        long HunShouPower = HunShouDataJson.getLong("力量");
+        long HunShouMP = HunShouDataJson.getLong("魂力");
+        long UserDef = map.getJSONObject("userData").getLong("防御");
+        long UserDodge = map.getJSONObject("userData").getLong("闪避");
+        long UserSpeed = map.getJSONObject("userData").getLong("速度");
         StringBuilder FightData = new StringBuilder();
         int i;
         for (i=0; i<BatterCount; i++){
@@ -329,11 +337,11 @@ public class Battle extends BotPlugin {
             if (!user.Is_UserBattle(jct)){
                 break;
             }
-            if (func.Get_RandomRun(30)){
+            if (Function.Get_RandomRun(30)){
                 FightData.append("★[").append(HunShouName).append("]正在蓄力，暂时还没有出手！！\n");
                 continue;
             }
-            if (func.Get_RandomRun(50)){
+            if (Function.Get_RandomRun(50)){
                 // 魂兽普通攻击
                 FightData.append(HunShouAttack(jct,user,func,fight,BatterId,HunShouCrit,HunShouCritDamage,HunShouPower,UserDef,UserDodge,UserSpeed,HunShouName));
                 continue;
@@ -347,7 +355,7 @@ public class Battle extends BotPlugin {
             }
             fight.Update_HunShouSkill_CoolDown(jct, Integer.parseInt(BatterId),HunShouSkill,Function.Get_NowTime());
             int SkillHit = Integer.parseInt(skill.Get_SkillHit(jct,HunShouSkill));
-            if (func.Get_RandomRun(SkillHit)){
+            if (Function.Get_RandomRun(SkillHit)){
                 // 无附加状态
                 if(!skill.Is_SkillStatus(jct,HunShouSkill)){
                     FightData.append(HunShouSkillNoState(jct,user,fight,skill,BatterId,HunShouData,HunShouName,HunShouSkill,HunShouMP,HunShouPower,UserDef));
@@ -355,8 +363,8 @@ public class Battle extends BotPlugin {
                 }
             }
             // 未命中
-            int SkillMP = Integer.parseInt(skill.Get_SkillCost(jct,HunShouSkill));
-            int NewHunShouMP = HunShouMP - SkillMP;
+            long SkillMP = Integer.parseInt(skill.Get_SkillCost(jct,HunShouSkill));
+            long NewHunShouMP = HunShouMP - SkillMP;
             if (NewHunShouMP < 0){
                 NewHunShouMP = 0;
             }
@@ -368,14 +376,14 @@ public class Battle extends BotPlugin {
         return FightData.toString();
     }
 
-    public static String HunShouSkillNoState(JdbcTemplate jct,User user,Fight fight,Skill skill ,String BatterId,String HunShouData,String HunShouName,String HunShouSkill,int HunShouMP,int HunShouPower,int UserDef){
-        int SkillMP = Integer.parseInt(skill.Get_SkillCost(jct,HunShouSkill));
-        int NewUserHP;
+    public static String HunShouSkillNoState(JdbcTemplate jct, User user, Fight fight, Skill skill , String BatterId, String HunShouData, String HunShouName, String HunShouSkill, long HunShouMP, long HunShouPower, long UserDef){
+        long SkillMP = Long.parseLong(skill.Get_SkillCost(jct,HunShouSkill));
+        long NewUserHP;
         String UserData = user.Get_UserData(jct);
         JSONObject map = JSONObject.parseObject(UserData);
-        int UserHP = Integer.parseInt(map.getJSONObject("userData").getString("当前生命"));
+        long UserHP = Integer.parseInt(map.getJSONObject("userData").getString("当前生命"));
         if (HunShouMP < SkillMP){
-            int Hurt = fight.Get_HunShouAttack(HunShouPower,UserDef);
+            long Hurt = fight.Get_HunShouAttack(HunShouPower,UserDef);
             NewUserHP = UserHP - Hurt;
             if (NewUserHP < 0){
                 NewUserHP = 0;
@@ -385,7 +393,7 @@ public class Battle extends BotPlugin {
             user.Set_UserData(jct,map.toJSONString(),"state_info");
             if (NewUserHP == 0){
                 int Level = Integer.parseInt(map.getJSONObject("userData").getString("等级"));
-                int Coin = Function.Get_Revive_Cost(Level);
+                long Coin = Function.Get_Revive_Cost(Level);
                 String Currency = Command.Get_CommandReviveCurrency(jct);
                 user.User_Revive(jct); // 玩家复活
                 user.Delete_UserPVEId(jct);
@@ -404,8 +412,8 @@ public class Battle extends BotPlugin {
         JSONObject HunShouDataJson = JSONObject.parseObject(HunShouData);
         HunShouDataJson.put("魂力",HunShouMP);
         Fight.Update_HunShouAttribute(jct, Integer.parseInt(BatterId),HunShouDataJson.toJSONString());
-        int SkillPower = Integer.parseInt(skill.Get_SkillPower(jct,HunShouSkill));
-        int Hurt = (int) (fight.Get_HunShouAttack(HunShouPower,UserDef)*SkillPower*0.01);
+        long SkillPower = Integer.parseInt(skill.Get_SkillPower(jct,HunShouSkill));
+        long Hurt = (long) (fight.Get_HunShouAttack(HunShouPower,UserDef)*SkillPower*0.01);
         NewUserHP = UserHP - Hurt;
         if (NewUserHP < 0){
             NewUserHP = 0;
@@ -415,7 +423,7 @@ public class Battle extends BotPlugin {
         user.Set_UserData(jct,map.toJSONString(),"state_info");
         if (NewUserHP == 0){
             int Level = Integer.parseInt(map.getJSONObject("userData").getString("等级"));
-            int Coin = Function.Get_Revive_Cost(Level);
+            long Coin = Function.Get_Revive_Cost(Level);
             String Currency = Command.Get_CommandReviveCurrency(jct);
             user.User_Revive(jct); // 玩家复活
             user.Delete_UserPVEId(jct);
@@ -433,18 +441,18 @@ public class Battle extends BotPlugin {
                 .concat(String.valueOf(NewUserHP)).concat("\n");
     }
 
-    public static String HunShouAttack(JdbcTemplate jct,User user,Function func,Fight fight,String BatterId,int HunShouCrit, int HunShouCritDamage, int HunShouPower, int UserDef, int UserDodge, int UserSpeed, String HunShouName){
+    public static String HunShouAttack(JdbcTemplate jct, User user, Function func, Fight fight, String BatterId, int HunShouCrit, long HunShouCritDamage, long HunShouPower, long UserDef, long UserDodge, long UserSpeed, String HunShouName){
         String UserData = user.Get_UserData(jct);
         JSONObject map = JSONObject.parseObject(UserData);
-        int UserHP = Integer.parseInt(map.getJSONObject("userData").getString("当前生命"));
-        int NewUserHP;
-        if (func.Get_RandomRun(HunShouCrit)){
+        long UserHP = map.getJSONObject("userData").getLong("当前生命");
+        long NewUserHP;
+        if (Function.Get_RandomRun(HunShouCrit)){
             // 暴击
-            if (func.Get_RandomRun(fight.Get_Dodge(UserDodge, UserSpeed))){
+            if (Function.Get_RandomRun(fight.Get_Dodge(UserDodge, UserSpeed))){
                 return "★[".concat(HunShouName).concat("]对").concat(map.getJSONObject("userInfo").getString("name"))
                         .concat("进行猛烈攻击，却被对方巧妙的避开了！\n");
             }
-            int Hurt = fight.Get_HunShouCritDamage(HunShouCritDamage,HunShouPower,UserDef);
+            long Hurt = fight.Get_HunShouCritDamage(HunShouCritDamage,HunShouPower,UserDef);
             NewUserHP = UserHP - Hurt;
             if (NewUserHP < 0){
                 NewUserHP = 0;
@@ -454,7 +462,7 @@ public class Battle extends BotPlugin {
             user.Set_UserData(jct,map.toJSONString(),"state_info");
             if (NewUserHP == 0){
                 int Level = Integer.parseInt(map.getJSONObject("userData").getString("等级"));
-                int Coin = Function.Get_Revive_Cost(Level);
+                long Coin = Function.Get_Revive_Cost(Level);
                 String Currency = Command.Get_CommandReviveCurrency(jct);
                 user.User_Revive(jct); // 玩家复活
                 user.Delete_UserPVEId(jct);
@@ -470,11 +478,11 @@ public class Battle extends BotPlugin {
                     .concat(String.valueOf(NewUserHP)).concat("\n");
         }
         //不暴击
-        if (func.Get_RandomRun(fight.Get_Dodge(UserDodge, UserSpeed))){
+        if (Function.Get_RandomRun(fight.Get_Dodge(UserDodge, UserSpeed))){
             return "★[".concat(HunShouName).concat("]对").concat(map.getJSONObject("userInfo").getString("name"))
                     .concat("进行猛烈攻击，却被对方巧妙的避开了！\n");
         }
-        int Hurt = fight.Get_HunShouAttack(HunShouPower,UserDef);
+        long Hurt = fight.Get_HunShouAttack(HunShouPower,UserDef);
         NewUserHP = UserHP - Hurt;
         if (NewUserHP < 0){
             NewUserHP = 0;
@@ -484,7 +492,7 @@ public class Battle extends BotPlugin {
         user.Set_UserData(jct,map.toJSONString(),"state_info");
         if (NewUserHP == 0){
             int Level = Integer.parseInt(map.getJSONObject("userData").getString("等级"));
-            int Coin = Function.Get_Revive_Cost(Level);
+            long Coin = Function.Get_Revive_Cost(Level);
             String Currency = Command.Get_CommandReviveCurrency(jct);
             user.User_Revive(jct); // 玩家复活
             user.Delete_UserPVEId(jct);
@@ -501,7 +509,7 @@ public class Battle extends BotPlugin {
     }
 
     @Override
-    public int onWholeMessage(@NotNull Bot bot, @NotNull WholeMessageEvent event){
+    public int onAnyMessage(@NotNull Bot bot, @NotNull AnyMessageEvent event){
         String msg = event.getMessage();
         String userId = String.valueOf(event.getUserId());
         String groupId = String.valueOf(event.getGroupId());
@@ -550,10 +558,10 @@ public class Battle extends BotPlugin {
                 return MESSAGE_IGNORE;
             }
             String BattleType = user.Is_UserPVEorPVPorCopy(jct);
-
+            com.mryunqi.qimenbot.entity.User player = userService.getById(userId);
             if (BattleType.equals("pve")){
                 String BattleId = user.Get_UserPVEId(jct);
-                String message = PVEAttackMain(jct,user,func,fight,BattleId,UserData);
+                String message = PVEAttackMain(jct,userDao,userService,userWeaponsDataService,user,func,fight,BattleId,UserData,userId);
                 bot.sendMsg(event, message, false);
                 return MESSAGE_IGNORE;
             }
@@ -601,7 +609,7 @@ public class Battle extends BotPlugin {
             }
             if (BattleType.equals("pve")){
                 String BattleId = user.Get_UserPVEId(jct);
-                String message = PVESkillMain(jct,user,func,status,fight,BattleId, Integer.parseInt(SkillId));
+                String message = PVESkillMain(jct,userDao,userService,userWeaponsDataService,user,func,status,fight,BattleId, Integer.parseInt(SkillId),userId);
                 bot.sendMsg(event, message, false);
                 return MESSAGE_IGNORE;
             }

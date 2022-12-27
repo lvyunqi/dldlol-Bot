@@ -44,6 +44,8 @@ public class Command extends Model<Command> {
     private String reviveCurrency;
     //答题成功人数上限
     private Integer questionPlayer;
+    //上一次运行时间
+    private String lastRunningTime;
 
 
 /*    public Integer getId() {

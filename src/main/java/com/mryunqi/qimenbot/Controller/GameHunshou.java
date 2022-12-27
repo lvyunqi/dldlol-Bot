@@ -8,7 +8,7 @@ import java.util.Map;
 
 public class GameHunshou {
 
-    public static int Get_HunShouLevel(int Age){
+    public static int Get_HunShouLevel(long Age){
         if (Age <= 99){
             return 1;
         } else if (Age <= 999) {
@@ -25,7 +25,7 @@ public class GameHunshou {
             return 7;
         }
     }
-    public static String Get_HunShouAgeLevelName(int Age){
+    public static String Get_HunShouAgeLevelName(long Age){
         int Level = Get_HunShouLevel(Age);
         switch (Level){
             case 1:

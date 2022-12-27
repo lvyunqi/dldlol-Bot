@@ -2,8 +2,7 @@ package com.mryunqi.qimenbot.entity;
 
 import java.util.Date;
 
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.annotation.*;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
 import lombok.Data;
 
@@ -61,6 +60,9 @@ public class User extends Model<User> {
     private String temporarySkill;
     //原始魂环
     private String skillData;
+    private String goodsData;
+    private String npc;
+    private String taskData;
 
 
 /*

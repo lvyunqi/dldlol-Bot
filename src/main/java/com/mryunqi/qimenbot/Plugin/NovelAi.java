@@ -4,7 +4,7 @@ import com.alibaba.fastjson2.JSONArray;
 import com.alibaba.fastjson2.JSONObject;
 import com.mikuac.shiro.core.Bot;
 import com.mikuac.shiro.core.BotPlugin;
-import com.mikuac.shiro.dto.event.message.WholeMessageEvent;
+import com.mikuac.shiro.dto.event.message.AnyMessageEvent;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
@@ -23,7 +23,7 @@ import static com.mryunqi.qimenbot.Util.ImageUtil.generateImage;
 @Component
 public class NovelAi extends BotPlugin {
     @Override
-    public int onWholeMessage(@NotNull Bot bot, @NotNull WholeMessageEvent event){
+    public int onAnyMessage(@NotNull Bot bot, @NotNull AnyMessageEvent event){
         String msg = event.getMessage();
         String CmdMatcher = "^AI绘图(.*)$";
         if (msg.matches(CmdMatcher)){

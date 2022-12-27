@@ -30,8 +30,6 @@ public class RestAPI {
 
     /**
      * UCloud API
-     * @param publicKey
-     * @param privateKey
      * @param imageUrl
      * @return pass-放行， forbid-封禁， check-人工审核
      */

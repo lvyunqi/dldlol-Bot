@@ -3,7 +3,7 @@ package com.mryunqi.qimenbot.Plugin;
 import com.alibaba.fastjson2.JSONObject;
 import com.mikuac.shiro.core.Bot;
 import com.mikuac.shiro.core.BotPlugin;
-import com.mikuac.shiro.dto.event.message.WholeMessageEvent;
+import com.mikuac.shiro.dto.event.message.AnyMessageEvent;
 import com.mryunqi.qimenbot.Controller.Command;
 import com.mryunqi.qimenbot.Controller.PublicAuth;
 import com.mryunqi.qimenbot.Controller.User;
@@ -20,7 +20,7 @@ public class Transaction extends BotPlugin {
         this.jct = jct;
     }
     @Override
-    public int onWholeMessage(@NotNull Bot bot, @NotNull WholeMessageEvent event) {
+    public int onAnyMessage(@NotNull Bot bot, @NotNull AnyMessageEvent event){
         String OtherQQ;
         String countCurrency;
         String msg = event.getMessage();
@@ -76,13 +76,13 @@ public class Transaction extends BotPlugin {
                 bot.sendMsg(event, "转账失败！币种不存在！", false);
                 return MESSAGE_IGNORE;
             }
-            int UserMoney = user.Get_UserMoney(jct,countCurrency);
+            Long UserMoney = user.Get_UserMoney(jct,countCurrency);
             if (UserMoney < Integer.parseInt(count)) {
                 bot.sendMsg(event, "转账失败！你的[" + countCurrency + "]不足！", false);
                 return MESSAGE_IGNORE;
             }
-            int NewUserMoney = UserMoney - Integer.parseInt(count);
-            int NewOtherUserMoney = OtherUser.Get_UserMoney(jct,countCurrency) + Integer.parseInt(count);
+            long NewUserMoney = UserMoney - Integer.parseInt(count);
+            long NewOtherUserMoney = OtherUser.Get_UserMoney(jct,countCurrency) + Integer.parseInt(count);
             user.Set_UserWalletData(jct,NewUserMoney,countCurrency);
             OtherUser.Set_UserWalletData(jct,NewOtherUserMoney,countCurrency);
             String UserData = user.Get_UserData(jct);
@@ -140,7 +140,7 @@ public class Transaction extends BotPlugin {
             }
             String ItemType = user.Get_UserItemType(ItemName,UserBackPack);
             String ItemCount = InitItem.substring(indexTwo + 1).trim();
-            int UserItemCount = user.Get_UserItemNum(jct,ItemName,ItemType);
+            long UserItemCount = user.Get_UserItemNum(jct,ItemName,ItemType);
             if (UserItemCount < Integer.parseInt(ItemCount)) {
                 bot.sendMsg(event, "发送物品失败！你的物品数量不足！", false);
                 return MESSAGE_IGNORE;

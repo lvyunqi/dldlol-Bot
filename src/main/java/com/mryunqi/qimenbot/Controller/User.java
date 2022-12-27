@@ -1,12 +1,15 @@
 package com.mryunqi.qimenbot.Controller;
 
+import com.mryunqi.qimenbot.service.UserService;
+import com.mryunqi.qimenbot.service.UserWeaponsDataService;
 import org.springframework.jdbc.core.JdbcTemplate;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 
 import java.util.List;
 import java.util.Map;
-import java.util.Random;
+
+import static com.mryunqi.qimenbot.Controller.Player.Split_Player_Attributes;
 
 
 /**
@@ -75,7 +78,7 @@ public class User {
             case 3:
                 return "三环魂尊";
             case 4:
-                return "三环魂宗";
+                return "四环魂宗";
             case 5:
                 return "五环魂王";
             case 6:
@@ -104,7 +107,7 @@ public class User {
     }
 
     /* 获取玩家下一阶精神力 */
-    public int Get_UserSpirit(int SP) {
+    public int Get_UserSpirit(Long SP) {
         if (SP <= 99) return 100;
         else if (SP <= 499) return 500;
         else if (SP <= 4999) return 5000;
@@ -114,7 +117,7 @@ public class User {
     }
 
     /* 获取玩家精神力等阶名称 */
-    public String Get_UserSpiritName(int SP) {
+    public String Get_UserSpiritName(Long SP) {
         if (SP <= 99) return "灵元境";
         else if (SP <= 499) return "灵通境";
         else if (SP <= 4999) return "灵海境";
@@ -273,33 +276,33 @@ public class User {
     }
 
     /* 获取玩家剩余的货币 */
-    public int Get_UserMoney(JdbcTemplate jct,String Currency){
+    public Long Get_UserMoney(JdbcTemplate jct,String Currency){
         String MoneyData = Get_UserWalletData(jct);
         JSONObject obj = JSON.parseObject(MoneyData);
-        return obj.getIntValue(Currency);
+        return obj.getLong(Currency);
     }
 
     /* 获取玩家某物品数量 */
-    public int Get_UserItemNum(JdbcTemplate jct,String ItemName,String ItemType){
+    public Long Get_UserItemNum(JdbcTemplate jct,String ItemName,String ItemType){
         String BackPackData = Get_UserBagData(jct);
         JSONObject obj = JSON.parseObject(BackPackData);
         JSONObject ItemList = obj.getJSONObject(ItemType);
         String InitItem = ItemList.getString(ItemName);
         if (ItemType.equals("consumables")) {
-            return Integer.parseInt(InitItem);
+            return Long.valueOf(InitItem);
         }
         if (ItemType.equals("material")) {
-            return Integer.parseInt(InitItem);
+            return Long.valueOf(InitItem);
         }
         if (ItemType.equals("weapons")) {
             int index = InitItem.indexOf("|");
-            return Integer.parseInt(InitItem.substring(index+1));
+            return Long.valueOf(InitItem.substring(index+1));
         }
-        return 0;
+        return 0L;
     }
 
     /* 设置玩家钱包数据 */
-    public void Set_UserWalletData(JdbcTemplate jct,int Count,String Currency){
+    public void Set_UserWalletData(JdbcTemplate jct, long Count, String Currency){
         String MoneyData = Get_UserWalletData(jct);
         JSONObject obj = JSON.parseObject(MoneyData);
         obj.put(Currency,Count);
@@ -309,7 +312,7 @@ public class User {
 
     /* 增加货币数据 */
     public void Add_UserMoney(JdbcTemplate jct,int Count,String Currency){
-        int Money = Get_UserMoney(jct,Currency);
+        long Money = Get_UserMoney(jct,Currency);
         Money += Count;
         Set_UserWalletData(jct,Money,Currency);
     }
@@ -320,8 +323,8 @@ public class User {
      * @param Count 要减少的数量
      * @param Currency 货币类型
      */
-    public void Sub_UserMoney(JdbcTemplate jct,int Count,String Currency){
-        int Money = Get_UserMoney(jct,Currency);
+    public void Sub_UserMoney(JdbcTemplate jct, long Count, String Currency){
+        long Money = Get_UserMoney(jct,Currency);
         Money -= Count;
         Set_UserWalletData(jct,Money,Currency);
     }
@@ -490,10 +493,10 @@ public class User {
     }
 
     /* 获取玩家生命总上限 */
-    public int Get_UserMaxHP(JdbcTemplate jct){
+    public Long Get_UserMaxHP(JdbcTemplate jct){
         String UserData = Get_UserData(jct);
         JSONObject map = JSON.parseObject(UserData);
-        return Integer.parseInt(map.getJSONObject("userData").getString("生命"));
+        return map.getJSONObject("userData").getLong("生命");
     }
 
     /* 增加玩家当前生命 */
@@ -511,10 +514,10 @@ public class User {
     }
 
     /* 减少玩家当前生命 */
-    public void Sub_UserNowHP(JdbcTemplate jct,int HP){
+    public void Sub_UserNowHP(JdbcTemplate jct, long HP){
         String UserData = Get_UserData(jct);
         JSONObject map = JSON.parseObject(UserData);
-        int nowHP = Integer.parseInt(map.getJSONObject("userData").getString("当前生命"));
+        long nowHP = map.getJSONObject("userData").getLong("当前生命");
         map.getJSONObject("userData").put("当前生命",nowHP-HP);
         if (nowHP-HP < 0) {
             map.getJSONObject("userData").put("当前生命",0);
@@ -561,7 +564,7 @@ public class User {
     }
 
     /* 判断玩家当前是否需要魂环 */
-    public boolean Is_UserNeedHp(JdbcTemplate jct,int NextEXP){
+    public boolean Is_UserNeedHp(JdbcTemplate jct, long NextEXP){
         String UserData = Get_UserData(jct);
         JSONObject map = JSON.parseObject(UserData);
         int Level = Integer.parseInt(map.getJSONObject("userData").getString("等级"));
@@ -574,18 +577,27 @@ public class User {
         return false;
     }
 
+    public static Boolean isLvUpOk(String userData,int ExpUp){
+        JSONObject jsonPlayer = JSONObject.parseObject(userData);
+        JSONObject jsonPlayerData = jsonPlayer.getJSONObject("userData");
+        long UserEXP = Integer.parseInt(jsonPlayerData.getString("经验"));
+        int Level = Integer.parseInt(jsonPlayerData.getString("等级"));
+        long NextLevelEXE = Function.Get_NextLevelExp(Level,ExpUp);
+        return UserEXP>=NextLevelEXE;
+    }
+
     /* 更新经验 */
-    public void Update_UserEXP(JdbcTemplate jct,int AddEXP,int NextEXP){
-        String UserData = Get_UserData(jct);
+    public void Update_UserEXP(JdbcTemplate jct, UserService userService, UserWeaponsDataService userWeaponsDataService,String qq, long AddEXP, long NextEXP){
+        String UserData = Split_Player_Attributes(userService,userWeaponsDataService, Integer.parseInt(qq)).toJSONString();
         JSONObject map = JSON.parseObject(UserData);
-        int UserEXP = Integer.parseInt(map.getJSONObject("userData").getString("经验"));
-        int Level = Integer.parseInt(map.getJSONObject("userData").getString("等级"));
-        int UserPower = Integer.parseInt(map.getJSONObject("userData").getString("力量"));
-        int UserAtk = Integer.parseInt(map.getJSONObject("userData").getString("攻击"));
-        int UserMP = Integer.parseInt(map.getJSONObject("userData").getString("魂力值"));
-        int UserHP = Integer.parseInt(map.getJSONObject("userData").getString("生命"));
-        int UserDef = Integer.parseInt(map.getJSONObject("userData").getString("防御"));
-        int NewEXP = UserEXP + AddEXP;
+        long UserEXP = map.getJSONObject("userData").getLong("经验");
+        long Level = map.getJSONObject("userData").getLong("等级");
+        long UserPower = map.getJSONObject("userData").getLong("力量");
+        long UserAtk = map.getJSONObject("userData").getLong("攻击");
+        long UserMP = map.getJSONObject("userData").getLong("魂力值");
+        long UserHP = map.getJSONObject("userData").getLong("生命");
+        long UserDef = map.getJSONObject("userData").getLong("防御");
+        long NewEXP = UserEXP + AddEXP;
         if (Level % 10 == 0){
             map.getJSONObject("userData").put("经验",NewEXP);
             String sql = "UPDATE user SET state_info=? WHERE qq =?";
@@ -610,93 +622,107 @@ public class User {
     }
 
     /* 攻击升级增幅计算 */
-    public int Get_UserAttackUp(int lv,int pr){
-        int a = (int) (1.21*lv + 1.01*pr);
-        int b = (int) (1.11*lv);
-        return ((Function.Get_Random_Range(a,a+b))+(Function.Get_Random_Range(a,a+b)))/2;
+    public Long Get_UserAttackUp(long lv, long pr){
+        long a = (long) (1.21*lv + 1.01*pr);
+        long b = (long) (1.11*lv);
+        return (((Function.Get_Random_Range(a, a + b)) + (Function.Get_Random_Range(a, a + b))) / 2);
     }
     /* 防御升级增幅计算 */
-    public int Get_UserDefenseUp(int lv,int def){
-        int a = (int) (1.31*lv + 1.02*def);
-        int b = (int) (1.11*lv);
-        return ((Function.Get_Random_Range(a,a+b))+(Function.Get_Random_Range(a,a+b)))/2;
+    public Long Get_UserDefenseUp(long lv, long def){
+        long a = (long) (1.31*lv + 1.02*def);
+        long b = (long) (1.11*lv);
+        return (((Function.Get_Random_Range(a, a + b)) + (Function.Get_Random_Range(a, a + b))) / 2);
     }
     /* 生命升级增幅计算 */
-    public int Get_UserHPUp(int lv,int hp){
-        int a = (int) (1.41*lv + 1.01*hp);
-        int b = (int) (1.11*lv);
+    public Long Get_UserHPUp(long lv, long hp){
+        long a = (long) (1.41*lv + 1.01*hp);
+        long b = (long) (1.11*lv);
         return ((Function.Get_Random_Range(a,a+b))+(Function.Get_Random_Range(a,a+b)))/2;
     }
     /* 力量升级增幅计算 */
-    public int Get_UserPowerUp(int lv,int pow){
+    public Long Get_UserPowerUp(long lv, long pow){
         int a = (int) (1.41*lv + 1.02*pow);
         int b = (int) (1.11*lv);
         return ((Function.Get_Random_Range(a,a+b))+(Function.Get_Random_Range(a,a+b)))/2;
     }
     /* MP升级增幅计算 */
-    public int Get_UserMPUp(int lv,int mp){
+    public Long Get_UserMPUp(long lv, long mp){
         int a = (int) (1.41*lv + 1.01*mp);
         int b = (int) (1.11*lv);
         return ((Function.Get_Random_Range(a,a+b))+(Function.Get_Random_Range(a,a+b)))/2;
     }
 
     /* 附加魂环升级 */
-    public void Update_UserLevelAddHuan(JdbcTemplate jct){
-        String UserData = Get_UserData(jct);
+    public void Update_UserLevelAddHuan(JdbcTemplate jct,UserService userService, UserWeaponsDataService userWeaponsDataService,String qq,String Attribute){
+        String UserData = Split_Player_Attributes(userService,userWeaponsDataService, Integer.parseInt(qq)).toJSONString();
         JSONObject map = JSON.parseObject(UserData);
-        int Level = Integer.parseInt(map.getJSONObject("userData").getString("等级"));
-        int UserEXP = Integer.parseInt(map.getJSONObject("userData").getString("经验"));
-        int UserPower = Integer.parseInt(map.getJSONObject("userData").getString("力量"));
-        int UserAtk = Integer.parseInt(map.getJSONObject("userData").getString("攻击"));
-        int UserMP = Integer.parseInt(map.getJSONObject("userData").getString("魂力值"));
-        int UserHP = Integer.parseInt(map.getJSONObject("userData").getString("生命"));
-        int UserDef = Integer.parseInt(map.getJSONObject("userData").getString("防御"));
-        int NextEXP = Function.Get_NextLevelExp(Level, Integer.parseInt(Command.Get_CommandExpUp(jct)));
-        UserPower = (int) (Get_UserPowerUp(Level,UserPower) * 1.5);
-        UserAtk = (int) (Get_UserAttackUp(Level,UserAtk) * 1.5);
-        UserMP = (int) (Get_UserMPUp(Level,UserMP) * 1.5);
-        UserHP = (int) (Get_UserHPUp(Level,UserHP) * 1.5);
-        UserDef = (int) (Get_UserDefenseUp(Level,UserDef) * 1.5);
+        long UserEXP = map.getJSONObject("userData").getLong("经验");
+        long Level = map.getJSONObject("userData").getLong("等级");
+        long UserPower = map.getJSONObject("userData").getLong("力量");
+        long UserAtk = map.getJSONObject("userData").getLong("攻击");
+        long UserMP = map.getJSONObject("userData").getLong("魂力值");
+        long UserHP = map.getJSONObject("userData").getLong("生命");
+        long UserDef = map.getJSONObject("userData").getLong("防御");
+        long NextEXP = Function.Get_NextLevelExp(Level, Integer.parseInt(Command.Get_CommandExpUp(jct)));
+        UserPower = (long) (Get_UserPowerUp(Level,UserPower) * 1.5);
+        UserAtk = (long) (Get_UserAttackUp(Level,UserAtk) * 1.5);
+        UserMP = (long) (Get_UserMPUp(Level,UserMP) * 1.5);
+        UserHP = (long) (Get_UserHPUp(Level,UserHP) * 1.5);
+        UserDef = (long) (Get_UserDefenseUp(Level,UserDef) * 1.5);
         while (UserEXP >= NextEXP) {
-            Level++;
             UserEXP -= NextEXP;
+            if (!Is_UserNeedLvUp(jct, Attribute)){
+                map.getJSONObject("userData").put("等级",Level);
+                map.getJSONObject("userData").put("经验",UserEXP);
+                map.getJSONObject("userData").put("力量",UserPower);
+                map.getJSONObject("userData").put("攻击",UserAtk);
+                map.getJSONObject("userData").put("魂力值",UserMP);
+                map.getJSONObject("userData").put("生命",UserHP);
+                map.getJSONObject("userData").put("防御",UserDef);
+                map.getJSONObject("userData").put("当前生命",UserHP);
+                map.getJSONObject("userData").put("当前魂力值",UserMP);
+                String sql = "UPDATE user SET state_info=? WHERE qq =?";
+                jct.update(sql,map.toJSONString(),User.this.QQ);
+                break;
+            }
+            Level++;
             NextEXP = Function.Get_NextLevelExp(Level, Integer.parseInt(Command.Get_CommandExpUp(jct)));
             UserPower = Get_UserPowerUp(Level,UserPower);
             UserAtk = Get_UserAttackUp(Level,UserAtk);
             UserMP = Get_UserMPUp(Level,UserMP);
             UserHP = Get_UserHPUp(Level,UserHP);
             UserDef = Get_UserDefenseUp(Level,UserDef);
+            map.getJSONObject("userData").put("等级",Level);
+            map.getJSONObject("userData").put("经验",UserEXP);
+            map.getJSONObject("userData").put("力量",UserPower);
+            map.getJSONObject("userData").put("攻击",UserAtk);
+            map.getJSONObject("userData").put("魂力值",UserMP);
+            map.getJSONObject("userData").put("生命",UserHP);
+            map.getJSONObject("userData").put("防御",UserDef);
+            map.getJSONObject("userData").put("当前生命",UserHP);
+            map.getJSONObject("userData").put("当前魂力值",UserMP);
+            String sql = "UPDATE user SET state_info=? WHERE qq =?";
+            jct.update(sql,map.toJSONString(),User.this.QQ);
         }
-        map.getJSONObject("userData").put("等级",Level);
-        map.getJSONObject("userData").put("经验",UserEXP);
-        map.getJSONObject("userData").put("力量",UserPower);
-        map.getJSONObject("userData").put("攻击",UserAtk);
-        map.getJSONObject("userData").put("魂力值",UserMP);
-        map.getJSONObject("userData").put("生命",UserHP);
-        map.getJSONObject("userData").put("防御",UserDef);
-        map.getJSONObject("userData").put("当前生命",UserHP);
-        map.getJSONObject("userData").put("当前魂力值",UserMP);
-        String sql = "UPDATE user SET state_info=? WHERE qq =?";
-        jct.update(sql,map.toJSONString(),User.this.QQ);
 
     }
 
     /* 附加魂环不升级 */
-    public void Update_UserLevel_NO_AddHuan(JdbcTemplate jct){
-        String UserData = Get_UserData(jct);
+    public void Update_UserLevel_NO_AddHuan(JdbcTemplate jct,UserService userService, UserWeaponsDataService userWeaponsDataService,String qq){
+        String UserData = Split_Player_Attributes(userService,userWeaponsDataService, Integer.parseInt(qq)).toJSONString();
         JSONObject map = JSON.parseObject(UserData);
-        int Level = Integer.parseInt(map.getJSONObject("userData").getString("等级"));
-        int UserEXP = Integer.parseInt(map.getJSONObject("userData").getString("经验"));
-        int UserPower = Integer.parseInt(map.getJSONObject("userData").getString("力量"));
-        int UserAtk = Integer.parseInt(map.getJSONObject("userData").getString("攻击"));
-        int UserMP = Integer.parseInt(map.getJSONObject("userData").getString("魂力值"));
-        int UserHP = Integer.parseInt(map.getJSONObject("userData").getString("生命"));
-        int UserDef = Integer.parseInt(map.getJSONObject("userData").getString("防御"));
-        UserPower = (int) (Get_UserPowerUp(Level,UserPower) * 1.5);
-        UserAtk = (int) (Get_UserAttackUp(Level,UserAtk) * 1.5);
-        UserMP = (int) (Get_UserMPUp(Level,UserMP) * 1.5);
-        UserHP = (int) (Get_UserHPUp(Level,UserHP) * 1.5);
-        UserDef = (int) (Get_UserDefenseUp(Level,UserDef) * 1.5);
+        long UserEXP = map.getJSONObject("userData").getLong("经验");
+        long Level = map.getJSONObject("userData").getLong("等级");
+        long UserPower = map.getJSONObject("userData").getLong("力量");
+        long UserAtk = map.getJSONObject("userData").getLong("攻击");
+        long UserMP = map.getJSONObject("userData").getLong("魂力值");
+        long UserHP = map.getJSONObject("userData").getLong("生命");
+        long UserDef = map.getJSONObject("userData").getLong("防御");
+        UserPower = (long) (Get_UserPowerUp(Level,UserPower) * 1.5);
+        UserAtk = (long) (Get_UserAttackUp(Level,UserAtk) * 1.5);
+        UserMP = (long) (Get_UserMPUp(Level,UserMP) * 1.5);
+        UserHP = (long) (Get_UserHPUp(Level,UserHP) * 1.5);
+        UserDef = (long) (Get_UserDefenseUp(Level,UserDef) * 1.5);
         map.getJSONObject("userData").put("经验",UserEXP);
         map.getJSONObject("userData").put("力量",UserPower);
         map.getJSONObject("userData").put("攻击",UserAtk);
@@ -726,7 +752,7 @@ public class User {
     }
 
     /* 设置玩家临时魂环 */
-    public void Set_UserTempHuan(JdbcTemplate jct,int Age,String HunShouName){
+    public void Set_UserTempHuan(JdbcTemplate jct, long Age, String HunShouName){
         JSONObject map = new JSONObject();
         map.put("HunShouName",HunShouName);
         map.put("Age",Age);
@@ -800,6 +826,24 @@ public class User {
         }
         int Level = obj.getJSONObject("userData").getIntValue("等级");
         return Level / 10 > len;
+    }
+    /* 判断玩家是否需要继续升级 */
+    public boolean Is_UserNeedLvUp(JdbcTemplate jct,String Attribute){
+        String UserData = Get_UserData(jct);
+        JSONObject obj = JSON.parseObject(UserData);
+        String Skill_data = Get_UserSkillData(jct);
+        JSONObject map = JSON.parseObject(Skill_data);
+        int len;
+        if (map.getJSONObject(Attribute) == null) {
+            len = 0;
+        } else {
+            len = map.getJSONObject(Attribute).size();
+        }
+        int Level = obj.getJSONObject("userData").getIntValue("等级");
+        if (Level / 10 >= len){
+            return Level - (len * 10) < 10;
+        }
+        return false;
     }
 
     /* 玩家复活 */
@@ -908,12 +952,12 @@ public class User {
         int UpCtP = status.Get_StatusCritDamage(jct, StatusName);
         int UpSpeed = status.Get_StatusSpeed(jct, StatusName);
         int UpDe = status.Get_StatusDefence(jct, StatusName);
-        obj.getJSONObject("userData").put("攻击",UpPr * obj.getJSONObject("userData").getInteger("攻击"));
-        obj.getJSONObject("userData").put("力量",UpPow * obj.getJSONObject("userData").getInteger("力量"));
-        obj.getJSONObject("userData").put("暴击率",UpCt + obj.getJSONObject("userData").getInteger("暴击率"));
-        obj.getJSONObject("userData").put("暴击伤害",UpCtP + obj.getJSONObject("userData").getInteger("暴击伤害"));
-        obj.getJSONObject("userData").put("速度",UpSpeed * obj.getJSONObject("userData").getInteger("速度"));
-        obj.getJSONObject("userData").put("防御",UpDe * obj.getJSONObject("userData").getInteger("防御"));
+        obj.getJSONObject("userData").put("攻击",UpPr * obj.getJSONObject("userData").getLong("攻击"));
+        obj.getJSONObject("userData").put("力量",UpPow * obj.getJSONObject("userData").getLong("力量"));
+        obj.getJSONObject("userData").put("暴击率",UpCt + obj.getJSONObject("userData").getLong("暴击率"));
+        obj.getJSONObject("userData").put("暴击伤害",UpCtP + obj.getJSONObject("userData").getLong("暴击伤害"));
+        obj.getJSONObject("userData").put("速度",UpSpeed * obj.getJSONObject("userData").getLong("速度"));
+        obj.getJSONObject("userData").put("防御",UpDe * obj.getJSONObject("userData").getLong("防御"));
         Set_UserData(jct, obj.toString());
         JSONObject json;
         if (Get_UserStatus(jct) == null){
@@ -927,10 +971,10 @@ public class User {
     }
 
     /* 减少玩家MP */
-    public void Sub_UserMP(JdbcTemplate jct,int MP){
+    public void Sub_UserMP(JdbcTemplate jct,long MP){
         String UserData = Get_UserData(jct);
         JSONObject obj = JSON.parseObject(UserData);
-        obj.getJSONObject("userData").put("当前魂力值",obj.getJSONObject("userData").getInteger("当前魂力值") - MP);
+        obj.getJSONObject("userData").put("当前魂力值",obj.getJSONObject("userData").getLong("当前魂力值") - MP);
         Set_UserData(jct, obj.toString());
     }
 }

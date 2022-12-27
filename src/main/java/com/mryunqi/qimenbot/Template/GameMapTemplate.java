@@ -3,6 +3,7 @@ package com.mryunqi.qimenbot.Template;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
+import com.mryunqi.qimenbot.Controller.PublicAuth;
 
 import static com.mryunqi.qimenbot.Util.FileUtils.is_file;
 
@@ -25,5 +26,12 @@ public class GameMapTemplate {
                 "查看传送 地图名称\n" +
                 "传送 地图名称\n" +
                 "向 上/下/左/右\n";
+    }
+    public static String NowMapNoTP(String UserData,String Attribute){
+        PublicAuth publicAuth = new PublicAuth();
+        return publicAuth.Get_UserHead(UserData,Attribute) +
+                "您当前所在地没有传送阵，无法定向传送！\n" +
+                "<可用命令>\n" +
+                "传送\n";
     }
 }

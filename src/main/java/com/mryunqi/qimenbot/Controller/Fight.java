@@ -29,8 +29,8 @@ public class Fight {
     }
 
     /* 玩家暴击伤害计算 */
-    public int Get_UserCritDamage(int UserAtk,int UserCritDamage,int UserPower,int UserSp,int HunShouDef) {
-        int Atk = (int) ((UserAtk * ((1 + UserPower + UserSp) * 0.004) * (UserCritDamage * 0.01)) - (HunShouDef * 1.5));
+    public Long Get_UserCritDamage(long UserAtk, long UserCritDamage, long UserPower, long UserSp, long HunShouDef) {
+        long Atk = (long) ((UserAtk * ((1 + UserPower + UserSp) * 0.004) * (UserCritDamage * 0.01)) - (HunShouDef * 1.5));
         if (Atk <= 0) {
             Atk = 1;
         }
@@ -38,15 +38,15 @@ public class Fight {
     }
 
     /* 玩家伤害计算 */
-    public int Get_UserDamage(int UserAtk,int UserPower,int UserSp,int HunShouDef) {
-        int Atk = (int) ((UserAtk * ((1 + UserPower + UserSp) * 0.004)) - (HunShouDef * 1.5));
+    public Long Get_UserDamage(long UserAtk, long UserPower, long UserSp, long HunShouDef) {
+        long Atk = (long) ((UserAtk * ((1 + UserPower + UserSp) * 0.004)) - (HunShouDef * 1.5));
         if (Atk <= 0) {
             Atk = 1;
         }
         return Atk;
     }
     /* 计算闪避率 */
-    public int Get_Dodge(int Dodge,int Speed) {
+    public int Get_Dodge(long Dodge, long Speed) {
         return (int) (Dodge + (Speed * 0.08));
     }
 
@@ -61,8 +61,8 @@ public class Fight {
     }
 
     /* 魂兽暴击伤害计算 */
-    public int Get_HunShouCritDamage(int HunShouCritDamage,int HunShouPower,int UserDef) {
-        int Atk = (int) (HunShouPower * 2.5 * (HunShouCritDamage * 0.01) - (UserDef * 1.5));
+    public Long Get_HunShouCritDamage(long HunShouCritDamage, long HunShouPower, long UserDef) {
+        long Atk = (long) (HunShouPower * 2.5 * (HunShouCritDamage * 0.01) - (UserDef * 1.5));
         if (Atk <= 0) {
             Atk = 1;
         }
@@ -70,8 +70,8 @@ public class Fight {
     }
 
     /* 魂兽普通攻击伤害计算 */
-    public int Get_HunShouAttack(int HunShouPower,int UserDef){
-        int Atk = (int) (HunShouPower * 2.5 - (UserDef * 1.5));
+    public Long Get_HunShouAttack(long HunShouPower, long UserDef){
+        long Atk = (long) (HunShouPower * 2.5 - (UserDef * 1.5));
         if (Atk <= 0) {
             Atk = 1;
         }
@@ -185,9 +185,9 @@ public class Fight {
         if (Attribute.equals("暴击率")) {
             json.put("暴击率", (int)(UpValue + (json.getInteger("暴击率"))));
         } else if (Attribute.equals("暴伤")) {
-            json.put("暴伤", (int)(UpValue + (json.getInteger("暴伤"))));
+            json.put("暴伤", (long)(UpValue + (json.getLong("暴伤"))));
         }else {
-            json.put(Attribute, (int)(UpValue * (json.getInteger(Attribute))));
+            json.put(Attribute, (long)(UpValue * (json.getLong(Attribute))));
         }
         String data = json.toJSONString();
         String sql = String.format("UPDATE fightdata SET data='%s' WHERE id=%d", data, id);

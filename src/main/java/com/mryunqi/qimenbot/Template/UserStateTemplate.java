@@ -33,22 +33,22 @@ public class UserStateTemplate {
         if (!Warship.equals("")) return "战舰："+Warship+"\n";
         return "";
     }
-    public String get_UserTem(String UserData,String LvName,int Ce,int NextLevelExp,double NextLevelExpPercent,int UserSpirit,String UserSpiritName){
+    public String get_UserTem(String UserData, String LvName, long Ce, long NextLevelExp, double NextLevelExpPercent, long UserSpirit, String UserSpiritName){
         JSONObject map = JSONObject.parseObject(UserData);
-        return "·等级：" + map.getJSONObject("userData").getString("等级") + "[" + LvName + "]\n" +
-                "·经验：" + map.getJSONObject("userData").getString("经验") + "/" + NextLevelExp + "[" + String.format("%.2f", NextLevelExpPercent) + "%]\n" +
+        return "·等级：" + map.getJSONObject("userData").getLong("等级") + "[" + LvName + "]\n" +
+                "·经验：" + map.getJSONObject("userData").getLong("经验") + "/" + NextLevelExp + "[" + String.format("%.2f", NextLevelExpPercent) + "%]\n" +
                 "·战力：" + Ce + "\n" +
-                "·精神力：" + map.getJSONObject("userData").getString("精神力") + "/" + UserSpirit + "[" + UserSpiritName + "]\n" +
-                "·生命：" + map.getJSONObject("userData").getString("当前生命") + "/" + map.getJSONObject("userData").getString("生命") + "\n" +
-                "·魂力：" + map.getJSONObject("userData").getString("当前魂力值") + "/" + map.getJSONObject("userData").getString("魂力值") + "\n" +
-                "·攻击：" + map.getJSONObject("userData").getString("攻击") + "\n" +
-                "·力量：" + map.getJSONObject("userData").getString("力量") + "\n" +
-                "·防御：" + map.getJSONObject("userData").getString("防御") + "\n" +
-                "·暴击：" + map.getJSONObject("userData").getString("暴击率") + "\n" +
-                "·暴伤：" + map.getJSONObject("userData").getString("暴击伤害") + "\n" +
-                "·速度：" + map.getJSONObject("userData").getString("速度") + "\n" +
-                "·闪避：" + map.getJSONObject("userData").getString("闪避") + "\n" +
-                "·体力值：" + map.getJSONObject("userData").getString("体力") + "\n" +
+                "·精神力：" + map.getJSONObject("userData").getLong("精神力") + "/" + UserSpirit + "[" + UserSpiritName + "]\n" +
+                "·生命：" + map.getJSONObject("userData").getLong("当前生命") + "/" + map.getJSONObject("userData").getString("生命") + "\n" +
+                "·魂力：" + map.getJSONObject("userData").getLong("当前魂力值") + "/" + map.getJSONObject("userData").getString("魂力值") + "\n" +
+                "·攻击：" + map.getJSONObject("userData").getLong("攻击") + "\n" +
+                "·力量：" + map.getJSONObject("userData").getLong("力量") + "\n" +
+                "·防御：" + map.getJSONObject("userData").getLong("防御") + "\n" +
+                "·暴击：" + map.getJSONObject("userData").getLong("暴击率") + "\n" +
+                "·暴伤：" + map.getJSONObject("userData").getLong("暴击伤害") + "\n" +
+                "·速度：" + map.getJSONObject("userData").getLong("速度") + "\n" +
+                "·闪避：" + map.getJSONObject("userData").getLong("闪避") + "\n" +
+                "·体力值：" + map.getJSONObject("userData").getLong("体力") + "\n" +
                 "<可用命令>\n" +
                 "背包\n";
     }
@@ -58,11 +58,11 @@ public class UserStateTemplate {
         Function func = new Function();
         User user = new User(QQ);
         JSONObject map = JSON.parseObject(userData);
-        int UserSpirit = user.Get_UserSpirit(Integer.parseInt(map.getJSONObject("userData").getString("精神力")));
-        String UserSpiritName = user.Get_UserSpiritName(Integer.parseInt(map.getJSONObject("userData").getString("精神力")));
-        int NextLevelExp = func.Get_NextLevelExp(Integer.parseInt(map.getJSONObject("userData").getString("等级")),UpExp);
+        long UserSpirit = user.Get_UserSpirit(map.getJSONObject("userData").getLong("精神力"));
+        String UserSpiritName = user.Get_UserSpiritName(map.getJSONObject("userData").getLong("精神力"));
+        long NextLevelExp = func.Get_NextLevelExp(Integer.parseInt(map.getJSONObject("userData").getString("等级")),UpExp);
         double NextLevelExpPercent = func.Get_NextLevelExpPercent(Integer.parseInt(map.getJSONObject("userData").getString("经验")),NextLevelExp);
-        int Ce = func.Get_Ce(userData);
+        long Ce = func.Get_Ce(userData);
         String Attribute = user.Get_UserNowAttribute(userData);
         String head = "";
         switch (Attribute) {
@@ -109,11 +109,11 @@ public class UserStateTemplate {
         Function func = new Function();
         JSONObject shelfMap = JSON.parseObject(userData);
         JSONObject map = JSON.parseObject(userOtherData);
-        int UserSpirit = OtherUser.Get_UserSpirit(Integer.parseInt(map.getJSONObject("userData").getString("精神力")));
-        String UserSpiritName = OtherUser.Get_UserSpiritName(Integer.parseInt(map.getJSONObject("userData").getString("精神力")));
-        int NextLevelExp = func.Get_NextLevelExp(Integer.parseInt(map.getJSONObject("userData").getString("等级")), UpExp);
+        long UserSpirit = OtherUser.Get_UserSpirit(map.getJSONObject("userData").getLong("精神力"));
+        String UserSpiritName = OtherUser.Get_UserSpiritName(map.getJSONObject("userData").getLong("精神力"));
+        long NextLevelExp = func.Get_NextLevelExp(map.getJSONObject("userData").getLong("等级"), UpExp);
         double NextLevelExpPercent = func.Get_NextLevelExpPercent(Integer.parseInt(map.getJSONObject("userData").getString("经验")), NextLevelExp);
-        int Ce = func.Get_Ce(userOtherData);
+        long Ce = func.Get_Ce(userOtherData);
         String Attribute = OtherUser.Get_UserNowAttribute(userOtherData);
         String head = "";
         switch (Attribute) {

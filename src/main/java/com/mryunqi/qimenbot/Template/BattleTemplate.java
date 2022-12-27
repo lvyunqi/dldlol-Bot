@@ -7,7 +7,7 @@ import static com.mryunqi.qimenbot.Util.FileUtils.is_file;
 
 public class BattleTemplate {
     /* 玩家攻击魂兽闪避 */
-    public static String Get_User_PVE_HunShou_Dodge_Attack(String UserData,String Attribute,int HunShouHP,int TimeCha,String FightData){
+    public static String Get_User_PVE_HunShou_Dodge_Attack(String UserData, String Attribute, long HunShouHP, int TimeCha, String FightData){
         PublicAuth publicAuth = new PublicAuth();
         JSONObject map = JSONObject.parseObject(UserData);
         return publicAuth.Get_UserHead(UserData,Attribute) +
@@ -18,7 +18,7 @@ public class BattleTemplate {
                 FightData;
     }
     /* 玩家暴击魂兽，魂兽未死亡 */
-    public static String Get_User_PVE_HunShou_Crit_NotDie(String UserData,String Attribute,int HunShouHP,int TimeCha,int Hurt,String FightData){
+    public static String Get_User_PVE_HunShou_Crit_NotDie(String UserData, String Attribute, long HunShouHP, int TimeCha, long Hurt, String FightData){
         PublicAuth publicAuth = new PublicAuth();
         JSONObject map = JSONObject.parseObject(UserData);
         return publicAuth.Get_UserHead(UserData,Attribute) +
@@ -30,7 +30,7 @@ public class BattleTemplate {
                 FightData;
     }
     /* 玩家暴击魂兽，魂兽死亡，玩家需要魂环 */
-    public static String Get_User_PVE_HunShou_Crit_Die_NeedHuan(String UserData,String Attribute,int TimeCha,int Hurt,int HunShouEXP,String FightData,String DropMessage,String HunShouDropAge,String HunShouAgeLevelName){
+    public static String Get_User_PVE_HunShou_Crit_Die_NeedHuan(String UserData, String Attribute, int TimeCha, long Hurt, long HunShouEXP, String FightData, String DropMessage, String HunShouDropAge, String HunShouAgeLevelName){
         PublicAuth publicAuth = new PublicAuth();
         String rootPath = System.getProperty("user.dir");
         JSONObject map = JSONObject.parseObject(UserData);
@@ -50,7 +50,7 @@ public class BattleTemplate {
                 "魂环信息";
     }
     /* 玩家暴击魂兽，魂兽死亡，玩家升级 */
-    public static String Get_User_PVE_HunShou_Crit_Die_LevelUp(String UserData,String Attribute,int TimeCha,int Hurt,int HunShouEXP,String FightData,String DropMessage,String HunShouDropAge,String HunShouAgeLevelName){
+    public static String Get_User_PVE_HunShou_Crit_Die_LevelUp(String UserData, String Attribute, int TimeCha, long Hurt, long HunShouEXP, String FightData, String DropMessage, String HunShouDropAge, String HunShouAgeLevelName){
         PublicAuth publicAuth = new PublicAuth();
         String rootPath = System.getProperty("user.dir");
         JSONObject map = JSONObject.parseObject(UserData);
@@ -70,7 +70,7 @@ public class BattleTemplate {
                 "魂环信息";
     }
     /* 玩家暴击魂兽，魂兽死亡 */
-    public static String Get_User_PVE_HunShou_Crit_Die(String UserData,String Attribute,int TimeCha,int Hurt,int HunShouEXP,String FightData,String DropMessage,String HunShouDropAge,String HunShouAgeLevelName){
+    public static String Get_User_PVE_HunShou_Crit_Die(String UserData, String Attribute, int TimeCha, long Hurt, long HunShouEXP, String FightData, String DropMessage, String HunShouDropAge, String HunShouAgeLevelName){
         PublicAuth publicAuth = new PublicAuth();
         String rootPath = System.getProperty("user.dir");
         JSONObject map = JSONObject.parseObject(UserData);
@@ -90,7 +90,7 @@ public class BattleTemplate {
                 "魂环信息";
     }
     /* 玩家攻击魂兽，魂兽死亡，玩家需要魂环 */
-    public static String Get_User_PVE_HunShou_Die_NeedHuan(String UserData,String Attribute,int TimeCha,int Hurt,int HunShouEXP,String FightData,String DropMessage,String HunShouDropAge,String HunShouAgeLevelName){
+    public static String Get_User_PVE_HunShou_Die_NeedHuan(String UserData, String Attribute, int TimeCha, long Hurt, long HunShouEXP, String FightData, String DropMessage, String HunShouDropAge, String HunShouAgeLevelName){
         PublicAuth publicAuth = new PublicAuth();
         String rootPath = System.getProperty("user.dir");
         JSONObject map = JSONObject.parseObject(UserData);
@@ -110,7 +110,7 @@ public class BattleTemplate {
                 "魂环信息";
     }
     /* 玩家攻击魂兽，魂兽死亡，玩家升级 */
-    public static String Get_User_PVE_HunShou_Die_LevelUp(String UserData,String Attribute,int TimeCha,int Hurt,int HunShouEXP,String FightData,String DropMessage,String HunShouDropAge,String HunShouAgeLevelName){
+    public static String Get_User_PVE_HunShou_Die_LevelUp(String UserData, String Attribute, int TimeCha, long Hurt, long HunShouEXP, String FightData, String DropMessage, String HunShouDropAge, String HunShouAgeLevelName){
         PublicAuth publicAuth = new PublicAuth();
         String rootPath = System.getProperty("user.dir");
         JSONObject map = JSONObject.parseObject(UserData);
@@ -130,7 +130,7 @@ public class BattleTemplate {
                 "魂环信息";
     }
     /* 玩家攻击魂兽，魂兽死亡 */
-    public static String Get_User_PVE_HunShou_Die(String UserData,String Attribute,int TimeCha,int Hurt,int HunShouEXP,String FightData,String DropMessage,String HunShouDropAge,String HunShouAgeLevelName){
+    public static String Get_User_PVE_HunShou_Die(String UserData, String Attribute, int TimeCha, long Hurt, long HunShouEXP, String FightData, String DropMessage, String HunShouDropAge, String HunShouAgeLevelName){
         PublicAuth publicAuth = new PublicAuth();
         String rootPath = System.getProperty("user.dir");
         JSONObject map = JSONObject.parseObject(UserData);
@@ -150,7 +150,7 @@ public class BattleTemplate {
                 "魂环信息";
     }
     /* 玩家攻击魂兽，魂兽未死亡 */
-    public static String Get_User_PVE_HunShou_NotDie(String UserData,String Attribute,int HunShouHP,int TimeCha,int Hurt,String FightData){
+    public static String Get_User_PVE_HunShou_NotDie(String UserData, String Attribute, long HunShouHP, int TimeCha, long Hurt, String FightData){
         PublicAuth publicAuth = new PublicAuth();
         JSONObject map = JSONObject.parseObject(UserData);
         return publicAuth.Get_UserHead(UserData,Attribute) +
@@ -163,7 +163,7 @@ public class BattleTemplate {
     }
 
     /* 玩家攻击魂兽未击中 */
-    public static String Get_User_PVE_HunShou_Skill_No_Attack(String UserData,String Attribute,int HunShouHP,int TimeCha,String FightData,String SkillName){
+    public static String Get_User_PVE_HunShou_Skill_No_Attack(String UserData, String Attribute, long HunShouHP, int TimeCha, String FightData, String SkillName){
         PublicAuth publicAuth = new PublicAuth();
         JSONObject map = JSONObject.parseObject(UserData);
         return publicAuth.Get_UserHead(UserData,Attribute) +
@@ -175,7 +175,7 @@ public class BattleTemplate {
     }
 
     /* 玩家释放魂技，魂技冷却中 */
-    public static String Get_User_PVE_HunShou_Skill_Cooling(String UserData,String Attribute,int HunShouHP,int TimeCha,int CDCha,String FightData,String SkillName){
+    public static String Get_User_PVE_HunShou_Skill_Cooling(String UserData, String Attribute, long HunShouHP, int TimeCha, long CDCha, String FightData, String SkillName){
         PublicAuth publicAuth = new PublicAuth();
         return publicAuth.Get_UserHead(UserData,Attribute) +
                 "["+SkillName+"]"+"冷却时间剩余" +CDCha+"秒！\n"+
@@ -186,7 +186,7 @@ public class BattleTemplate {
     }
 
     /* 玩家释放魂技，魂力不足 */
-    public static String Get_User_PVE_HunShou_Skill_No_MP(String UserData,String Attribute,int HunShouHP,int TimeCha,String FightData){
+    public static String Get_User_PVE_HunShou_Skill_No_MP(String UserData, String Attribute, long HunShouHP, int TimeCha, String FightData){
         PublicAuth publicAuth = new PublicAuth();
         return publicAuth.Get_UserHead(UserData,Attribute) +
                 "您的魂力不足,无法释放该魂技！\n"+
@@ -197,8 +197,8 @@ public class BattleTemplate {
     }
 
     /* 玩家释放魂技，击杀魂兽，未升级 */
-    public static String Get_User_PVE_HunShou_Skill_Die_NoLvUp(String UserData,String Attribute,int TimeCha,int Hurt,String HunShouName,String SkillName,String SkillInfo,String HunShouStatus,String UserStatus,String FightData
-            ,String HunShouDropAge,String HunShouAgeLevelName,int HunShouEXP,String DropMessage){
+    public static String Get_User_PVE_HunShou_Skill_Die_NoLvUp(String UserData, String Attribute, int TimeCha, long Hurt, String HunShouName, String SkillName, String SkillInfo, String HunShouStatus, String UserStatus, String FightData
+            , String HunShouDropAge, String HunShouAgeLevelName, long HunShouEXP, String DropMessage){
         PublicAuth publicAuth = new PublicAuth();
         String rootPath = System.getProperty("user.dir");
         JSONObject map = JSONObject.parseObject(UserData);
@@ -219,8 +219,8 @@ public class BattleTemplate {
     }
 
     /* 玩家释放魂技，击杀魂兽，升级，需要魂环*/
-    public static String Get_User_PVE_HunShou_Skill_Die_NeedHuan(String UserData,String Attribute,int TimeCha,int Hurt,String HunShouName,String SkillName,String SkillInfo
-            ,String HunShouStatus,String UserStatus,String FightData,String HunShouDropAge,String HunShouAgeLevelName,int HunShouEXP,String DropMessage){
+    public static String Get_User_PVE_HunShou_Skill_Die_NeedHuan(String UserData, String Attribute, int TimeCha, long Hurt, String HunShouName, String SkillName, String SkillInfo
+            , String HunShouStatus, String UserStatus, String FightData, String HunShouDropAge, String HunShouAgeLevelName, long HunShouEXP, String DropMessage){
         PublicAuth publicAuth = new PublicAuth();
         String rootPath = System.getProperty("user.dir");
         JSONObject map = JSONObject.parseObject(UserData);
@@ -241,8 +241,8 @@ public class BattleTemplate {
     }
 
     /* 玩家释放魂技，击杀魂兽，升级*/
-    public static String Get_User_PVE_HunShou_Skill_LvUP(String UserData,String Attribute,int TimeCha,int Hurt,String HunShouName,String SkillName,String SkillInfo
-            ,String HunShouStatus,String UserStatus,String FightData,String HunShouDropAge,String HunShouAgeLevelName,int HunShouEXP,String DropMessage){
+    public static String Get_User_PVE_HunShou_Skill_LvUP(String UserData, String Attribute, int TimeCha, long Hurt, String HunShouName, String SkillName, String SkillInfo
+            , String HunShouStatus, String UserStatus, String FightData, String HunShouDropAge, String HunShouAgeLevelName, long HunShouEXP, String DropMessage){
         PublicAuth publicAuth = new PublicAuth();
         String rootPath = System.getProperty("user.dir");
         JSONObject map = JSONObject.parseObject(UserData);
@@ -263,8 +263,8 @@ public class BattleTemplate {
     }
 
     /* 玩家释放魂技，未击杀魂兽*/
-    public static String Get_User_PVE_HunShou_Skill_NoDie(String UserData,String Attribute,int HunShouHP,int TimeCha,int Hurt,String HunShouName,String SkillName,String SkillInfo
-            ,String HunShouStatus,String UserStatus,String FightData){
+    public static String Get_User_PVE_HunShou_Skill_NoDie(String UserData, String Attribute, long HunShouHP, int TimeCha, long Hurt, String HunShouName, String SkillName, String SkillInfo
+            , String HunShouStatus, String UserStatus, String FightData){
         PublicAuth publicAuth = new PublicAuth();
         JSONObject map = JSONObject.parseObject(UserData);
         return publicAuth.Get_UserHead(UserData,Attribute) +
@@ -277,7 +277,7 @@ public class BattleTemplate {
     }
 
     /* 逃跑 */
-    public static String Escape_PVE(String UserData,String Attribute,int Coin,String Currency){
+    public static String Escape_PVE(String UserData, String Attribute, long Coin, String Currency){
         PublicAuth publicAuth = new PublicAuth();
         return publicAuth.Get_UserHead(UserData,Attribute) +
                 "逃跑成功！您在逃跑时不慎损失["+Currency+"]"+Coin+"\n";
